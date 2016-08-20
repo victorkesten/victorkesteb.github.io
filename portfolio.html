@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="home.css">
+<!-- <script language="JavaScrpt" type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+</script> -->
+<script src="jquery-3.0.0.js"></script>
+<script language="JavaScript" type="text/javascript" src="help.js"></script>
+
+<title>Portfolio</title>
+</head>
+<body>
+<div id="backgroundPic">
+</div>
+<div id="bannerTop">
+	<br>
+	<div id="bannerLink">
+		<a id=homeLink href="home.html">HOME</a> / <a id=homeLink href="portfolio.html">PORTFOLIO</a> / <a id=homeLink href="about.html">ABOUT</a>
+	</div>
+</div>
+
+<div id="box">
+
+	<div class="projectSpace">
+		<div class="project" id="proj3" title="GL Engine" onclick="go(ProjectNames.RAY_TRACE)">
+		</div>
+		<p class="textDesc" id="textDesc3"><b><u>Ray Tracing</u></b><br>Exploring Ray Tracers and Rasterizers.</p>
+	</div>
+
+	<div class="projectSpace">
+		<div class="project" id="proj5" title="GL 3D" onclick="go(ProjectNames.GL_ENGINE)">
+		</div>
+		<p class="textDesc" id="textDesc3"><b><u>OpenGL Project</u></b><br>3D Environment in OpenGL using Java and C++</p>
+	</div>
+
+	<div class="projectSpace" id="projectSpace1">
+		<div class="project" id="proj1" onclick="go(ProjectNames.TEXT_CPP)">
+
+		</div>
+		<p class="textDesc" id="textDesc1"><b><u>Magical Zenland</u></b><br>A simple command line text adventure game made in C++.</p>
+	</div>
+
+	<div class="projectSpace">
+		<div class="project" id="proj2" onclick="go(ProjectNames.THEA)">
+		</div>
+		<p class="textDesc" id="textDesc2"><b><u>Thea For Glasses</u></b><br>Android Studios project made in Java.</p>
+	</div>
+
+	<div class="projectSpace">
+		<div class="project" id="proj4" onclick="go(ProjectNames.SMALL_GAMES)">
+		</div>
+		<p class="textDesc" id="textDesc4"><b><u>Vareity of Small Games</u></b><br>Simple games such as Snake, Battleship and Pong (among others) created using a variety of programming languages, libraries and techniques.</p>
+
+	</div>
+</div>
+
+</body>
+</html>

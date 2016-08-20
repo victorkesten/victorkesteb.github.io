@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html> 
+ <head>
+    <title>Javascript Funtimes</title> 
+  <link rel="stylesheet" type="text/css" href="snake.css">
+    <link rel="shortcut icon" href="">
+ 
+</head>
+ <script src="snake.js"></script>
+ <body onload="createSnake()">
+    <p align="center" id="test"> 
+    </p>
+<h1>Snake with Javascript!</h1>
+<p><marquee width="500">
+  Double tap Spacebar to start. Control with your keys. Save with S. Pause with P.
+</marquee>
+</p>
+
+     <!--<button onclick="document.write(5 + 6)">Try it</button>-->
+    <p id="restart">
+         <button onclick="start()">Start</button>
+         <button onclick="restart()">Restart Game</button>
+         <button onclick="pause()">Pause/Unpause</button>
+         <button onclick="save()">Save Game</button>
+         <button onclick="loadGame()">Load Game</button>
+         <button onclick="submitHS()">Submit Highscore/Statistics</button>
+         <!-- <button onclick="debug()">Debug</button> -->
+    </p>
+
+    <form name="myform" id="myform" method="get" action="game.html">
+        <!-- <input type="text" name="myinput" value="3" /> -->
+    </form>
+
+<div id="hiddenField">
+
+    </div>
+<div id="session1">
+
+    </div>
+<div id="playfield">
+
+    </div>
+
+<div id="statistics">
+
+</div>
+
+<div id="highscore">
+
+</div>
+
+</body>
+
+</html>
