@@ -7,22 +7,22 @@ ProjectNames = {
 }
 
 function go(a) {
-	var locat = "portfolio.html";
+	var locat = "portfolio";
 	switch(a){
 		case ProjectNames.THEA:
-			locat = "projects/thea.html";
+			locat = "portfolio/thea";
 			break;
 		case ProjectNames.TEXT_CPP:
-			locat = "projects/text_cpp.html";
+			locat = "portfolio/text_cpp";
 			break;
 		case ProjectNames.RAY_TRACE:
-			locat = "projects/raytrace.html";
+			locat = "portfolio/raytrace";
 			break;
 		case ProjectNames.SMALL_GAMES:
-			locat = "projects/small_games.html";
+			locat = "portfolio/small_games";
 			break;
 		case ProjectNames.GL_ENGINE:
-			locat = "projects/gl_engine.html";
+			locat = "portfolio/gl_engine";
 		default:
 			break;
 	}
