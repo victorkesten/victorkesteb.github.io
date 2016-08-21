@@ -1,1 +1,5 @@
 - Individual pages
+
+
+https://alexcican.com/post/how-to-remove-php-html-htm-extensions-with-htaccess/
+//https://www.geekshosted.com/Blog/how-to-remove-html-from-your-url/

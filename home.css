@@ -23,7 +23,8 @@ html, body {
 	background-color: black;
 	color: white;	
 	text-align: center;
-	position: relative;
+	/*position: relative;*/
+	position: auto;
 	height: 63px;
 	z-index: 50;
 }
@@ -160,6 +161,13 @@ html, body {
 }
 
 
+
+.textBox {
+	margin-left : 10%;
+	margin-right :10%;
+	font-family: candara;
+
+}
 
 
 
