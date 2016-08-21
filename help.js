@@ -10,19 +10,19 @@ function go(a) {
 	var locat = "portfolio";
 	switch(a){
 		case ProjectNames.THEA:
-			locat = "portfolio/thea";
+			locat = "thea";
 			break;
 		case ProjectNames.TEXT_CPP:
-			locat = "portfolio/text_cpp";
+			locat = "text_cpp";
 			break;
 		case ProjectNames.RAY_TRACE:
-			locat = "portfolio/raytrace";
+			locat = "raytrace";
 			break;
 		case ProjectNames.SMALL_GAMES:
-			locat = "portfolio/small_games";
+			locat = "small_games";
 			break;
 		case ProjectNames.GL_ENGINE:
-			locat = "portfolio/gl_engine";
+			locat = "gl_engine";
 		default:
 			break;
 	}
