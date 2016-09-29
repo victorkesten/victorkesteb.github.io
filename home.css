@@ -249,6 +249,6 @@ div.desc {
 
 */
 
-#wrapper_1 { clear: left; float: left; position: relative; left: 50%; }
+#wrapper_1 { clear: left; float: left; position: relative; vertical-align: middle; left: 50%; }
 
-#container_1 { display: block; float: left; position: relative; right: 50%; text-align: center; }
+#container_1 { display: block; float: left; position: relative; vertical-align: middle; right: 50%; text-align: center; }
