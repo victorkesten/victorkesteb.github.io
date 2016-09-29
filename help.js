@@ -3,7 +3,8 @@ ProjectNames = {
     TEXT_CPP : 1,
     GL_ENGINE : 2,
     SMALL_GAMES : 3,
-    RAY_TRACE : 4
+    RAY_TRACE : 4,
+    MINECRAFT: 5
 }
 
 function go(a) {
@@ -23,6 +24,9 @@ function go(a) {
 			break;
 		case ProjectNames.GL_ENGINE:
 			locat = "gl_engine";
+			break;
+		case ProjectNames.MINECRAFT:
+			locat = "minecraft_mod";
 		default:
 			break;
 	}

@@ -139,7 +139,15 @@ html, body {
 
 #proj5{
 	background-image: url("resources/GLMon.png");
-	background-size: 105%;
+	background-size: 155%;
+	background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+#proj6{
+	background-image: url("resources/mc1.png");
+	background-size: 175%;
 	background-position: center;
     background-repeat: no-repeat;
 }
