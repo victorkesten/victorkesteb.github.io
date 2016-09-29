@@ -16,34 +16,64 @@
 		<a id=homeLink href="../">HOME</a> / <a id=homeLink href="../portfolio/">PORTFOLIO</a> / <a id=homeLink href="../about">ABOUT</a>
 	</div>
 </div>
-<div class="textBox">
-<img style="margin-left:3%;width:20%;height:auto%" src="../resources/snake.png" alt="Text 1" align="right">
 
+<div style="font-family:candara;">
+<h2 style="	text-align: center">Select a project</h2>
+
+<div style="text-align:center">
+<b>
+<a id="select1" onclick="clickMe(1)">Snake</a> | 
+<a id="select1" onclick="clickMe(2)">Battleships</a> | 
+<a id="select1" onclick="clickMe(3)">Pokédex</a> | 
+<a id="select1" onclick="clickMe(4)">Pong</a>
+</b>
+</div>
+</div>
+<!-- 
+<button onclick="clickMe(2)" id="btnClick">Click me!</button>
+<button onclick="clickMe(1)" id="btnClick">Click me!</button>
+ -->
+<div class="textBox">
+
+
+<div id="sub1" style="display:none">
+<img style="margin-left:3%;width:30%;height:auto%" src="../resources/snake.png" alt="Text 1" align="right">
 <h2>Snake</h2>
 Snake is one of the classics when it comes to old school games. Essentially everyone knows what it is and how to play. This implementation of snake is created with JavaScript and 
 <br><br>
 This game originally had a database backend that supported highscores and logins by the same user from different computers. However, the database server is no longer accessible and so now it's only a local game intended for in-browser use with no saving mechanics.  
 <br><br>
-<a href="Snake/game.html">Click here to play in Browser</a>
-<br><br>
-<img style="margin-left:3%;width:20%;height:auto%" src="../resources/battleship.png" alt="Text 1" align="right">
+<a href="Snake/index.html">Click here to play in Browser</a>
+</div>
 
+
+<div id="sub2" style="display:none">
+<img style="margin-left:3%;width:30%;height:auto%" src="../resources/battleship.png" alt="Text 1" align="right">
 <h2>Battleships</h2>
 Another game that dates back way before I was born (obviously). But how about if you could play it against yourself (or a team mate) with random Battleship placement? Exciting? I think yes!
 <br><br>
-<a href="game.html">Click here to play in Browser</a>
+<a href="Battleship/index.html">Click here to play in Browser</a>
+</div>
 
+
+
+<div id="sub3" style="display:none">
+<img style="margin-left:3%;width:30%;height:auto%" src="../resources/Pokedex.PNG" alt="Text 1" align="right">
 <h2>Pokédex</h2>
 Although not a game, it's something I would like to share as it's a fun project! In my first year at University I decided to create a Pokédex in Java. This was before I knew SQL and proper database support, but nevertheless I am still proud of the outcome. 
 <br><br>
-<a href="game.html">Click here to go to Repo</a>
+<a href="https://github.com/victorkesten/PokeProject">Click here to go to Repo</a>
+</div>
 
 
-<img style="margin-left:3%;width:20%;height:auto%" src="../resources/Pong.png" alt="Text 1" align="right">
+
+<div id="sub4" style="display:none">
+<img style="margin-left:3%;width:30%;height:auto%" src="../resources/Pong.png" alt="Text 1" align="right">
 <h2>Pong</h2>
 This game originally had a database backend that supported highscores and logins by the same user from different computers. However, the database server is no longer accessible and so now it's only a local game intended for in-browser use. 
 <br><br>
 <a href="game.html">Click here to download game. (Uploaded Soon)</a>
+</div>
 </div>
 
 </body>

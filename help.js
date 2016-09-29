@@ -53,6 +53,20 @@ function screenCheck(){
 	}
 }
 
+var oldProj = 0;
+function clickMe(a){
+	if(oldProj == 0){
+		oldProj = a;
+	}
+	console.log(a);
+	var newP = document.getElementById('sub' + a).style;
+	var oldP = document.getElementById('sub' + oldProj).style;
+	oldP.display = 'none';
+	newP.display = 'initial';
+	oldProj = a;
+}
+
+
 var velocity = 1;
 var oldPos;
 var percent = 50;

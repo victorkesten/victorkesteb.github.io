@@ -252,3 +252,20 @@ div.desc {
 #wrapper_1 { clear: left; float: left; position: relative; vertical-align: middle; left: 50%; }
 
 #container_1 { display: block; float: left; position: relative; vertical-align: middle; right: 50%; text-align: center; }
+
+#select1:link {
+    text-decoration: none;
+}
+
+#select1:visited {
+    text-decoration: none;
+}
+
+#select1:hover {
+    text-decoration: underline;
+}
+
+
+#select1:active {
+    text-decoration: underline;
+}
