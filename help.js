@@ -44,6 +44,15 @@ function hideText(a){
 	console.log("test1");
 }
 
+function screenCheck(){
+	console.log($(window).width());
+	if($(window).width >= 1850){
+		var x = document.getElementsByClassName("projectSpace");
+		x.style.marginRight = "15"
+  		x.style.marginLeft = "15"
+	}
+}
+
 var velocity = 1;
 var oldPos;
 var percent = 50;
