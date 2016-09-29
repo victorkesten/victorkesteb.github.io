@@ -48,8 +48,8 @@ function screenCheck(){
 	console.log($(window).width());
 	if($(window).width >= 1850){
 		var x = document.getElementsByClassName("projectSpace");
-		x.style.marginRight = "15"
-  		x.style.marginLeft = "15"
+		x.style.marginRight = "15px"
+  		x.style.marginLeft = "15px"
 	}
 }
 
