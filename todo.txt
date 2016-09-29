@@ -1,5 +1,15 @@
 - Individual pages
-
+- 404 Page
 
 https://alexcican.com/post/how-to-remove-php-html-htm-extensions-with-htaccess/
 //https://www.geekshosted.com/Blog/how-to-remove-html-from-your-url/
+
+"Source Sans Pro","HelveticaNeue","Helvetica Neue",sans-serif;
+font-size: 16px;
+    line-height: 1.7;
+    font-family: "Source Sans Pro","HelveticaNeue","Helvetica Neue",sans-serif;
+    color: #2e2e2e;
+
+    http://and.intercon.ru/releases/talks/dlaagdc2011/slides/
+
+    Fix images on THEA. Added two new ones. They should be in one drive.
