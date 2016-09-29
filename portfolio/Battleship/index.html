@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html> 
+ <head>
+    <title>Javascript Funtimes</title> 
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+ 
+</head>
+ <script src="myscript.js"></script>
+ <body onload="createGrid()">
+    <p align="center" id="test"> 
+    </p>
+<h1>Battleships with Javascript!</h1>
+<p><marquee width="250">
+  No Instructions needed. Just play
+</marquee>
+</p>
+
+     <!--<button onclick="document.write(5 + 6)">Try it</button>-->
+    <p id="restart">
+         <button onclick="restart()">Restart Game</button>
+         <button onclick="debug()">Debug</button>
+    </p>
+    <div id="pTurn">Player 1's Turn</div>
+
+    <div id="grid">
+        
+    </div>
+    <br>
+    <b>Player 1:</b>
+    <div id="shots1">
+    Shots: 0
+    </div>
+    <div id="hits1">
+    Hits: 0
+    </div>
+    <div id="sunk1">
+    Ships sunk: 0
+    </div>
+    <br>
+    <b>Player 2:</b>
+    <div id="shots2">
+    Shots: 0
+    </div>
+    <div id="hits2">
+    Hits: 0
+    </div>
+    <div id="sunk2">
+    Ships sunk: 0
+    </div>
+
+
+ </body>
+ 
+ <!-- Run all the JavaScript stuff -->
+
+
+
+</html>

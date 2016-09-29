@@ -1,0 +1,16 @@
+#grid {
+    width: 450px;
+    height:450px;        
+}
+
+.cell {
+    outline: 1px solid red;
+    background: cyan;
+    float: left;
+    height: 50px;
+    width: 50px;    
+}
+
+#update {
+	float: right;
+}

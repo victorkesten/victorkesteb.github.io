@@ -1,0 +1,12 @@
+#grid {
+    width: 270px;
+    height:270px;        
+}
+
+.square {
+    outline: 1px solid black;
+    background: orange;
+    float: left;
+    height: 30px;
+    width: 30px;    
+}
