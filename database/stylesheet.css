@@ -1,0 +1,41 @@
+
+
+#formDiv {
+  float: left;
+  margin: auto;
+  width: 35%; 
+}
+
+#result {
+  float: right;
+  padding: 1%;
+  margin-right: 10%;
+}
+
+#searchparams {
+  font-size: 0%;
+}
+
+form {
+  width: 100%;
+  margin: auto;
+}
+
+input {
+  margin: 8px 0;
+}
+
+label {
+  width: 18%;
+}
+
+td {
+  background-color: #D3d3D3;
+}
+th, td {
+  padding: 5px;
+}
+
+th {
+  background-color: #AAAAAA;  
+}
