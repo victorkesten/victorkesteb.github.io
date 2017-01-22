@@ -27,6 +27,12 @@ div {
 #right {
     margin: 5px;
     width: 48%;
-        background-color: blue;
+        /*background-color: blue;*/
 
+}
+#graphChoice {
+    background-color: black;
+    color: white;
+    font-size: 40;
+    text-align: center;
 }

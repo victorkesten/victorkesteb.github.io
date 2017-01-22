@@ -2,18 +2,19 @@
 <html>
 <head>
 <title>Project 1</title>
-<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
 		<!-- Google fonts -->
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 
 		<!-- D3.js -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script src="sorttable.js"></script> <!-- http://www.kryogenix.org/code/browser/sorttable/ -->
-<script src="help.js"></script>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		<script src="sorttable.js"></script> <!-- http://www.kryogenix.org/code/browser/sorttable/ -->
+		<script src="help.js"></script>
  <!-- http://tableizer.journalistopia.com/tableizer.php -->
-		<script src="radarChart.js"></script>	
+	<script src="radarChart.js"></script>	
 
 </head>
 
@@ -114,13 +115,15 @@ Create an interactive Radar Chart with D3. List everyone on the left, be abble t
 	 		</tbody>
 		</table>
 	</div>
-	<div id="middle">
+	<div id="middle" onclick="addData()">
 	<br>
 		<div id="person">
 		</div>
 	</div>
-	<div id="right">
-	<br>
+	<div id="right" onclick="removeData()">
+	<header id="graphChoice"> <a onclick="console.log(4)">Radar Chart </a> | <a onclick="console.log(5)">Bar Graph</a></header>
+	<div id="rad" class="radarChart"></div>
+
 	</div>
 </div>
 
