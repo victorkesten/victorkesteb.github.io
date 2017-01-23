@@ -1,50 +1,43 @@
 
 ////////////////////////////////////////////////////////////// 
-			////////////////////////// Data ////////////////////////////// 
-			////////////////////////////////////////////////////////////// 
-			//IVIS
-			//Stats
-			//Math
-			//Art
-			//User
-			//Prog
-			//Graphics
-			//HCI
-			//UX
-			var data = [
-					  [//iPhone
-						{axis:"IVIS",value:7},
-						{axis:"Stats",value:3},
-						{axis:"Math",value:3},
-						{axis:"Art",value:9},
-						{axis:"User",value:6},
-						{axis:"Prog",value:2},
-						{axis:"Graphics",value:1},
-						{axis:"HCI",value:4},
-						{axis:"UX",value:8}				
-					  ],[//Samsung
-						{axis:"IVIS",value:5},
-						{axis:"Stats",value:4},
-						{axis:"Math",value:3},
-						{axis:"Art",value:6},
-						{axis:"User",value:7},
-						{axis:"Prog",value:3},
-						{axis:"Graphics",value:1},
-						{axis:"HCI",value:4},
-						{axis:"UX",value:8}
-					  ],[//Nokia Smartphone
-						{axis:"IVIS",value:3},
-						{axis:"Stats",value:3},
-						{axis:"Math",value:3},
-						{axis:"Art",value:3},
-						{axis:"User",value:8},
-						{axis:"Prog",value:8},
-						{axis:"Graphics",value:3},
-						{axis:"HCI",value:3},
-						{axis:"UX",value:3}
-					  ]
-					];
-var radarNameList;
+////////////////////////// Data ////////////////////////////// 
+////////////////////////////////////////////////////////////// 
+//IVIS
+//Stats
+//Math
+//Art
+//User
+//Prog
+//Graphics
+//HCI
+//UX
+var nullElement =  [//iPhone
+			{axis:"IVIS",value:0},
+			{axis:"Stats",value:0},
+			{axis:"Math",value:0},
+			{axis:"Art",value:0},
+			{axis:"User",value:0},
+			{axis:"Prog",value:0},
+			{axis:"Graphics",value:0},
+			{axis:"HCI",value:0},
+			{axis:"UX",value:0}				
+		  ];
+var data = [
+		  [//iPhone
+			{axis:"IVIS",value:0},
+			{axis:"Stats",value:0},
+			{axis:"Math",value:0},
+			{axis:"Art",value:0},
+			{axis:"User",value:0},
+			{axis:"Prog",value:0},
+			{axis:"Graphics",value:0},
+			{axis:"HCI",value:0},
+			{axis:"UX",value:0}				
+		  ]
+		];
+var statsForEveryone = [];
+var radarRowList = [];
+var radarNameList = [];
 function tableFix(){
 
 	var str = document.getElementById("tableData").innerHTML.trim();
@@ -58,11 +51,26 @@ function tableFix(){
 
 		ret += "<tr onclick=\"showPerson(\'"+ name +"\', " + (a+1) + ")\">"+sta.substring(4);
 		str = str.substring(str.indexOf("\n")).trim();
+		var statString = [];
+
+		var tempStr = sta.substring(ind.indexOf("<td>")+18);
+		tempStr = tempStr.substring(tempStr.indexOf("<td>"));
+		var x = parseInt(tempStr.substring(4,tempStr.indexOf("</td>")));
+		statString.push(x);
+		for(var b = 0; b < 8; b++){
+			tempStr = tempStr.substring(tempStr.indexOf("</td>"));
+			tempStr = tempStr.substring(tempStr.indexOf("<td>"));
+			x = parseInt(tempStr.substring(4,tempStr.indexOf("</td>")));
+			statString.push(x);
+		}
+		statsForEveryone.push(statString);
 		a++;
 	}
+	statsForEveryone.push([5,8,7,7,9,9,8,7,7]);
+	//console.log(statsForEveryone);
 	ret+=" <tr onclick=\"showPerson(\'Uruk\', 74)\"><td>74</td><td>Uruk</td><td>5</td><td>8</td><td>7</td><td>7</td><td>9</td><td>9</td><td>8</td><td>7</td><td>7</td></tr>";
 	document.getElementById("tableData").innerHTML = ret;
-	startTheRadar()
+	startTheRadar();
 }
 
 
@@ -88,9 +96,9 @@ function showPerson(name, row){
 	first = first.substring(8, first.length-8);
 	second = second.substring(8, second.length-6);
 
-	
+
 	var dataFormated = "0";
-	document.getElementById("person").innerHTML = "<h1>" + row + " " + name + "</h1>" + first + "<br><br><br>" + second + "		<br><button type=\"button\" onclick=\"addData(\'a\', "+ dataFormated +")\">Click to add!</button>"
+	document.getElementById("person").innerHTML = "<h1>" + row + " " + name + "</h1>" + first + "<br><br><br>" + second + "	<br><button type=\"button\" onclick=\"addData('" + name +"', "+ row +")\">Click to add!</button>" + " <br><button type=\"button\" onclick=\"removeData("+ row +")\">Click to remove!</button>";
 }
 
 function startTheRadar(){
@@ -106,7 +114,7 @@ function startTheRadar(){
 			//////////////////// Draw the Chart ////////////////////////// 
 			////////////////////////////////////////////////////////////// 
 			var color = d3.scale.ordinal()
-				.range(["#EDC951","#CC333F","#00A0B0"]);
+				.range(["#EDC951","#CC333F","#00A0B0", "#2CA25F", "#E6550D","#C51B8A", "#2C7FB8", "#636363"]);
 				
 			var radarChartOptions = {
 			  w: width,
@@ -120,28 +128,53 @@ function startTheRadar(){
 			//Call function to draw the Radar chart
 			RadarChart(".radarChart", data, radarChartOptions);
 }
-
-function addData(name, da){
-	console.log(1);
+var initCheck = true;
+function addData(name, row){
+	var tempAr = statsForEveryone[row-1];
+	console.log(tempAr);
+	if(initCheck){
+		data.pop();
+		initCheck = false;
+	}
 	var a = [//Nokia Smartphone
-						{axis:"IVIS",value:1},
-						{axis:"Stats",value:7},
-						{axis:"Math",value:5},
-						{axis:"Art",value:10},
-						{axis:"User",value:4},
-						{axis:"Prog",value:7},
-						{axis:"Graphics",value:5},
-						{axis:"HCI",value:1},
-						{axis:"UX",value:10}
+						{axis:"IVIS",value:tempAr[0]},
+						{axis:"Stats",value:tempAr[1]},
+						{axis:"Math",value:tempAr[2]},
+						{axis:"Art",value:tempAr[3]},
+						{axis:"User",value:tempAr[4]},
+						{axis:"Prog",value:tempAr[5]},
+						{axis:"Graphics",value:tempAr[6]},
+						{axis:"HCI",value:tempAr[7]},
+						{axis:"UX",value:tempAr[8]}
 					  ];
 	data.push(a);
+	radarRowList.push(row);
+	radarNameList.push(name);
+	var legendString = "";
+	for(var i = 0; i < radarNameList.length; i++){
+		legendString += radarNameList[i] + "<br>";
+	}
+	document.getElementById("legend").innerHTML = legendString;
 	startTheRadar();
 }
 
-function removeData(name){
-	var index = radarNameList.indexOf(name);
+function removeData(row){
+	var index = radarRowList.indexOf(row);
 	if(index > -1){
 		data.splice(index, 1);
+		index = radarRowList.indexOf(row);
+		radarRowList.splice(index, 1);
+		radarNameList.splice(index, 1);
+		if(data.length == 0){
+			data.push(nullElement);
+			initCheck = true;
+		}
+
+		var legendString = "";
+		for(var i = 0; i < radarNameList.length; i++){
+			legendString += radarNameList[i] + "<br>";
+		}
+		document.getElementById("legend").innerHTML = legendString;
 		startTheRadar();
 	}
 }

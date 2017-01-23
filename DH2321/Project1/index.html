@@ -14,7 +14,7 @@
 		<script src="sorttable.js"></script> <!-- http://www.kryogenix.org/code/browser/sorttable/ -->
 		<script src="help.js"></script>
  <!-- http://tableizer.journalistopia.com/tableizer.php -->
-	<script src="radarChart.js"></script>	
+	<script src="radarchart.js"></script>	
 
 </head>
 
@@ -115,13 +115,14 @@ Create an interactive Radar Chart with D3. List everyone on the left, be abble t
 	 		</tbody>
 		</table>
 	</div>
-	<div id="middle" onclick="addData()">
+	<div id="middle">
 	<br>
 		<div id="person">
 		</div>
 	</div>
-	<div id="right" onclick="removeData()">
+	<div id="right">
 	<header id="graphChoice"> <a onclick="console.log(4)">Radar Chart </a> | <a onclick="console.log(5)">Bar Graph</a></header>
+	<div id="legend"></div>
 	<div id="rad" class="radarChart"></div>
 
 	</div>
