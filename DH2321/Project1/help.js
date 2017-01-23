@@ -71,6 +71,10 @@ function tableFix(){
 	ret+=" <tr onclick=\"showPerson(\'Uruk\', 74)\"><td>74</td><td>Uruk</td><td>5</td><td>8</td><td>7</td><td>7</td><td>9</td><td>9</td><td>8</td><td>7</td><td>7</td></tr>";
 	document.getElementById("tableData").innerHTML = ret;
 	startTheRadar();
+	console.log(document.getElementById("left").offsetWidth);
+	console.log(document.getElementById("middle").offsetWidth);
+	console.log(document.getElementById("right").offsetWidth);
+
 }
 
 

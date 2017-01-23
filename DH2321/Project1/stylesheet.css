@@ -13,21 +13,25 @@ div {
 
 #left {
         background-color: red;
-    width: 28%;
+    width: 510px;
     height:100%;
     margin: 5px;
-    position: relative;
+    position: absolute;
 }
 #middle {
     margin: 5px 0;
-    width: 20%;
-        background-color: green;
+    margin-left: 525px;
+    width: 370px;
+     background-color: green;
+     position: absolute;
 
 }
 #right {
     margin: 5px;
+    margin-left: 905px;
     width: 50%;
         /*background-color: blue;*/
+    position: absolute;
 
 }
 
