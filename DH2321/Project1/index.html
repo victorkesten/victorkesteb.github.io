@@ -20,100 +20,103 @@
 
 <body onload="tableFix()">
 <!-- <body> -->
-Create an interactive Radar Chart with D3. List everyone on the left, be abble to sort and all that. Highlight selected ones and show up on the right. Where you can select people to work together and then see how they match up. <br><br>
+Create an interactive Radar Chart with D3. List everyone on the left, be abble to sort and all that. Highlight selected ones and show up on the right. Where you can select people to work together and then see how they match up. <br>
+<br><button type="button" onclick="clearData()">Click to clear all data!</button><br>
 
 <div id="MainBody">
 	<div id="left">
-		<table class="sortable">
-			<thead>
-			    <th>Number</th>
-			    <th>Alias</th> 
-			    <th>IVIS</th>	
-		  		<th>Stats</th>
-		  		<th>Math</th>
-		  		<th>Art</th>
-		  		<th>User</th>
-		  		<th>Prog</th>
-		  		<th>Graphics</th>
-		  		<th>HCI</th>
-		  		<th>UX</th>
-		  	</thead><tbody id="tableData">
-		  	 <tr><td>1</td><td>Aldor</td><td>7</td><td>3</td><td>3</td><td>9</td><td>6</td><td>2</td><td>1</td><td>4</td><td>8</td></tr>
-			 <tr><td>2</td><td>Aragorn</td><td>5</td><td>4</td><td>3</td><td>6</td><td>7</td><td>3</td><td>1</td><td>4</td><td>8</td></tr>
-			 <tr><td>3</td><td>Arwen</td><td>3</td><td>3</td><td>3</td><td>3</td><td>8</td><td>8</td><td>3</td><td>3</td><td>3</td></tr>
-			 <tr><td>4</td><td>Balin</td><td>3</td><td>4</td><td>4</td><td>6</td><td>8</td><td>2</td><td>1</td><td>2</td><td>7</td></tr>
-			 <tr><td>5</td><td>Bereg</td><td>3</td><td>5</td><td>6</td><td>8</td><td>6</td><td>3</td><td>5</td><td>3</td><td>5</td></tr>
-			 <tr><td>6</td><td>Bifur</td><td>4</td><td>4</td><td>5</td><td>6</td><td>10</td><td>7</td><td>7</td><td>6</td><td>7</td></tr>
-			 <tr><td>7</td><td>Bilbo</td><td>6</td><td>5</td><td>8</td><td>7</td><td>8</td><td>7</td><td>7</td><td>7</td><td>8</td></tr>
-			 <tr><td>8</td><td>Bofur</td><td>4</td><td>4</td><td>6</td><td>5</td><td>7</td><td>7</td><td>3</td><td>3</td><td>2</td></tr>
-			 <tr><td>9</td><td>Bombadil</td><td>4</td><td>6</td><td>6</td><td>2</td><td>6</td><td>5</td><td>1</td><td>5</td><td>8</td></tr>
-			 <tr><td>10</td><td>Bombur</td><td>1</td><td>4</td><td>5</td><td>10</td><td>7</td><td>4</td><td>2</td><td>3</td><td>6</td></tr>
-			 <tr><td>11</td><td>Borin</td><td>2</td><td>4</td><td>2</td><td>6</td><td>6</td><td>2</td><td>1</td><td>4</td><td>10</td></tr>
-			 <tr><td>12</td><td>Boromir</td><td>3</td><td>5</td><td>5</td><td>1</td><td>7</td><td>8</td><td>2</td><td>6</td><td>5</td></tr>
-			 <tr><td>13</td><td>Bounder</td><td>3</td><td>9</td><td>9</td><td>3</td><td>10</td><td>10</td><td>3</td><td>3</td><td>9</td></tr>
-			 <tr><td>14</td><td>Celeborn</td><td>7</td><td>6</td><td>5</td><td>6</td><td>8</td><td>4</td><td>1</td><td>6</td><td>7</td></tr>
-			 <tr><td>15</td><td>Damrod</td><td>3</td><td>2</td><td>5</td><td>6</td><td>7</td><td>1</td><td>2</td><td>3</td><td>8</td></tr>
-			 <tr><td>16</td><td>Deagol</td><td>1</td><td>3</td><td>3</td><td>5</td><td>8</td><td>5</td><td>1</td><td>1</td><td>2</td></tr>
-			 <tr><td>17</td><td>Denethor</td><td>7</td><td>8</td><td>6</td><td>2</td><td>8</td><td>9</td><td>6</td><td>3</td><td>6</td></tr>
-			 <tr><td>18</td><td>Dorlas</td><td>4</td><td>4</td><td>4</td><td>6</td><td>5</td><td>4</td><td>1</td><td>5</td><td>6</td></tr>
-			 <tr><td>19</td><td>Dwalin</td><td>3</td><td>3</td><td>6</td><td>7</td><td>7</td><td>6</td><td>1</td><td>5</td><td>5</td></tr>
-			 <tr><td>20</td><td>Eldarion</td><td>3</td><td>4</td><td>9</td><td>8</td><td>8</td><td>3</td><td>2</td><td>8</td><td>9</td></tr>
-			 <tr><td>21</td><td>Elendil</td><td>5</td><td>3</td><td>5</td><td>6</td><td>7</td><td>7</td><td>4</td><td>6</td><td>5</td></tr>
-			 <tr><td>22</td><td>Elendur</td><td>3</td><td>3</td><td>5</td><td>2</td><td>7</td><td>5</td><td>2</td><td>6</td><td>9</td></tr>
-			 <tr><td>23</td><td>Elrond</td><td>3</td><td>10</td><td>8</td><td>1</td><td>6</td><td>9</td><td>4</td><td>3</td><td>3</td></tr>
-			 <tr><td>24</td><td>Eomer</td><td>7</td><td>9</td><td>7</td><td>3</td><td>9</td><td>8</td><td>7</td><td>6</td><td>1</td></tr>
-			 <tr><td>25</td><td>Eothain</td><td>5</td><td>5</td><td>7</td><td>4</td><td>9</td><td>9</td><td>8</td><td>4</td><td>3</td></tr>
-			 <tr><td>26</td><td>Eowyn</td><td>2</td><td>4</td><td>4</td><td>4</td><td>4</td><td>2</td><td>6</td><td>4</td><td>4</td></tr>
-			 <tr><td>27</td><td>Faramir</td><td>5</td><td>4</td><td>8</td><td>7</td><td>9</td><td>8</td><td>5</td><td>6</td><td>6</td></tr>
-			 <tr><td>28</td><td>Ferny</td><td>5</td><td>2</td><td>3</td><td>4</td><td>8</td><td>5</td><td>3</td><td>4</td><td>1</td></tr>
-			 <tr><td>29</td><td>Fili</td><td>5</td><td>5</td><td>5</td><td>4</td><td>5</td><td>5</td><td>4</td><td>5</td><td>5</td></tr>
-			 <tr><td>30</td><td>Freda</td><td>3</td><td>3</td><td>9</td><td>7</td><td>7</td><td>2</td><td>2</td><td>3</td><td>8</td></tr>
-			 <tr><td>31</td><td>Frodo</td><td>3</td><td>3</td><td>4</td><td>4</td><td>6</td><td>5</td><td>3</td><td>4</td><td>3</td></tr>
-			 <tr><td>32</td><td>Galadriel</td><td>7</td><td>5</td><td>6</td><td>7</td><td>9</td><td>8</td><td>7</td><td>8</td><td>5</td></tr>
-			 <tr><td>33</td><td>Gamgee</td><td>2</td><td>4</td><td>6</td><td>2</td><td>7</td><td>6</td><td>2</td><td>4</td><td>3</td></tr>
-			 <tr><td>34</td><td>Gandalf</td><td>4</td><td>6</td><td>8</td><td>1</td><td>9</td><td>8</td><td>6</td><td>5</td><td>5</td></tr>
-			 <tr><td>35</td><td>Gimli</td><td>3</td><td>3</td><td>4</td><td>9</td><td>7</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
-			 <tr><td>36</td><td>Gollum</td><td>4</td><td>2</td><td>2</td><td>4</td><td>9</td><td>1</td><td>1</td><td>1</td><td>6</td></tr>
-			 <tr><td>37</td><td>Gorbag</td><td>5</td><td>2</td><td>5</td><td>5</td><td>9</td><td>7</td><td>3</td><td>6</td><td>3</td></tr>
-			 <tr><td>38</td><td>Grimbold</td><td>4</td><td>4</td><td>7</td><td>5</td><td>9</td><td>6</td><td>1</td><td>1</td><td>4</td></tr>
-			 <tr><td>39</td><td>Grishnakh</td><td>5</td><td>8</td><td>6</td><td>2</td><td>7</td><td>8</td><td>5</td><td>4</td><td>3</td></tr>
-			 <tr><td>40</td><td>Haldir</td><td>3</td><td>3</td><td>4</td><td>7</td><td>8</td><td>2</td><td>1</td><td>2</td><td>2</td></tr>
-			 <tr><td>41</td><td>Haleth</td><td>2</td><td>3</td><td>3</td><td>4</td><td>6</td><td>3</td><td>1</td><td>4</td><td>5</td></tr>
-			 <tr><td>42</td><td>Hama</td><td>7</td><td>8</td><td>8</td><td>7</td><td>9</td><td>8</td><td>8</td><td>7</td><td>8</td></tr>
-			 <tr><td>43</td><td>Hardang</td><td>2</td><td>4</td><td>7</td><td>9</td><td>7</td><td>2</td><td>2</td><td>3</td><td>8</td></tr>
-			 <tr><td>44</td><td>Idril</td><td>6</td><td>3</td><td>3</td><td>8</td><td>10</td><td>5</td><td>3</td><td>5</td><td>5</td></tr>
-			 <tr><td>45</td><td>Irolas</td><td>5</td><td>4</td><td>5</td><td>2</td><td>7</td><td>7</td><td>4</td><td>6</td><td>5</td></tr>
-			 <tr><td>46</td><td>Isildur</td><td>4</td><td>5</td><td>5</td><td>4</td><td>8</td><td>8</td><td>3</td><td>5</td><td>5</td></tr>
-			 <tr><td>47</td><td>Kili</td><td>3</td><td>5</td><td>5</td><td>1</td><td>6</td><td>6</td><td>3</td><td>5</td><td>8</td></tr>
-			 <tr><td>48</td><td>Legolas</td><td>4</td><td>4</td><td>4</td><td>7</td><td>8</td><td>8</td><td>4</td><td>4</td><td>4</td></tr>
-			 <tr><td>49</td><td>Lindir</td><td>2</td><td>2</td><td>5</td><td>2</td><td>7</td><td>4</td><td>1</td><td>4</td><td>4</td></tr>
-			 <tr><td>50</td><td>Lurtz</td><td>3</td><td>6</td><td>7</td><td>6</td><td>8</td><td>8</td><td>3</td><td>4</td><td>5</td></tr>
-			 <tr><td>51</td><td>Madril</td><td>4</td><td>4</td><td>5</td><td>4</td><td>9</td><td>5</td><td>2</td><td>7</td><td>5</td></tr>
-			 <tr><td>52</td><td>Maiar</td><td>6</td><td>5</td><td>5</td><td>7</td><td>7</td><td>4</td><td>2</td><td>5</td><td>6</td></tr>
-			 <tr><td>53</td><td>Mauhur</td><td>7</td><td>2</td><td>5</td><td>8</td><td>9</td><td>6</td><td>2</td><td>6</td><td>7</td></tr>
-			 <tr><td>54</td><td>Merry</td><td>5</td><td>6</td><td>7</td><td>8</td><td>7</td><td>6</td><td>4</td><td>4</td><td>8</td></tr>
-			 <tr><td>55</td><td>Morwen</td><td>3</td><td>5</td><td>4</td><td>3</td><td>10</td><td>6</td><td>2</td><td>7</td><td>5</td></tr>
-			 <tr><td>56</td><td>Nessa</td><td>1</td><td>1</td><td>1</td><td>2</td><td>2</td><td>1</td><td>1</td><td>1</td><td>2</td></tr>
-			 <tr><td>57</td><td>Ohtar</td><td>2</td><td>2</td><td>1</td><td>3</td><td>4</td><td>4</td><td>1</td><td>2</td><td>2</td></tr>
-			 <tr><td>58</td><td>Oin</td><td>7</td><td>5</td><td>8</td><td>5</td><td>8</td><td>9</td><td>7</td><td>9</td><td>7</td></tr>
-			 <tr><td>59</td><td>Otho</td><td>6</td><td>3</td><td>4</td><td>6</td><td>10</td><td>7</td><td>5</td><td>9</td><td>7</td></tr>
-			 <tr><td>60</td><td>Pelendur</td><td>2</td><td>5</td><td>4</td><td>3</td><td>4</td><td>5</td><td>4</td><td>4</td><td>1</td></tr>
-			 <tr><td>61</td><td>Pippin</td><td>7</td><td>2</td><td>2</td><td>8</td><td>10</td><td>7</td><td>2</td><td>5</td><td>2</td></tr>
-			 <tr><td>62</td><td>Quickbeam</td><td>3</td><td>3</td><td>5</td><td>8</td><td>8</td><td>2</td><td>3</td><td>3</td><td>3</td></tr>
-			 <tr><td>63</td><td>Rian</td><td>3</td><td>5</td><td>5</td><td>2</td><td>8</td><td>5</td><td>3</td><td>4</td><td>4</td></tr>
-			 <tr><td>64</td><td>Sam</td><td>6</td><td>3</td><td>5</td><td>9</td><td>8</td><td>4</td><td>4</td><td>4</td><td>9</td></tr>
-			 <tr><td>65</td><td>Sauron</td><td>3</td><td>9</td><td>7</td><td>2</td><td>9</td><td>6</td><td>5</td><td>3</td><td>3</td></tr>
-			 <tr><td>66</td><td>Shagrat</td><td>3</td><td>3</td><td>5</td><td>6</td><td>7</td><td>2</td><td>1</td><td>1</td><td>4</td></tr>
-			 <tr><td>67</td><td>Sharku</td><td>2</td><td>7</td><td>5</td><td>4</td><td>6</td><td>1</td><td>1</td><td>1</td><td>8</td></tr>
-			 <tr><td>68</td><td>Smaug</td><td>7</td><td>4</td><td>4</td><td>6</td><td>10</td><td>8</td><td>5</td><td>7</td><td>6</td></tr>
-			 <tr><td>69</td><td>Smeagol</td><td>3</td><td>3</td><td>5</td><td>7</td><td>9</td><td>3</td><td>2</td><td>3</td><td>8</td></tr>
-			 <tr><td>70</td><td>Theoden</td><td>3</td><td>5</td><td>8</td><td>1</td><td>9</td><td>2</td><td>1</td><td>1</td><td>3</td></tr>
-			 <tr><td>71</td><td>Theodred</td><td>4</td><td>8</td><td>8</td><td>5</td><td>9</td><td>7</td><td>9</td><td>8</td><td>4</td></tr>
-			 <tr><td>72</td><td>Thorin</td><td>7</td><td>6</td><td>7</td><td>2</td><td>10</td><td>8</td><td>6</td><td>7</td><td>7</td></tr>
-			 <tr><td>73</td><td>Ugluk</td><td>4</td><td>3</td><td>5</td><td>5</td><td>8</td><td>6</td><td>4</td><td>4</td><td>2</td></tr>
-			 <tr><td>74</td><td>Uruk</td><td>5</td><td>8</td><td>7</td><td>7</td><td>9</td><td>9</td><td>8</td><td>7</td><td>7</td></tr>
-	 		</tbody>
-		</table>
+		<div id="table_wrapper">
+			<table class="sortable">
+				<thead>
+				    <th><span class="title_head">Number</span></th>
+				    <th><span class="title_head">Alias</span></th> 
+				    <th><span class="title_head">IVIS</span></th>	
+			  		<th><span class="title_head">Stats</span></th>
+			  		<th><span class="title_head">Math</span></th>
+			  		<th><span class="title_head">Art</span></th>
+			  		<th><span class="title_head">User</span></th>
+			  		<th><span class="title_head">Prog</span></th>
+			  		<th><span class="title_head">Graphics</span></th>
+			  		<th><span class="title_head">HCI</span></th>
+			  		<th><span class="title_head">UX</span></th>
+			  	</thead><tbody id="tableData">
+			  	 <tr><td>1</td><td>Aldor</td><td>7</td><td>3</td><td>3</td><td>9</td><td>6</td><td>2</td><td>1</td><td>4</td><td>8</td></tr>
+				 <tr><td>2</td><td>Aragorn</td><td>5</td><td>4</td><td>3</td><td>6</td><td>7</td><td>3</td><td>1</td><td>4</td><td>8</td></tr>
+				 <tr><td>3</td><td>Arwen</td><td>3</td><td>3</td><td>3</td><td>3</td><td>8</td><td>8</td><td>3</td><td>3</td><td>3</td></tr>
+				 <tr><td>4</td><td>Balin</td><td>3</td><td>4</td><td>4</td><td>6</td><td>8</td><td>2</td><td>1</td><td>2</td><td>7</td></tr>
+				 <tr><td>5</td><td>Bereg</td><td>3</td><td>5</td><td>6</td><td>8</td><td>6</td><td>3</td><td>5</td><td>3</td><td>5</td></tr>
+				 <tr><td>6</td><td>Bifur</td><td>4</td><td>4</td><td>5</td><td>6</td><td>10</td><td>7</td><td>7</td><td>6</td><td>7</td></tr>
+				 <tr><td>7</td><td>Bilbo</td><td>6</td><td>5</td><td>8</td><td>7</td><td>8</td><td>7</td><td>7</td><td>7</td><td>8</td></tr>
+				 <tr><td>8</td><td>Bofur</td><td>4</td><td>4</td><td>6</td><td>5</td><td>7</td><td>7</td><td>3</td><td>3</td><td>2</td></tr>
+				 <tr><td>9</td><td>Bombadil</td><td>4</td><td>6</td><td>6</td><td>2</td><td>6</td><td>5</td><td>1</td><td>5</td><td>8</td></tr>
+				 <tr><td>10</td><td>Bombur</td><td>1</td><td>4</td><td>5</td><td>10</td><td>7</td><td>4</td><td>2</td><td>3</td><td>6</td></tr>
+				 <tr><td>11</td><td>Borin</td><td>2</td><td>4</td><td>2</td><td>6</td><td>6</td><td>2</td><td>1</td><td>4</td><td>10</td></tr>
+				 <tr><td>12</td><td>Boromir</td><td>3</td><td>5</td><td>5</td><td>1</td><td>7</td><td>8</td><td>2</td><td>6</td><td>5</td></tr>
+				 <tr><td>13</td><td>Bounder</td><td>3</td><td>9</td><td>9</td><td>3</td><td>10</td><td>10</td><td>3</td><td>3</td><td>9</td></tr>
+				 <tr><td>14</td><td>Celeborn</td><td>7</td><td>6</td><td>5</td><td>6</td><td>8</td><td>4</td><td>1</td><td>6</td><td>7</td></tr>
+				 <tr><td>15</td><td>Damrod</td><td>3</td><td>2</td><td>5</td><td>6</td><td>7</td><td>1</td><td>2</td><td>3</td><td>8</td></tr>
+				 <tr><td>16</td><td>Deagol</td><td>1</td><td>3</td><td>3</td><td>5</td><td>8</td><td>5</td><td>1</td><td>1</td><td>2</td></tr>
+				 <tr><td>17</td><td>Denethor</td><td>7</td><td>8</td><td>6</td><td>2</td><td>8</td><td>9</td><td>6</td><td>3</td><td>6</td></tr>
+				 <tr><td>18</td><td>Dorlas</td><td>4</td><td>4</td><td>4</td><td>6</td><td>5</td><td>4</td><td>1</td><td>5</td><td>6</td></tr>
+				 <tr><td>19</td><td>Dwalin</td><td>3</td><td>3</td><td>6</td><td>7</td><td>7</td><td>6</td><td>1</td><td>5</td><td>5</td></tr>
+				 <tr><td>20</td><td>Eldarion</td><td>3</td><td>4</td><td>9</td><td>8</td><td>8</td><td>3</td><td>2</td><td>8</td><td>9</td></tr>
+				 <tr><td>21</td><td>Elendil</td><td>5</td><td>3</td><td>5</td><td>6</td><td>7</td><td>7</td><td>4</td><td>6</td><td>5</td></tr>
+				 <tr><td>22</td><td>Elendur</td><td>3</td><td>3</td><td>5</td><td>2</td><td>7</td><td>5</td><td>2</td><td>6</td><td>9</td></tr>
+				 <tr><td>23</td><td>Elrond</td><td>3</td><td>10</td><td>8</td><td>1</td><td>6</td><td>9</td><td>4</td><td>3</td><td>3</td></tr>
+				 <tr><td>24</td><td>Eomer</td><td>7</td><td>9</td><td>7</td><td>3</td><td>9</td><td>8</td><td>7</td><td>6</td><td>1</td></tr>
+				 <tr><td>25</td><td>Eothain</td><td>5</td><td>5</td><td>7</td><td>4</td><td>9</td><td>9</td><td>8</td><td>4</td><td>3</td></tr>
+				 <tr><td>26</td><td>Eowyn</td><td>2</td><td>4</td><td>4</td><td>4</td><td>4</td><td>2</td><td>6</td><td>4</td><td>4</td></tr>
+				 <tr><td>27</td><td>Faramir</td><td>5</td><td>4</td><td>8</td><td>7</td><td>9</td><td>8</td><td>5</td><td>6</td><td>6</td></tr>
+				 <tr><td>28</td><td>Ferny</td><td>5</td><td>2</td><td>3</td><td>4</td><td>8</td><td>5</td><td>3</td><td>4</td><td>1</td></tr>
+				 <tr><td>29</td><td>Fili</td><td>5</td><td>5</td><td>5</td><td>4</td><td>5</td><td>5</td><td>4</td><td>5</td><td>5</td></tr>
+				 <tr><td>30</td><td>Freda</td><td>3</td><td>3</td><td>9</td><td>7</td><td>7</td><td>2</td><td>2</td><td>3</td><td>8</td></tr>
+				 <tr><td>31</td><td>Frodo</td><td>3</td><td>3</td><td>4</td><td>4</td><td>6</td><td>5</td><td>3</td><td>4</td><td>3</td></tr>
+				 <tr><td>32</td><td>Galadriel</td><td>7</td><td>5</td><td>6</td><td>7</td><td>9</td><td>8</td><td>7</td><td>8</td><td>5</td></tr>
+				 <tr><td>33</td><td>Gamgee</td><td>2</td><td>4</td><td>6</td><td>2</td><td>7</td><td>6</td><td>2</td><td>4</td><td>3</td></tr>
+				 <tr><td>34</td><td>Gandalf</td><td>4</td><td>6</td><td>8</td><td>1</td><td>9</td><td>8</td><td>6</td><td>5</td><td>5</td></tr>
+				 <tr><td>35</td><td>Gimli</td><td>3</td><td>3</td><td>4</td><td>9</td><td>7</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+				 <tr><td>36</td><td>Gollum</td><td>4</td><td>2</td><td>2</td><td>4</td><td>9</td><td>1</td><td>1</td><td>1</td><td>6</td></tr>
+				 <tr><td>37</td><td>Gorbag</td><td>5</td><td>2</td><td>5</td><td>5</td><td>9</td><td>7</td><td>3</td><td>6</td><td>3</td></tr>
+				 <tr><td>38</td><td>Grimbold</td><td>4</td><td>4</td><td>7</td><td>5</td><td>9</td><td>6</td><td>1</td><td>1</td><td>4</td></tr>
+				 <tr><td>39</td><td>Grishnakh</td><td>5</td><td>8</td><td>6</td><td>2</td><td>7</td><td>8</td><td>5</td><td>4</td><td>3</td></tr>
+				 <tr><td>40</td><td>Haldir</td><td>3</td><td>3</td><td>4</td><td>7</td><td>8</td><td>2</td><td>1</td><td>2</td><td>2</td></tr>
+				 <tr><td>41</td><td>Haleth</td><td>2</td><td>3</td><td>3</td><td>4</td><td>6</td><td>3</td><td>1</td><td>4</td><td>5</td></tr>
+				 <tr><td>42</td><td>Hama</td><td>7</td><td>8</td><td>8</td><td>7</td><td>9</td><td>8</td><td>8</td><td>7</td><td>8</td></tr>
+				 <tr><td>43</td><td>Hardang</td><td>2</td><td>4</td><td>7</td><td>9</td><td>7</td><td>2</td><td>2</td><td>3</td><td>8</td></tr>
+				 <tr><td>44</td><td>Idril</td><td>6</td><td>3</td><td>3</td><td>8</td><td>10</td><td>5</td><td>3</td><td>5</td><td>5</td></tr>
+				 <tr><td>45</td><td>Irolas</td><td>5</td><td>4</td><td>5</td><td>2</td><td>7</td><td>7</td><td>4</td><td>6</td><td>5</td></tr>
+				 <tr><td>46</td><td>Isildur</td><td>4</td><td>5</td><td>5</td><td>4</td><td>8</td><td>8</td><td>3</td><td>5</td><td>5</td></tr>
+				 <tr><td>47</td><td>Kili</td><td>3</td><td>5</td><td>5</td><td>1</td><td>6</td><td>6</td><td>3</td><td>5</td><td>8</td></tr>
+				 <tr><td>48</td><td>Legolas</td><td>4</td><td>4</td><td>4</td><td>7</td><td>8</td><td>8</td><td>4</td><td>4</td><td>4</td></tr>
+				 <tr><td>49</td><td>Lindir</td><td>2</td><td>2</td><td>5</td><td>2</td><td>7</td><td>4</td><td>1</td><td>4</td><td>4</td></tr>
+				 <tr><td>50</td><td>Lurtz</td><td>3</td><td>6</td><td>7</td><td>6</td><td>8</td><td>8</td><td>3</td><td>4</td><td>5</td></tr>
+				 <tr><td>51</td><td>Madril</td><td>4</td><td>4</td><td>5</td><td>4</td><td>9</td><td>5</td><td>2</td><td>7</td><td>5</td></tr>
+				 <tr><td>52</td><td>Maiar</td><td>6</td><td>5</td><td>5</td><td>7</td><td>7</td><td>4</td><td>2</td><td>5</td><td>6</td></tr>
+				 <tr><td>53</td><td>Mauhur</td><td>7</td><td>2</td><td>5</td><td>8</td><td>9</td><td>6</td><td>2</td><td>6</td><td>7</td></tr>
+				 <tr><td>54</td><td>Merry</td><td>5</td><td>6</td><td>7</td><td>8</td><td>7</td><td>6</td><td>4</td><td>4</td><td>8</td></tr>
+				 <tr><td>55</td><td>Morwen</td><td>3</td><td>5</td><td>4</td><td>3</td><td>10</td><td>6</td><td>2</td><td>7</td><td>5</td></tr>
+				 <tr><td>56</td><td>Nessa</td><td>1</td><td>1</td><td>1</td><td>2</td><td>2</td><td>1</td><td>1</td><td>1</td><td>2</td></tr>
+				 <tr><td>57</td><td>Ohtar</td><td>2</td><td>2</td><td>1</td><td>3</td><td>4</td><td>4</td><td>1</td><td>2</td><td>2</td></tr>
+				 <tr><td>58</td><td>Oin</td><td>7</td><td>5</td><td>8</td><td>5</td><td>8</td><td>9</td><td>7</td><td>9</td><td>7</td></tr>
+				 <tr><td>59</td><td>Otho</td><td>6</td><td>3</td><td>4</td><td>6</td><td>10</td><td>7</td><td>5</td><td>9</td><td>7</td></tr>
+				 <tr><td>60</td><td>Pelendur</td><td>2</td><td>5</td><td>4</td><td>3</td><td>4</td><td>5</td><td>4</td><td>4</td><td>1</td></tr>
+				 <tr><td>61</td><td>Pippin</td><td>7</td><td>2</td><td>2</td><td>8</td><td>10</td><td>7</td><td>2</td><td>5</td><td>2</td></tr>
+				 <tr><td>62</td><td>Quickbeam</td><td>3</td><td>3</td><td>5</td><td>8</td><td>8</td><td>2</td><td>3</td><td>3</td><td>3</td></tr>
+				 <tr><td>63</td><td>Rian</td><td>3</td><td>5</td><td>5</td><td>2</td><td>8</td><td>5</td><td>3</td><td>4</td><td>4</td></tr>
+				 <tr><td>64</td><td>Sam</td><td>6</td><td>3</td><td>5</td><td>9</td><td>8</td><td>4</td><td>4</td><td>4</td><td>9</td></tr>
+				 <tr><td>65</td><td>Sauron</td><td>3</td><td>9</td><td>7</td><td>2</td><td>9</td><td>6</td><td>5</td><td>3</td><td>3</td></tr>
+				 <tr><td>66</td><td>Shagrat</td><td>3</td><td>3</td><td>5</td><td>6</td><td>7</td><td>2</td><td>1</td><td>1</td><td>4</td></tr>
+				 <tr><td>67</td><td>Sharku</td><td>2</td><td>7</td><td>5</td><td>4</td><td>6</td><td>1</td><td>1</td><td>1</td><td>8</td></tr>
+				 <tr><td>68</td><td>Smaug</td><td>7</td><td>4</td><td>4</td><td>6</td><td>10</td><td>8</td><td>5</td><td>7</td><td>6</td></tr>
+				 <tr><td>69</td><td>Smeagol</td><td>3</td><td>3</td><td>5</td><td>7</td><td>9</td><td>3</td><td>2</td><td>3</td><td>8</td></tr>
+				 <tr><td>70</td><td>Theoden</td><td>3</td><td>5</td><td>8</td><td>1</td><td>9</td><td>2</td><td>1</td><td>1</td><td>3</td></tr>
+				 <tr><td>71</td><td>Theodred</td><td>4</td><td>8</td><td>8</td><td>5</td><td>9</td><td>7</td><td>9</td><td>8</td><td>4</td></tr>
+				 <tr><td>72</td><td>Thorin</td><td>7</td><td>6</td><td>7</td><td>2</td><td>10</td><td>8</td><td>6</td><td>7</td><td>7</td></tr>
+				 <tr><td>73</td><td>Ugluk</td><td>4</td><td>3</td><td>5</td><td>5</td><td>8</td><td>6</td><td>4</td><td>4</td><td>2</td></tr>
+				 <tr><td>74</td><td>Uruk</td><td>5</td><td>8</td><td>7</td><td>7</td><td>9</td><td>9</td><td>8</td><td>7</td><td>7</td></tr>
+		 		</tbody>
+			</table>
+		</div>
 	</div>
 	<div id="middle">
 	<br>
@@ -121,11 +124,12 @@ Create an interactive Radar Chart with D3. List everyone on the left, be abble t
 		</div>
 	</div>
 	<div id="right">
-	<header id="graphChoice"> <a onclick="console.log(4)">Radar Chart </a> | <a onclick="console.log(5)">Bar Graph</a></header>
+	<header id="graphChoice"> <a onclick="showRadar()">Radar Chart </a> | <a onclick="showBar()">Bar Graph</a></header>
 	<div id="legend"></div>
 	<div id="rad" class="radarChart"></div>
 
 	</div>
+	<div id="bar"></div>
 </div>
 
 <div style="display:none;">

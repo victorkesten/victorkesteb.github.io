@@ -13,9 +13,10 @@ div {
 
 #left {
         background-color: red;
-    width: 27%;
+    width: 28%;
     height:100%;
     margin: 5px;
+    position: relative;
 }
 #middle {
     margin: 5px 0;
@@ -23,16 +24,26 @@ div {
         background-color: green;
 
 }
-
 #right {
     margin: 5px;
-    width: 48%;
+    width: 50%;
         /*background-color: blue;*/
 
 }
+
+/*#table_wrapper{
+    height:500px;
+    overflow:auto;  
+    margin-top:20px;
+}
+*/
 #graphChoice {
     background-color: black;
     color: white;
     font-size: 40;
     text-align: center;
 }
+
+/*thead {
+    position:absolute;
+}*/

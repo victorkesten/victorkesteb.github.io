@@ -129,7 +129,13 @@ function startTheRadar(){
 			RadarChart(".radarChart", data, radarChartOptions);
 }
 var initCheck = true;
+
 function addData(name, row){
+	for(var i = 0; i < radarNameList.length; i++){
+		if(name == radarNameList[i]){
+			return;
+		}
+	}
 	var tempAr = statsForEveryone[row-1];
 	console.log(tempAr);
 	if(initCheck){
@@ -177,4 +183,35 @@ function removeData(row){
 		document.getElementById("legend").innerHTML = legendString;
 		startTheRadar();
 	}
+}
+
+var bar = false;
+var radar = true;
+function showBar(){
+	if(!bar){
+		document.getElementById("bar").style.display = "initial";
+		document.getElementById("rad").style.display = "none";
+		bar = true;
+		radar = false;
+	}
+}
+
+function showRadar(){
+	if(!radar){
+		document.getElementById("rad").style.display = "initial";
+		document.getElementById("bar").style.display = "none";
+		bar = false;
+		radar = true;
+	}
+}
+
+function clearData(){
+	radarRowList = [];
+	radarNameList = [];
+	data = [];
+	data.push(nullElement);
+	initCheck = true;
+	document.getElementById("legend").innerHTML = "";
+	startTheRadar();
+
 }
