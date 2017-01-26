@@ -7,12 +7,20 @@ div {
     float: left;
 }
 
+.group {
+    width: 20px;
+    margin: 20px;
+
+}
+/*.group:hover{
+    background-color: grey;
+}*/
 #MainBody {
     width: 100%;
 }
 
 #left {
-        background-color: red;
+        background-color: grey;
     width: 510px;
     height:100%;
     margin: 5px;
@@ -33,6 +41,9 @@ div {
         /*background-color: blue;*/
     position: absolute;
 
+}
+#legend {
+    width:74px;
 }
 
 /*#table_wrapper{

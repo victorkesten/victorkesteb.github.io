@@ -21,7 +21,12 @@
 <body onload="tableFix()">
 <!-- <body> -->
 Create an interactive Radar Chart with D3. List everyone on the left, be abble to sort and all that. Highlight selected ones and show up on the right. Where you can select people to work together and then see how they match up. <br>
-<br><button type="button" onclick="clearData()">Click to clear all data!</button><br>
+<!-- <br><button type="button" onclick="clearData()">Click to clear all data!</button><br>
+ --><br><a id="g1" class="group" onclick="setGroup(1)" onmouseover="setCol(1)" onmouseout="unsetCol(1)">Group 1</a> <a id="g2" class="group" onclick="setGroup(2)" onmouseover="setCol(2)" onmouseout="unsetCol(2)">Group 2</a><a id="g3" class="group" onclick="setGroup(3)" onmouseover="setCol(3)" onmouseout="unsetCol(3)">Group 3</a> <a id="g4" class="group" onclick="setGroup(4)" onmouseover="setCol(4)" onmouseout="unsetCol(4)">Group 4</a><a id="g5" class="group" onclick="setGroup(5)" onmouseover="setCol(5)" onmouseout="unsetCol(5)">Group 5</a> <a id="g6" class="group" onclick="setGroup(6)" onmouseover="setCol(6)" onmouseout="unsetCol(6)">Group 6</a><a id="g7" class="group" onclick="setGroup(7)" onmouseover="setCol(7)" onmouseout="unsetCol(7)">Group 7</a> <a id="g8" class="group" onclick="setGroup(8)" onmouseover="setCol(8)" onmouseout="unsetCol(8)">Group 8</a><a id="g9" class="group" onclick="setGroup(9)" onmouseover="setCol(9)" onmouseout="unsetCol(9)">Group 9</a> <a id="g10" class="group" onclick="setGroup(10)" onmouseover="setCol(10)" onmouseout="unsetCol(10)">Group 10</a>
+
+
+
+
 
 <div id="MainBody">
 	<div id="left">
@@ -125,6 +130,7 @@ Create an interactive Radar Chart with D3. List everyone on the left, be abble t
 	</div>
 	<div id="right">
 	<header id="graphChoice"> <a onclick="showRadar()">Radar Chart </a> | <a onclick="showBar()">Bar Graph</a></header>
+	<div id="title"></div>
 	<div id="legend"></div>
 	<div id="rad" class="radarChart"></div>
 
