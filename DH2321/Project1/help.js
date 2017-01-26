@@ -92,7 +92,7 @@ function tableFix(){
 	}
 	statsForEveryone.push([5,8,7,7,9,9,8,7,7]);
 	//console.log(statsForEveryone);
-	ret+=" <tr onclick=\"showPerson(\'Uruk\', 74)\"><td>74</td><td>Uruk</td><td>5</td><td>8</td><td>7</td><td>7</td><td>9</td><td>9</td><td>8</td><td>7</td><td>7</td></tr>";
+	ret+=" <tr id=\"p74\" onclick=\"showPerson(\'Uruk\', 74)\"><td>74</td><td>Uruk</td><td>5</td><td>8</td><td>7</td><td>7</td><td>9</td><td>9</td><td>8</td><td>7</td><td>7</td></tr>";
 	document.getElementById("tableData").innerHTML = ret;
 	startTheRadar();
 	//console.log(document.getElementById("left").offsetWidth);
@@ -141,7 +141,7 @@ function showPerson(name, row){
 	}
 
 	var dataFormated = "0";
-	document.getElementById("person").innerHTML = "<h1>" + row + " " + name + "</h1>" + first + "<br><br><br>" + second + "	<br><br><button id=\"butA"+ row +"\" style=\"display:"+bA+";\" type=\"button\" onclick=\"addData('" + name +"', "+ row +")\">Click to add!</button>" + " <button id=\"butR"+ row +"\" type=\"button\" style=\"display:"+bR+";\" onclick=\"removeData("+ row +")\">Click to remove!</button>";
+	document.getElementById("person").innerHTML = "<a id=\"name\">" + row + " " + name + "</a><br><a id=\"firstquestion\">" + first + "</a><br><br><br><a id=\"secondquestion\">" + second + "	</a><br><br><button id=\"butA"+ row +"\" style=\"display:"+bA+";\" type=\"button\" onclick=\"addData('" + name +"', "+ row +")\">Click to add!</button>" + " <button id=\"butR"+ row +"\" type=\"button\" style=\"display:"+bR+";\" onclick=\"removeData("+ row +")\">Click to remove!</button>";
 }
 
 function startTheRadar(){
@@ -260,13 +260,11 @@ function removeData(row){
 	if(index > -1){
 		// console.log(data[groupSelected]);
 		// console.log(data[groupSelected].length);
-		console.log(index);
 		if(data[groupSelected].length == 1){
 			initChecks[groupSelected] = true;
 		}
 		data[groupSelected].splice(index-1, 1);
 		
-		console.log(data[groupSelected].length);
 
 		index = radarRowList[groupSelected].indexOf(row);
 		// console.log("CHECK");
