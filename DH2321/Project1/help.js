@@ -106,6 +106,7 @@ function tableFix(){
 
 
 function showPerson(name, row){
+	document.getElementById("middle").style.display = "initial";
 	//console.log(name, row);
 	var htm = "";
 	var first = document.getElementById("InterestHobby").innerHTML;

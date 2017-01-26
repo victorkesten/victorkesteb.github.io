@@ -67,6 +67,7 @@ li {
     height: 600px;
     width: 370px;
      /*background-color: green;*/
+     display:none;
      position: absolute;
 
 }
