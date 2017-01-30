@@ -35,7 +35,7 @@
 <li><a id="g8" class="group" onclick="setGroup(8)" onmouseover="setCol(8)" onmouseout="unsetCol(8)">Group 8</a></li>
 <li><a id="g9" class="group" onclick="setGroup(9)" onmouseover="setCol(9)" onmouseout="unsetCol(9)">Group 9</a></li>
 <li><a id="g10" class="group" onclick="setGroup(10)" onmouseover="setCol(10)" onmouseout="unsetCol(10)">Group 10</a></li>
-<li><a id="help" class="group">Help</a>
+<li><a id="help" class="group" onclick="popuphelp()">Help</a>
 </ul>
 
 
@@ -141,7 +141,7 @@
 		</div>
 	</div>
 	<div id="right">
-	<header id="graphChoice"> <a onclick="showRadar()">Radar Chart </a> | <a onclick="showBar()">Bar Graph</a></header>
+	<header id="graphChoice"> <a onclick="showRadar()">Radar Chart </a><!--  | <a onclick="showBar()">Bar Graph</a> --></header>
 	<div id="title"></div>
 	<div id="legend"></div>
 	<div id="rad" class="radarChart"></div>

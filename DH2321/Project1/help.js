@@ -331,3 +331,7 @@ function clearData(){
 	startTheRadar();
 
 }
+
+function popuphelp(){
+	alert("Click on a group to change which group you're currently controlling.\n\nSort the table by clicking the headers.\n\nAdd new group members to each group with a maximum of 8.\n\nEach group will have it's own graph!\n\nTo remove a member from a group, select the group in which the member is included in and then remove!");
+}
