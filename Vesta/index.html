@@ -8,6 +8,7 @@
 <!-- fotorama.css & fotorama.js. -->
 <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
 <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+<script src="help.js"></script>
 
 <title>Vesta</title>
 </head>
@@ -18,6 +19,14 @@
 	<div id="banner_top">
 		<img src="http://t.realgeeks.media/thumbnail/vK50MXJ2EpGhVgFBBE9ssohBAag=/fit-in/920x120/filters:format(png)/u.realgeeks.media/vestahawaiirealestate/logo.png">
 		<div id="nav_bar">
+			<ul id="navBar">
+				<li><a id="g1" class="group" onmouseover="setCol(1)" onmouseout="unsetCol(1)">About</a></li>
+				<li><a id="g2" class="group" onmouseover="setCol(2)" onmouseout="unsetCol(2)">Meet The Team</a></li>
+				<li><a id="g3" class="group" onmouseover="setCol(3)" onmouseout="unsetCol(3)">Buying + Selling</a></li>
+				<li><a id="g4" class="group" onmouseover="setCol(4)" onmouseout="unsetCol(4)">Property Management</a></li>
+				<li><a id="g5" class="group" onmouseover="setCol(5)" onmouseout="unsetCol(5)">Contact Us!</a></li>
+
+			</ul>
 		</div>
 	</div>
 	<div id="photo_reel" class="fotorama"   data-width="1000"
@@ -30,18 +39,54 @@
 	</div>
 
 	<div id="about">
-	Opening doors. Finding opportunities.<br><br>
- 
-	Welcome to the Vesta Hawaii Real Estate website. We’re a locally-owned company that can help you with all of your real estate needs. With years of experience in the Hawaii market, we provide our clients with personalized service combined with integrity and professionalism. When it comes to real estate on Oahu, let Vesta find the right opportunities for you.
+		<div id="about_text">
+		<!-- <br> -->
+		<b>Opening doors. Finding opportunities.</b><br><br>
+	 
+		Welcome to the Vesta Hawaii Real Estate website. We’re a locally-owned company that can help you with all of your real estate needs. With years of experience in the Hawaii market, we provide our clients with personalized service combined with integrity and professionalism. When it comes to real estate on Oahu, let Vesta find the right opportunities for you.
+		<br>
 	</div>
+			<img src="http://u.realgeeks.media/vestahawaiirealestate/filler.jpg" style="width:500px; bottom: 0; position:absolute;"></div>
+
 
 	<div id="search">
+	<form id="real_estate_request" accept-charset="utf-8">
+			<label>Region</label>
+			<input type="text" name="region"><br>
+			<label>Neighborhood</label>
+			<input type="number" name="neighborhood"><br>
+			<label>Minimum Price</label>
+			<input type="number" name="max_area"><br>
+			<label>Maximum Price</label>
+			<input type="number" name="min_rum"><br>
+			<label>Bedrooms</label>
+			<input type="number" name="max_rum"><br>
+			<label>Bathrooms</label>
+			<input type="number" name="min_pris"><br>
+
+			<div id="property_type">
+			  <label for="home" class="home">Villa</label>
+			  <input type="checkbox" class="home" name="home" value="home"><br>
+			  <label for="condo" class="condo">Condo</label>
+			  <input type="checkbox" class="condo" name="condo" value="condo">
+			  <label for="land" class="land">Land</label>
+			  <input type="checkbox" class="land" name="land" value="land">
+			  <label for="multi-res" class="multi-res">Multi Res</label>
+			  <input type="checkbox" class="multi-res" name="multi-res" value="multi-res">
+			</div>
+			<input type="submit" value="Search">
+	</form>
 	</div>
 
 	<div id="footer">
 		<div id="mail_list">
+		Click here to join our mailing list!
 		</div>
 		<div id="contact">
+		Facebook | Twitter | Instagram <br>
+		Address<br>
+		Telephone / email<br>
+		© 2004-2017 - All Rights Reserved
 		</div>
 	</div>
 </div>

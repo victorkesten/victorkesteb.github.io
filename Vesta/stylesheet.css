@@ -1,5 +1,21 @@
 
 
+.group {
+    cursor: hand;
+    border-radius: 25px;
+
+}
+li, .group {
+      display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li {
+    float: left;
+}
+
 #main_box {
 	width: 1000px;
 	height: 1400px;
@@ -24,6 +40,16 @@
 	background-color: blue;
 }
 
+#navBar {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    padding-left: 100px;
+    overflow: hidden;
+    background-color: #333;
+	/*margin: 0 auto;*/
+
+}
 #photo_reel{
 	background-color: orange;
 	position: absolute;
@@ -43,6 +69,19 @@
 	width:500px;
 }
 
+#about_text{
+	margin: 40px;
+	color: white;
+    font-size: 40;
+    text-align: center;
+    border-radius: 25px;
+    /*border: 1px solid black;*/
+    height: 150px;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
 #search{
 	position: absolute;
 	margin-top: 775px;
@@ -52,24 +91,34 @@
 	height: 500px;
 	width:500px;
 }
-
-#footer{
-/*	bottom: 0;
-*/}
+#real_estate_request{
+	margin: 40px;
+    font-size: 40;
+    text-align: center;
+    border-radius: 25px;
+    border: 1px solid black;
+    height: 180px;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
 
 #mail_list{
+	/*align-content: center;	*/
 	position: absolute;
 	height: 50px;
 	width: 1000px;
-	background-color: grey;
+	background-color: #42f1f4;
 	/*z-index: 1;*/
 	margin-top: 1300px;
+	text-align: center;
 }
 
 #contact {
 	position: absolute;
-	height: 50px;
+	height: 100px;
 	width: 1000px;
 	background-color: purple;
 	margin-top: 1350px;
+	text-align: center;
 }
