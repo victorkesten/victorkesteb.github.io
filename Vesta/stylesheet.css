@@ -1,7 +1,75 @@
 
 
 #main_box {
-	width: 60%;
+	width: 1000px;
+	height: 1400px;
+	/*position: absolute;*/
 	background-color: green;
 	margin: auto;
+}
+
+#banner_top{
+	position: absolute;
+	width: 1000px;
+	background-color: red;
+	margin:auto;
+	height: 250px;
+}
+
+#nav_bar {
+	position: absolute;
+	width: 1000px;
+	height: 75px;
+	bottom: 0;
+	background-color: blue;
+}
+
+#photo_reel{
+	background-color: orange;
+	position: absolute;
+	width:1000px;
+	height: 450px;
+	/*padding: 10px;*/
+	/*padding-bottom: 20px;*/
+	margin-top: 275px;
+}
+
+#about{
+	margin-top: 775px;
+	position: absolute;
+	background-color: grey;
+	height: 500px;
+	float: left;
+	width:500px;
+}
+
+#search{
+	position: absolute;
+	margin-top: 775px;
+	margin-left: 500px;
+	float: left;
+	background-color: pink;
+	height: 500px;
+	width:500px;
+}
+
+#footer{
+/*	bottom: 0;
+*/}
+
+#mail_list{
+	position: absolute;
+	height: 50px;
+	width: 1000px;
+	background-color: grey;
+	/*z-index: 1;*/
+	margin-top: 1300px;
+}
+
+#contact {
+	position: absolute;
+	height: 50px;
+	width: 1000px;
+	background-color: purple;
+	margin-top: 1350px;
 }
