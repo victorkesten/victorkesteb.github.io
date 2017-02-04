@@ -20,14 +20,14 @@ li {
 	width: 1000px;
 	height: 1400px;
 	/*position: absolute;*/
-	background-color: green;
+	/*background-color: green;*/
 	margin: auto;
 }
 
 #banner_top{
 	position: absolute;
 	width: 1000px;
-	background-color: red;
+	/*background-color: red;*/
 	margin:auto;
 	height: 250px;
 }
@@ -37,7 +37,7 @@ li {
 	width: 1000px;
 	height: 75px;
 	bottom: 0;
-	background-color: blue;
+	/*background-color: blue;*/
 }
 
 #navBar {
@@ -51,7 +51,7 @@ li {
 
 }
 #photo_reel{
-	background-color: orange;
+	/*background-color: orange;*/
 	position: absolute;
 	width:1000px;
 	height: 450px;
@@ -63,7 +63,7 @@ li {
 #about{
 	margin-top: 775px;
 	position: absolute;
-	background-color: grey;
+	/*background-color: grey;*/
 	height: 500px;
 	float: left;
 	width:500px;
@@ -71,7 +71,7 @@ li {
 
 #about_text{
 	margin: 40px;
-	color: white;
+	color: black;
     font-size: 40;
     text-align: center;
     border-radius: 25px;
@@ -87,7 +87,7 @@ li {
 	margin-top: 775px;
 	margin-left: 500px;
 	float: left;
-	background-color: pink;
+	/*background-color: pink;*/
 	height: 500px;
 	width:500px;
 }
@@ -108,7 +108,7 @@ li {
 	position: absolute;
 	height: 50px;
 	width: 1000px;
-	background-color: #42f1f4;
+	/*background-color: #42f1f4;*/
 	/*z-index: 1;*/
 	margin-top: 1300px;
 	text-align: center;
@@ -118,7 +118,7 @@ li {
 	position: absolute;
 	height: 80px;
 	width: 1000px;
-	background-color: purple;
+	/*background-color: purple;*/
 	margin-top: 1350px;
 	padding-top: 5px;
 	text-align: center;
