@@ -21,9 +21,9 @@
 // load csv file and create the chart
 d3.csv('testdata.csv', function(data) {
   var colorgen = d3.scale.ordinal()
-    .range(["#a6cee3","#1f78b4","#b2df8a","#33a02c",
-            "#fb9a99","#e31a1c","#fdbf6f","#ff7f00",
-            "#cab2d6","#6a3d9a","#ffff99","#b15928"]);
+    .range(["#a6cee3","#1f78b4","#b2df8a","#33a02c"]);//,
+            // "#fb9a99","#e31a1c","#fdbf6f","#ff7f00",
+            // "#cab2d6","#6a3d9a","#ffff99","#b15928"]);
 
   var color = function(d) { return colorgen(d.group); };
 
@@ -31,17 +31,19 @@ d3.csv('testdata.csv', function(data) {
     .data(data)
     .hideAxis(["name"])
     .color(color)
-    .alpha(0.25)
+    .alpha(0.5)
     .composite("darken")
     .margin({ top: 24, left: 150, bottom: 12, right: 0 })
     .mode("queue")
     .render()
+    .reorderable()
     .brushMode("1D-axes");  // enable brushing
 
   parcoords.svg.selectAll("text")
     .style("font", "10px sans-serif");
 
      var grid = d3.divgrid();
+
   d3.select("#grid")
     .datum(data.slice(0,10))
     .call(grid)

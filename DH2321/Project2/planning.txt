@@ -62,7 +62,7 @@ Have a list of countries in the bottom right. Not a list. Just a box of countrie
 
 http://www.columbia.edu/~cme2126/datavisuals/bigdata_parallelcoordinates.html
 https://bl.ocks.org/jasondavies/1341281
-https://syntagmatic.github.io/parallel-coordinates/
+https://syntagmatic.github.io/parallel-coordinates/  				<---- This shit though is amazing.
 https://imarkstrom.github.io/INVIS17/P1/index.html
 
 http://codepen.io/stefanjudis/full/gkHwJ
