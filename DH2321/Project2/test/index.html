@@ -4,7 +4,15 @@
 
 <link rel="stylesheet" type="text/css" href="d3.parcoords.css">
 <div id="example-progressive" class="parcoords" style="width:1300px;margin-left:-250px;height:270px;"></div>
-	
+	<style>
+/* data table styles */
+#grid { height: 198px; }
+.row, .header { clear: left; font-size: 12px; line-height: 18px; height: 18px; }
+.row:nth-child(odd) { background: rgba(0,0,0,0.05); }
+.header { font-weight: bold; }
+.cell { float: left; overflow: hidden; white-space: nowrap; width: 100px; height: 18px; }
+.col-0 { width: 180px; }
+</style>
 </div>
 <div id="grid"></div>
 </body>
