@@ -6,7 +6,7 @@
 <div id="example-progressive" class="parcoords" style="width:1300px;margin-left:-250px;height:270px;"></div>
 	<style>
 /* data table styles */
-#grid { height: 198px; }
+#grid { height: 198px; width: 500px; }
 .row, .header { clear: left; font-size: 12px; line-height: 18px; height: 18px; }
 .row:nth-child(odd) { background: rgba(0,0,0,0.05); }
 .header { font-weight: bold; }
@@ -44,6 +44,8 @@ d3.csv('testdata.csv', function(data) {
 
      var grid = d3.divgrid();
 
+
+  grid.columns(["Country"]);
   d3.select("#grid")
     .datum(data.slice(0,10))
     .call(grid)
