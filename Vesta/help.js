@@ -2,7 +2,7 @@
 
 function setCol(test){
 	// console.log("hey");
-	document.getElementById("g"+test).style.backgroundColor = "blue";
+	document.getElementById("g"+test).style.backgroundColor = "orange";
 
 }
 
