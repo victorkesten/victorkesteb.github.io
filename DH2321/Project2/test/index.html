@@ -69,16 +69,14 @@ d3.csv('testdata.csv', function(data) {
       });
   });
 
-  d3.select('#btnReset').on('click', function(d) {parcoords.brushReset();
-  	 d3.select("#grid")
-      .datum(d.slice(0,10))
-      .call(grid)
-      .selectAll(".row")
-      .on({
-        "mouseover": function(d) { parcoords.highlight([d]) },
-        "mouseout": parcoords.unhighlight
-      });
-  });
+  d3.select('#btnReset').on('click', function(d) {parcoords.brushReset();  d3.select("#grid")
+    .datum(data.slice(0,10))
+    .call(grid)
+    .selectAll(".row")
+    .on({
+      "mouseover": function(d) { parcoords.highlight([d]) },
+      "mouseout": parcoords.unhighlight
+    });});
 });
 
 </script>
