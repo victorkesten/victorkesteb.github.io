@@ -4,6 +4,8 @@
 <div id="example-progressive" class="parcoords" style="width:1300px;margin-left:-250px;height:270px;"></div>
 	
 </div>
+<div id="grid"></div>
+</body>
 
 <script>
 // load csv file and create the chart
@@ -28,5 +30,13 @@ d3.csv('nutrients.csv', function(data) {
 
   parcoords.svg.selectAll("text")
     .style("font", "10px sans-serif");
+});
+
+var grid = d3.divgrid();
+
+d3.csv('nutrients.csv', function(data) {
+  d3.select('#grid')
+    .datum(data)
+    .call(grid)
 });
 </script>
