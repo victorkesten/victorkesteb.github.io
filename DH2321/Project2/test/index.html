@@ -3,81 +3,28 @@
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="d3.parcoords.js"></script>
 <script src="divgrid.js"></script>
+<script src="help.js"></script>
+<body>
 <link rel="stylesheet" type="text/css" href="d3.parcoords.css">
-<div id="example-progressive" class="parcoords" style="width:1300px;margin-left:-250px;height:270px;"></div>
+<h1> Test Tite</h1><div onclick="changeto('data/1014')">hey</div>
+<div id="example-progressive" class="parcoords" style="width:1500px;margin-left:-150px;height:270px;"></div>
 <style>
-/* data table styles */
-#grid { height: 198px; width: 250px; }
+/* data table styles size: */
+#grid { height: 198px; width: 100px; }
 .row, .header { clear: left; font-size: 12px; line-height: 18px; height: 18px; }
 .row:nth-child(odd) { background: rgba(0,0,0,0.05); }
 .header { font-weight: bold; }
 .cell { float: left; overflow: hidden; white-space: nowrap; width: 100px; height: 18px; }
-.col-0 { width: 180px; }
+.col-0 { width: 100px; }
 </style>
 <br>
 <button id="btnReset">Reset Brushes</button>
-<br>
+<br><br>
 <div id="grid"></div>
 
 <script>
 // load csv file and create the chart
-d3.csv('testdata.csv', function(data) {
-  var colorgen = d3.scale.ordinal()
-    .range(["#a6cee3","#1f78b4","#b2df8a","#33a02c",
-            "#fb9a99","#e31a1c","#fdbf6f","#ff7f00",
-            "#cab2d6","#6a3d9a","#ffff99","#b15928"]);
-
-  var color = function(d) { return colorgen(d.group); };
-
-  var parcoords = d3.parcoords()("#example-progressive")
-    .data(data)
-    .hideAxis(["name"])
-    .color(color)
-    .alpha(0.5)
-    .composite("darken")
-    .margin({ top: 24, left: 150, bottom: 12, right: 0 })
-    .mode("queue")
-    .render()
-    .reorderable()
-    .brushMode("1D-axes");  // enable brushing
-
-  parcoords.svg.selectAll("text")
-    .style("font", "10px sans-serif");
-
-     var grid = d3.divgrid();
-
-
-  grid.columns(["Country"]);
-  d3.select("#grid")
-    .datum(data.slice(0,10))
-    .call(grid)
-    .selectAll(".row")
-    .on({
-      "mouseover": function(d) { parcoords.highlight([d]) },
-      "mouseout": parcoords.unhighlight
-    });
-
-  // update data table on brush event
-  parcoords.on("brush", function(d) {
-    d3.select("#grid")
-      .datum(d.slice(0,10))
-      .call(grid)
-      .selectAll(".row")
-      .on({
-        "mouseover": function(d) { parcoords.highlight([d]) },
-        "mouseout": parcoords.unhighlight
-      });
-  });
-
-  d3.select('#btnReset').on('click', function(d) {parcoords.brushReset();  d3.select("#grid")
-    .datum(data.slice(0,10))
-    .call(grid)
-    .selectAll(".row")
-    .on({
-      "mouseover": function(d) { parcoords.highlight([d]) },
-      "mouseout": parcoords.unhighlight
-    });});
-});
-
+temp();
 </script>
+</body>
 </html>

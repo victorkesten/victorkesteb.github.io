@@ -57,6 +57,8 @@ Parallel Coordinates
 Each variable is a new thing. 
 Right handside variable is country.
 
+Header, like last project kind of, This be YEAR range. Switch between four areas. 
+
 Have a list of countries in the bottom right. Not a list. Just a box of countries is better. When you hover over a cuntry name, you get a highlight on the map. When you click, you get up more information. Maybe 8 Pie charts. 
 
 
