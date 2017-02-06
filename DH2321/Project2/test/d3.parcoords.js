@@ -78,7 +78,7 @@ var events = d3.dispatch.apply(this,["render", "resize", "highlight", "brush", "
       interactive: false,
       debug: false
     },
-    xscale = d3.scaleOrdinal(),
+    xscale = d3.scale.ordinal(),
     dragging = {},
     line = d3.svg.line(),
     axis = d3.svg.axis().orient("left").ticks(5),
@@ -205,7 +205,7 @@ pc.autoscale = function() {
 
       // special case if single value
       if (extent[0] === extent[1]) {
-        return d3.scaleOrdinal()
+        return d3.scale.ordinal()
           .domain([extent[0]])
           .rangePoints(getRange());
       }
@@ -219,7 +219,7 @@ pc.autoscale = function() {
 
       // special case if single value
       if (extent[0] === extent[1]) {
-        return d3.scaleOrdinal()
+        return d3.scale.ordinal()
           .domain([extent[0]])
           .rangePoints(getRange());
       }
@@ -249,7 +249,7 @@ pc.autoscale = function() {
         return counts[a] - counts[b];
       });
 
-      return d3.scaleOrdinal()
+      return d3.scale.ordinal()
         .domain(domain)
         .rangePoints(getRange());
     }
