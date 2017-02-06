@@ -10,20 +10,21 @@ function changeto(a){
 	temp();
 }
 
-
+var tes = 0;
 function temp(){
 	d3.csv(test + '.csv', function(data) {
-	  var colorgen = d3.scale.ordinal()
+	  var colorgen = d3.scaleOrdinal()
 	    .range(["#a6cee3","#1f78b4","#b2df8a","#33a02c",
 	            "#fb9a99","#e31a1c","#fdbf6f","#ff7f00",
 	            "#cab2d6","#6a3d9a","#ffff99","#b15928"]);
 
-	  var color = function(d) { return colorgen(d.group); };
 
 	  var parcoords = d3.parcoords()("#example-progressive")
 	    .data(data)
 	    // .hideAxis(["name"])
-	    .color(color)
+	    .color(function(d, i){
+	    	return colorgen(i);
+	  	})
 	    .alpha(0.5)
 	    .composite("darken")
 	    .margin({ top: 24, left: 150, bottom: 12, right: 0 })

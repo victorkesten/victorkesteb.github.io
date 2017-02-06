@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
-<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://d3js.org/d3.v4.min.js"></script>
 <script src="d3.parcoords.js"></script>
 <script src="divgrid.js"></script>
 <script src="help.js"></script>
 <body>
 <link rel="stylesheet" type="text/css" href="d3.parcoords.css">
-<h1> Test Tite</h1><div onclick="changeto('data/1014')">hey</div>
+
+<h1> Test Tite</h1>
+<div><a onclick="changeto('data/1014')">hey</a></div>
+
 <div id="example-progressive" class="parcoords" style="width:1500px;margin-left:-150px;height:270px;"></div>
 <style>
 /* data table styles size: */
@@ -21,6 +24,8 @@
 <button id="btnReset">Reset Brushes</button>
 <br><br>
 <div id="grid"></div>
+
+
 
 <script>
 // load csv file and create the chart
