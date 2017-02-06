@@ -238,6 +238,6 @@ window.onclick = function(event) {
   }
 }
 
-function test(){
+function testa(){
 	console.log("yes");
 }
