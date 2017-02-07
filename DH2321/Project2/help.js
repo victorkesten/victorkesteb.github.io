@@ -1,6 +1,3 @@
-function displayBlob(d){
-	console.log(d);
-}
 
 var test = "data/1014";
 function changeto(a){
@@ -57,6 +54,9 @@ function temp(){
 	      .datum(d.slice(0,10))
 	      .call(grid)
 	      .selectAll(".row")
+        .attr("id", function(d,i) { return "country_" + d.Country;})
+        .attr("onclick", function(d,i){ return "displayBlob(\"" + d.Country + "\")"})
+
 	      .on({
 	        "mouseover": function(d) { parcoords.highlight([d]) },
 	        "mouseout": parcoords.unhighlight
@@ -245,6 +245,7 @@ function testa(){
 }
 
 var yearSelected = 4;
+var years = ["","9599", "0004", "0509", "1014"];
 var defaultColor = ["","","","","","","","","","",""];
 var groupColors = ["#ff7373","#ffc0cb","#d3ffce","#e6e6fa","#7fffd4","#ffa500","#b0e0e6","#008080","#00ff00", "#ff00ff"];
 
@@ -262,7 +263,7 @@ function setYear(year){
   yearSelected = year;
   var filename = "data/1014";
   if(year == 1){
-    filename = "data/test"; 
+    filename = "data/9599"; 
   } else if (year == 2){
     filename = "data/0004";
   } else if (year == 3){
@@ -282,3 +283,22 @@ function unsetCol(a){
     }
   document.getElementById("ye"+a).style.backgroundColor = defaultColor[a-1];
 }
+
+
+// Donut Chart Code
+var country;
+var categoriesYear1 = ["","",""];
+function displayBlob(d){
+  document.getElementById("titlehead").innerHTML = d;
+  country = d;
+}
+
+function setCategory(name){
+
+}
+
+
+
+
+
+

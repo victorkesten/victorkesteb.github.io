@@ -28,7 +28,9 @@ d3.divgrid = function(config) {
         .data(function(d) { return d; })
 
     rows.enter().append("div")
-        .attr("class", "row");
+        .attr("class", "row")
+        .attr("id", function(d,i) { return "country_" + d.Country;})
+        .attr("onclick", function(d,i){ return "displayBlob(\"" + d.Country+ "\")"});
         // .attr("id", "test");
     // rows.attr("id", "test");
 
@@ -40,13 +42,16 @@ d3.divgrid = function(config) {
     // cells
     cells.enter().append("div")
       .attr("class", function(d,i) { return "col-" + i; })
-      .attr("id", function(d,i) { return "country_" + d;})
-      .attr("onclick", function(d,i){ return "displayBlob(\"" + d + "\")"})
+     
       .classed("cell", true);
 
 
     cells.exit().remove();
 
+    // selection.enter().append("div")
+    // .attr("id", function(d,i) { return "country_" + d;})
+    //   .attr("onclick", function(d,i){ return "displayBlob(\"" + d + "\")"});
+      // selection.exit().remove();
     selection.selectAll(".cell")
       .text(function(d) { return d; });
 
