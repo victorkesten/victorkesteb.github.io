@@ -2,7 +2,7 @@ function displayBlob(d){
 	console.log(d);
 }
 
-var test = "data/test";
+var test = "data/1014";
 function changeto(a){
 	test = a;
 	// var parcoords = d3.parcoords()("#example-progressive")
@@ -30,6 +30,7 @@ function temp(){
 	    .composite("darken")
 	    .margin({ top: 24, left: 150, bottom: 12, right: 0 })
 	    .mode("queue")
+      .nullValueSeparator("bottom")
 	    .render()
 	    .reorderable()
 	    .brushMode("1D-axes");  // enable brushing
@@ -245,15 +246,39 @@ function testa(){
 
 var yearSelected = 4;
 var defaultColor = ["","","","","","","","","","",""];
-var groupColors = ["#ff7373","#ffc0cb","d3ffce","#e6e6fa","#7fffd4","#ffa500","#b0e0e6","#008080","#00ff00", "#ff00ff"];
+var groupColors = ["#ff7373","#ffc0cb","#d3ffce","#e6e6fa","#7fffd4","#ffa500","#b0e0e6","#008080","#00ff00", "#ff00ff"];
 
 function setYear(year){
+  defaultColor[yearSelected-1] = "";
+  document.getElementById("ye"+yearSelected).style.backgroundColor = "";
+  document.getElementById("ye"+yearSelected).style.color = "white";
+
   yearSelected = year;
+
+  defaultColor[yearSelected-1] = groupColors[yearSelected-1];
+  document.getElementById("ye"+yearSelected).style.color = "black";
+  document.getElementById("ye"+yearSelected).style.backgroundColor = defaultColor[yearSelected-1];
+
+  yearSelected = year;
+  var filename = "data/1014";
+  if(year == 1){
+    filename = "data/test"; 
+  } else if (year == 2){
+    filename = "data/0004";
+  } else if (year == 3){
+    filename = "data/0509";
+  }
+  changeto(filename);
 }
+
 function setCol(a){
-  document.getElementById("y"+a).style.backgroundColor = groupColors[a-1];
+  document.getElementById("ye"+a).style.color = "black";
+  document.getElementById("ye"+a).style.backgroundColor = groupColors[a-1];
 }
 
 function unsetCol(a){
-  document.getElementById("y"+a).style.backgroundColor = defaultColor[a-1];
+    if(defaultColor[a-1] == ""){
+      document.getElementById("ye"+a).style.color = "white";
+    }
+  document.getElementById("ye"+a).style.backgroundColor = defaultColor[a-1];
 }
