@@ -1,6 +1,7 @@
 function displayBlob(d){
 	console.log(d);
 }
+
 var test = "data/test";
 function changeto(a){
 	test = a;
@@ -240,4 +241,19 @@ window.onclick = function(event) {
 
 function testa(){
 	console.log("yes");
+}
+
+var yearSelected = 4;
+var defaultColor = ["","","","","","","","","","",""];
+var groupColors = ["#ff7373","#ffc0cb","d3ffce","#e6e6fa","#7fffd4","#ffa500","#b0e0e6","#008080","#00ff00", "#ff00ff"];
+
+function setYear(year){
+  yearSelected = year;
+}
+function setCol(a){
+  document.getElementById("y"+a).style.backgroundColor = groupColors[a-1];
+}
+
+function unsetCol(a){
+  document.getElementById("y"+a).style.backgroundColor = defaultColor[a-1];
 }
