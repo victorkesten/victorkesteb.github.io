@@ -75,16 +75,16 @@
 </style>
 
 <!-- <h1 id="chart1">Toronto Parking Tickets by Weekday in 2012</h1>  -->
-<div id="chart"><b id="titlehead">Title</b></div>
+<div id="chart"><b id="titlehead">Azerbaijan 2010-2014: Confidence in Police</b></div>
 <div id="listofchoices"></div>
 <div id="dropdownlist">
     <div class="dropdown">
   <button onclick="myFunction()" class="dropbtn">Pick Category</button>
     <div id="myDropdown" class="dropdown-content">
-      <a href="#home">Home</a>
-      <a onclick="testa()">Hey</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+      <a onclick="categoryChoice(0)">Home</a>
+      <a onclick="categoryChoice(1)">Hey</a>
+      <a onclick="categoryChoice(2)">About</a>
+      <a onclick="categoryChoice(3)">Contact</a>
     </div>
   </div>
 </div>
@@ -92,6 +92,7 @@
 <script>
 // load csv file and create the chart
 setYear(4);
+generateDropDown();
 temp();
 pieChart();
 

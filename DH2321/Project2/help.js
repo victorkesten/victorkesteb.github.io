@@ -1,5 +1,5 @@
 
-var test = "data/1014";
+var test = "1014";
 function changeto(a){
 	test = a;
 	// var parcoords = d3.parcoords()("#example-progressive")
@@ -10,7 +10,7 @@ function changeto(a){
 
 var tes = 0;
 function temp(){
-	d3.csv(test + '.csv', function(data) {
+	d3.csv('data/'+test + '.csv', function(data) {
 	  var colorgen = d3.scale.ordinal()
 	    .range(["#a6cee3","#1f78b4","#b2df8a","#33a02c",
 	            "#fb9a99","#e31a1c","#fdbf6f","#ff7f00",
@@ -76,6 +76,8 @@ function temp(){
 	});
 }
 
+var currentlySelectedPieChart = 'weekdays';
+
 function pieChart(){
 	   (function(d3) {
         'use strict';
@@ -118,7 +120,7 @@ function pieChart(){
         tooltip.append('div')
           .attr('class', 'percent');
 
-        d3.csv('weekdays.csv', function(error, dataset) {
+        d3.csv(currentlySelectedPieChart + '.csv', function(error, dataset) {
           dataset.forEach(function(d) {
             d.count = +d.count;
             d.enabled = true;                                         // NEW
@@ -149,12 +151,12 @@ function pieChart(){
             tooltip.style('display', 'none');
           });
 
-          /* OPTIONAL 
+           // OPTIONAL 
           path.on('mousemove', function(d) {
             tooltip.style('top', (d3.event.layerY + 10) + 'px')
               .style('left', (d3.event.layerX + 10) + 'px');
           });
-          */
+          
             
           var legend = svg.selectAll('.legend')
             .data(color.domain())
@@ -219,6 +221,7 @@ function pieChart(){
 
 
 
+
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function myFunction() {
@@ -233,6 +236,7 @@ window.onclick = function(event) {
     var i;
     for (i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];
+      // console.log(dropdowns[i]);
       if (openDropdown.classList.contains('show')) {
         openDropdown.classList.remove('show');
       }
@@ -240,9 +244,6 @@ window.onclick = function(event) {
   }
 }
 
-function testa(){
-	console.log("yes");
-}
 
 var yearSelected = 4;
 var years = ["","9599", "0004", "0509", "1014"];
@@ -261,15 +262,16 @@ function setYear(year){
   document.getElementById("ye"+yearSelected).style.backgroundColor = defaultColor[yearSelected-1];
 
   yearSelected = year;
-  var filename = "data/1014";
+  var filename = "1014";
   if(year == 1){
-    filename = "data/9599"; 
+    filename = "9599"; 
   } else if (year == 2){
-    filename = "data/0004";
+    filename = "0004";
   } else if (year == 3){
-    filename = "data/0509";
+    filename = "0509";
   }
   changeto(filename);
+  generateDropDown();
 }
 
 function setCol(a){
@@ -286,19 +288,56 @@ function unsetCol(a){
 
 
 // Donut Chart Code
-var country;
-var categoriesYear1 = ["","",""];
+var country = "Azerbaijan";
+var categoriesYear1 = ["Religious Person","Confidence in Police","Happiness","Having Democracy","Woman earning more than man","Family Importance","Religious Importance","Homosexuality Stance","Men make better Leaders"];
+var categoriesYear2 = ["Confidence in Police ","Family Importance","Patriotism","Homosexuality Stance","Men make better leaders","Religious Importance"];
+var categoriesYear3 = ["Confidence in Police","Family Importance","Happiness","Patriotism","Homosexuality Stance","Men make better leaders","Religion Importance","Religious Person","Voted in National Election"];
+var categoriesYear4 = ["Confidence in Police","Happiness","Patriotism","Woman earning more than men","Family Importance","Religious Importance","Homosexuality Stance","Men make better leaders","Religious Person", "Voted in National Election"];
+var currentlySelectedCategory = 0;
+var yearStr = ["", "1995-1999", "2000-2004", "2005-2009", "2010-2014"];
+function generateDropDown(){
+  var title = categoriesYear4;
+  var at = "";
+  if(yearSelected == 1){
+    title = categoriesYear1;
+  } else if (yearSelected == 2){
+    title = categoriesYear2;
+  } else if (yearSelected == 3){
+    title = categoriesYear3;
+  }
+
+  for(var a = 0; title.length > a; a++){
+    at += "<a onclick=\"categoryChoice("+a+")\">"+title[a]+"</a>\n";
+  }
+  document.getElementById("myDropdown").innerHTML = at;
+
+}
+//Take the drop down number
+function categoryChoice(a){
+  currentlySelectedCategory = a;
+  displayBlob(country);
+}
+
 function displayBlob(d){
   document.getElementById("titlehead").innerHTML = d;
   country = d;
+  setCategory(country + "_" + yearSelected + "_" + currentlySelectedCategory);
 }
+
+//country_year_category where filename=d, year=currentlySelectedYear, category=Question asked. 
 
 function setCategory(name){
-
+  var title = categoriesYear4[currentlySelectedCategory];
+  if(yearSelected == 1){
+    title = categoriesYear1[currentlySelectedCategory];
+  } else if (yearSelected == 2){
+    title = categoriesYear2[currentlySelectedCategory];
+  } else if (yearSelected == 3){
+    title = categoriesYear3[currentlySelectedCategory];
+  }
+  document.getElementById("chart").innerHTML = "<b id=\"titlehead\">" + country + " " + yearStr[yearSelected] + ": " + title + "</b>";
+  console.log(name);
+  currentlySelectedPieChart = name;
+  pieChart();
+  //Generate new chart using selected variables.
 }
-
-
-
-
-
-
