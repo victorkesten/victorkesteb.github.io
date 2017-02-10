@@ -2,12 +2,10 @@
 var test = "1014";
 function changeto(a){
 	test = a;
-	// var parcoords = d3.parcoords()("#example-progressive")
-	// 	.queue.clear();
 	document.getElementById("example-progressive").innerHTML = "";
 	temp();
 }
-
+var tempT = "";
 var tes = 0;
 function temp(){
 	d3.csv('data/'+test + '.csv', function(data) {
@@ -127,11 +125,17 @@ function pieChart(){
         tooltip.append('div')
           .attr('class', 'percent');
 
+        // try {
         d3.csv('data/'+ yearSelected + "/" + currentlySelectedPieChart + '.csv', function(error, dataset) {
+          if(error){
+            document.getElementById("chart").innerHTML = "<b id=\"titlehead\">" + country + " " + yearStr[yearSelected] + ": " + tempT + "</b><br>\nThere is unfortunately no data for this category!";
+          } else {
+          
           dataset.forEach(function(d) {
             d.count = +d.count;
             d.enabled = true;                                         // NEW
           });
+
 
           var path = svg.selectAll('path')
             .data(pie(dataset))
@@ -215,13 +219,13 @@ function pieChart(){
                   };                                                  // NEW
                 });                                                   // NEW
             });                                                       // NEW
-            
           legend.append('text')
             .attr('x', legendRectSize + legendSpacing)
             .attr('y', legendRectSize - legendSpacing)
             .text(function(d) { return d; });
-
+        }
         });
+
 
       })(window.d3);
 }
@@ -342,6 +346,7 @@ function setCategory(name){
   } else if (yearSelected == 3){
     title = categoriesYear3[currentlySelectedCategory];
   }
+  tempT = title;
   document.getElementById("chart").innerHTML = "<b id=\"titlehead\">" + country + " " + yearStr[yearSelected] + ": " + title + "</b>";
   console.log(name);
   currentlySelectedPieChart = name;

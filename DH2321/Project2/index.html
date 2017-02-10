@@ -13,12 +13,12 @@
   <a id="ye2" class="nav_year" onclick="setYear(2)" onmouseover="setCol(2)" onmouseout="unsetCol(2)">2000-2004</a>
   <a id="ye3" class="nav_year" onclick="setYear(3)" onmouseover="setCol(3)" onmouseout="unsetCol(3)">2005-2009</a>
   <a id="ye4" class="nav_year" onclick="setYear(4)" onmouseover="setCol(4)" onmouseout="unsetCol(4)">2010-2014</a>
-  <a id="trail1" class="nav_year">Analytical Trail 1</a>
-  <a id="trail1" class="nav_year">Analytical Trail 2</a>
+  <a id="trail1" class="nav_year" href="analytical2">Analytical Trail 2</a>
+  <a id="trail1" class="nav_year" href="analytical1">Analytical Trail 1</a>
 
 </div>
 
-<!-- <h1> Test Tite</h1> -->
+<!-- <h1> Test Title</h1> -->
 <!-- <div><a onclick="changeto('data/1014')">hey</a></div>
  -->
 <div id="example-progressive" class="parcoords" style="width:1500px;margin-left:-150px;height:270px;"></div>
@@ -64,17 +64,16 @@
     font-size: 13px;
   }
   rect {
-    cursor: pointer;                                              /* NEW */
+    cursor: pointer;                                             
     stroke-width: 2;
   }
-  rect.disabled {                                                 /* NEW */
-    fill: transparent !important;                                 /* NEW */
-  }                                                               /* NEW */
-  .chart {                                                            /* NEW */
-    font-size: 14px;                                              /* NEW */
-    text-align: center;                                           /* NEW */
-  }                      
-                                        /* NEW */
+  rect.disabled {                                                 
+    fill: transparent !important;                                 
+  }                                                               
+  .chart {                                                            
+    font-size: 14px;                                              
+    text-align: center;                                           
+  }                                                           
 </style>
 
 <!-- <h1 id="chart1">Toronto Parking Tickets by Weekday in 2012</h1>  -->
@@ -91,8 +90,6 @@
 <script>
 // load csv file and create the chart
 setYear(4);
-generateDropDown();
-// temp();
 pieChart();
 
 </script>
