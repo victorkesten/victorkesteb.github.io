@@ -43,6 +43,9 @@ function temp(){
 	    .datum(data.slice(0,10))
 	    .call(grid)
 	    .selectAll(".row")
+      .attr("id", function(d,i) { return "country_" + d.Country;})
+      .attr("onclick", function(d,i){ return "displayBlob(\"" + d.Country + "\")"})
+
 	    .on({
 	      "mouseover": function(d) { parcoords.highlight([d]) },
 	      "mouseout": parcoords.unhighlight
@@ -68,6 +71,9 @@ function temp(){
 		    .datum(data.slice(0,10))
 		    .call(grid)
 		    .selectAll(".row")
+        .attr("id", function(d,i) { return "country_" + d.Country;})
+        .attr("onclick", function(d,i){ return "displayBlob(\"" + d.Country + "\")"})
+
 		    .on({
 		      "mouseover": function(d) { parcoords.highlight([d]) },
 		      "mouseout": parcoords.unhighlight
@@ -82,12 +88,13 @@ function pieChart(){
 	   (function(d3) {
         'use strict';
 
-        var width = 360;
-        var height = 360;
+        var width = 420;
+        var height = 420;
         var radius = Math.min(width, height) / 2;
         var donutWidth = 75;
         var legendRectSize = 18;
-        var legendSpacing = 4;
+        var legendSpacing = 3;
+
 
         var color = d3.scale.category20b();
 
@@ -120,7 +127,7 @@ function pieChart(){
         tooltip.append('div')
           .attr('class', 'percent');
 
-        d3.csv(currentlySelectedPieChart + '.csv', function(error, dataset) {
+        d3.csv('data/'+ yearSelected + "/" + currentlySelectedPieChart + '.csv', function(error, dataset) {
           dataset.forEach(function(d) {
             d.count = +d.count;
             d.enabled = true;                                         // NEW
