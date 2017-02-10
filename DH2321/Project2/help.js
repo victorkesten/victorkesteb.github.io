@@ -96,7 +96,7 @@ function pieChart(){
         var legendSpacing = 3;
 
 
-        var color = d3.scale.category20b();
+        var color = d3.scale.category20();
 
         var svg = d3.select('#chart')
           .append('svg')
@@ -149,7 +149,7 @@ function pieChart(){
             }));
             var percent = Math.round(1000 * d.data.count / total) / 10;
             tooltip.select('.label').html(d.data.label);
-            tooltip.select('.count').html(d.data.count); 
+            // tooltip.select('.count').html(d.data.count); 
             tooltip.select('.percent').html(percent + '%'); 
             tooltip.style('display', 'block');
           });

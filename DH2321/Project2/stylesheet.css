@@ -7,7 +7,7 @@
 }
 
 .dropbtn {
-    background-color: #4CAF50;
+    background-color: #333;
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -37,6 +37,7 @@
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
+    min-width: 120px;
     text-decoration: none;
     display: block;
 }
@@ -45,47 +46,7 @@
 
 .show {display:block;}
 
-/**/
 
- #chart {
-    height: 420px;
-    margin-left: 150px;
-    margin-top: -250px;
-    position: absolute;
-    text-align:center;
-    width: 420px;
-  }
-  .tooltip {
-    background: #eee;
-    box-shadow: 0 0 5px #999999;
-    color: #333;
-    display: none;
-    font-size: 12px;
-    left: 130px;
-    padding: 10px;
-    position: absolute;
-    text-align: center;
-    top: 95px;
-    width: 80px;
-    z-index: 10;
-  }
-  .legend {
-    font-size: 13px;
-  }
-  rect {
-    cursor: pointer;                                              /* NEW */
-    stroke-width: 2;
-  }
-  rect.disabled {                                                 /* NEW */
-    fill: transparent !important;                                 /* NEW */
-  }                                                               /* NEW */
-  .chart {                                                            /* NEW */
-    font-size: 14px;                                              /* NEW */
-    text-align: center;                                           /* NEW */
-  }                      
-        
-
-/**/
 
 
 .nav_year {
@@ -118,6 +79,10 @@ a {
     /*vertical-align: center;*/
     /*text-align: center;*/
     padding: 4px;
+}
+
+#trail1 {
+    float: right;
 }
 
 
