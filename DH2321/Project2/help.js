@@ -5,6 +5,9 @@ function changeto(a){
 	document.getElementById("example-progressive").innerHTML = "";
 	temp();
 }
+
+
+//Generate the Parcoords
 var tempT = "";
 var tes = 0;
 function temp(){
@@ -13,7 +16,6 @@ function temp(){
 	    .range(["#a6cee3","#1f78b4","#b2df8a","#33a02c",
 	            "#fb9a99","#e31a1c","#fdbf6f","#ff7f00",
 	            "#cab2d6","#6a3d9a","#ffff99","#b15928"]);
-
 
 	  var parcoords = d3.parcoords()("#example-progressive")
 	    .data(data)
@@ -32,10 +34,9 @@ function temp(){
 
 	  parcoords.svg.selectAll("text")
 	    .style("font", "10px sans-serif");
-
-	     var grid = d3.divgrid();
-
-
+	  
+    //Genearte the legend   
+    var grid = d3.divgrid();
 	  grid.columns(["Country"]);
 	  d3.select("#grid")
 	    .datum(data.slice(0,10))
@@ -43,7 +44,6 @@ function temp(){
 	    .selectAll(".row")
       .attr("id", function(d,i) { return "country_" + d.Country;})
       .attr("onclick", function(d,i){ return "displayBlob(\"" + d.Country + "\")"})
-
 	    .on({
 	      "mouseover": function(d) { parcoords.highlight([d]) },
 	      "mouseout": parcoords.unhighlight
@@ -57,13 +57,13 @@ function temp(){
 	      .selectAll(".row")
         .attr("id", function(d,i) { return "country_" + d.Country;})
         .attr("onclick", function(d,i){ return "displayBlob(\"" + d.Country + "\")"})
-
 	      .on({
 	        "mouseover": function(d) { parcoords.highlight([d]) },
 	        "mouseout": parcoords.unhighlight
 	      });
 	  });
 
+    //Reset button.
 	  d3.select('#btnReset').on('click', function(d) {parcoords.brushReset();  
 	  	d3.select("#grid")
 		    .datum(data.slice(0,10))
@@ -71,7 +71,6 @@ function temp(){
 		    .selectAll(".row")
         .attr("id", function(d,i) { return "country_" + d.Country;})
         .attr("onclick", function(d,i){ return "displayBlob(\"" + d.Country + "\")"})
-
 		    .on({
 		      "mouseover": function(d) { parcoords.highlight([d]) },
 		      "mouseout": parcoords.unhighlight
@@ -80,8 +79,9 @@ function temp(){
 	});
 }
 
-var currentlySelectedPieChart = 'weekdays';
 
+//Generate Pie chart
+var currentlySelectedPieChart = 'Azerbaijan_4_0';
 function pieChart(){
 	   (function(d3) {
         'use strict';
@@ -95,7 +95,6 @@ function pieChart(){
 
 
         var color = d3.scale.category20();
-
         var svg = d3.select('#chart')
           .append('svg')
           .attr('width', width)
@@ -130,10 +129,9 @@ function pieChart(){
           if(error){
             document.getElementById("chart").innerHTML = "<b id=\"titlehead\">" + country + " " + yearStr[yearSelected] + ": " + tempT + "</b><br>\nThere is unfortunately no data for this category!";
           } else {
-          
           dataset.forEach(function(d) {
             d.count = +d.count;
-            d.enabled = true;                                         // NEW
+            d.enabled = true;                                         
           });
 
 
@@ -144,16 +142,16 @@ function pieChart(){
             .attr('d', arc)
             .attr('fill', function(d, i) { 
               return color(d.data.label); 
-            })                                                        // UPDATED (removed semicolon)
-            .each(function(d) { this._current = d; });                // NEW
+            })                                                        
+            .each(function(d) { this._current = d; });                
 
           path.on('mouseover', function(d) {
             var total = d3.sum(dataset.map(function(d) {
-              return (d.enabled) ? d.count : 0;                       // UPDATED
+              return (d.enabled) ? d.count : 0;                       
             }));
             var percent = Math.round(1000 * d.data.count / total) / 10;
             tooltip.select('.label').html(d.data.label);
-            // tooltip.select('.count').html(d.data.count); 
+            tooltip.select('.count').html(d.data.count); 
             tooltip.select('.percent').html(percent + '%'); 
             tooltip.style('display', 'block');
           });
@@ -162,7 +160,7 @@ function pieChart(){
             tooltip.style('display', 'none');
           });
 
-           // OPTIONAL 
+           // Mouse over funciton 
           path.on('mousemove', function(d) {
             tooltip.style('top', (d3.event.layerY + 10) + 'px')
               .style('left', (d3.event.layerX + 10) + 'px');
@@ -186,47 +184,45 @@ function pieChart(){
             .attr('width', legendRectSize)
             .attr('height', legendRectSize)                                   
             .style('fill', color)
-            .style('stroke', color)                                   // UPDATED (removed semicolon)
-            .on('click', function(label) {                            // NEW
-              var rect = d3.select(this);                             // NEW
-              var enabled = true;                                     // NEW
-              var totalEnabled = d3.sum(dataset.map(function(d) {     // NEW
-                return (d.enabled) ? 1 : 0;                           // NEW
-              }));                                                    // NEW
+            .style('stroke', color)                                   
+            .on('click', function(label) {                            
+              var rect = d3.select(this);                             
+              var enabled = true;                                     
+              var totalEnabled = d3.sum(dataset.map(function(d) {     
+                return (d.enabled) ? 1 : 0;                           
+              }));                                                    
               
-              if (rect.attr('class') === 'disabled') {                // NEW
-                rect.attr('class', '');                               // NEW
-              } else {                                                // NEW
-                if (totalEnabled < 2) return;                         // NEW
-                rect.attr('class', 'disabled');                       // NEW
-                enabled = false;                                      // NEW
-              }                                                       // NEW
+              if (rect.attr('class') === 'disabled') {                
+                rect.attr('class', '');                               
+              } else {                                                
+                if (totalEnabled < 2) return;                         
+                rect.attr('class', 'disabled');                       
+                enabled = false;                                      
+              }                                                       
 
-              pie.value(function(d) {                                 // NEW
-                if (d.label === label) d.enabled = enabled;           // NEW
-                return (d.enabled) ? d.count : 0;                     // NEW
-              });                                                     // NEW
+              pie.value(function(d) {                                 
+                if (d.label === label) d.enabled = enabled;           
+                return (d.enabled) ? d.count : 0;                     
+              });                                                     
 
-              path = path.data(pie(dataset));                         // NEW
+              path = path.data(pie(dataset));                         
 
-              path.transition()                                       // NEW
-                .duration(750)                                        // NEW
-                .attrTween('d', function(d) {                         // NEW
-                  var interpolate = d3.interpolate(this._current, d); // NEW
-                  this._current = interpolate(0);                     // NEW
-                  return function(t) {                                // NEW
-                    return arc(interpolate(t));                       // NEW
-                  };                                                  // NEW
-                });                                                   // NEW
-            });                                                       // NEW
+              path.transition()                                       
+                .duration(750)                                        
+                .attrTween('d', function(d) {                         
+                  var interpolate = d3.interpolate(this._current, d); 
+                  this._current = interpolate(0);                     
+                  return function(t) {                                
+                    return arc(interpolate(t));                       
+                  };                                                  
+                });                                                   
+            });                                                       
           legend.append('text')
             .attr('x', legendRectSize + legendSpacing)
             .attr('y', legendRectSize - legendSpacing)
             .text(function(d) { return d; });
         }
         });
-
-
       })(window.d3);
 }
 
@@ -247,7 +243,6 @@ window.onclick = function(event) {
     var i;
     for (i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];
-      // console.log(dropdowns[i]);
       if (openDropdown.classList.contains('show')) {
         openDropdown.classList.remove('show');
       }
@@ -352,4 +347,15 @@ function setCategory(name){
   currentlySelectedPieChart = name;
   pieChart();
   //Generate new chart using selected variables.
+}
+
+var learning = false;
+function showLearning(){
+  if(learning == false){
+    learning = true;
+    document.getElementById("learning").style.display = "initial";
+  } else {
+    learning = false;
+      document.getElementById("learning").style.display = "none";
+  }
 }
