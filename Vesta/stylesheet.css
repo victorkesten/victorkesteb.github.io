@@ -1,125 +1,377 @@
-
-
-.group {
+html {
+	/*background-color: #99CCFF;*/
+	/*min-width:1200px;*/
+	/*min-width: 1245px;*/
+	min-width:1270px;
+	max-width: 1520px;
+	margin: 0 auto;
+	float: none;
+	font-family: Verdana,sans-serif;
+	/*font-family: GT Walsheim;*/
+}
+/*http://designers.hubspot.com/docs/snippets/design/centering-your-website-using-max-width-and-auto-margins
+http://blog.froont.com/positioning-in-web-design/*/
+/*.group {
     cursor: hand;
     border-radius: 25px;
 
-}
-li, .group {
-      display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-li {
-    float: left;
-}
+}*/
+
 
 #main_box {
-	width: 1000px;
-	height: 1400px;
+	/*width: 50%;*/
+		/*margin: 0 auto;*/
+
+	/*height: 1450px;*/
 	/*position: absolute;*/
-	background-color: green;
-	margin: auto;
+	/*background-color: #DCE4F2;*/
+	/*background-color: #CCFFFF;*/
 }
 
+
 #banner_top{
-	position: absolute;
-	width: 1000px;
-	background-color: red;
+	background-image: url('resources/raw/header.jpg');
+	background-clip: content-box;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+
+	/*background-size: 80%;*/
+	/*position: relative;*/
+	/*width: 1000px;*/
+	background-color: #FFFFFF;
 	margin:auto;
 	height: 250px;
 }
 
-#nav_bar {
-	position: absolute;
-	width: 1000px;
-	height: 75px;
-	bottom: 0;
-	background-color: blue;
-}
 
-#navBar {
-    list-style-type: none;
-    margin: 0 auto;
-    padding: 0;
-    padding-left: 100px;
+
+/* Style the tab */
+div.tab {
+
     overflow: hidden;
-    background-color: #333;
-	/*margin: 0 auto;*/
+    /*border: 1px solid #ccc;*/
+    /*border: 1px solid darkorange;*/
+
+    /*background-color: #f1f1f1;*/
+    /*background-color: orange;*/
+    background-color: #fb7921;
+    position: relative;
+    z-index: 46;
+
+        padding-left:35px;
+        -webkit-box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
+-moz-box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
+box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
+
+    /*margin: 0 auto;*/
+}
+
+/* Style the links inside the tab */
+div.tab a {
+    /*float: left;*/
+    width: 17%;
+    /*margin: 0 auto;*/
+    display: inline-block;
+    /*margin: 0 auto;*/
+    /*color: black;*/
+    	/*color: #0D094F;*/
+color: white;
+    text-align: center;
+    padding: 10px 16px;   /*originally 13 16*/
+    text-decoration: none;
+    /*line-height: 30px;*/
+    transition: 0.3s;
+    font-size: 16px;
+    font-family: "Segoe UI",Arial,sans-serif;
+
+
+
+    /*font-weight: bold;*/
+}
+
+/* Change background color of links on hover */
+div.tab a:hover {
+    /*background-color: #ddd;*/
+    background-color: #1C589C;
+    color: white;
+    /*margin-top: -1px;*/
+    /*margin-bottom: -1px;*/
 
 }
+
+/* Create an active/current tablink class */
+div.tab a:focus, .active {
+    background-color: #ccc;
+}
+
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.quote{
+	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+	color: #434D92;
+}
+
 #photo_reel{
-	background-color: orange;
-	position: absolute;
-	width:1000px;
-	height: 450px;
+	/*background-color: orange;*/
+	/*position: relative;*/
+	/*width:1000px;*/
+	padding-top: 10px;
+	height: 670px;
+
+	border: 0px;
+-webkit-box-shadow: 3px 2px 33px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 2px 33px -1px rgba(0,0,0,0.75);
+box-shadow: 3px 2px 33px -1px rgba(0,0,0,0.75);
+
+/*overflow: visible;*/
+position: relative;
+z-index: 45;
+	/*width: 50%;*/
+	/*margin: 0 auto;*/
 	/*padding: 10px;*/
 	/*padding-bottom: 20px;*/
-	margin-top: 275px;
+	/*margin-top: 325px;*/
 }
 
+.fotorama__wrap { margin: auto; }
+
 #about{
-	margin-top: 775px;
-	position: absolute;
-	background-color: grey;
+	/*margin-top: 825px;*/
+	/*position: relative;*/
+	
 	height: 500px;
 	float: left;
-	width:500px;
+	/*width:500px;*/
+	/*width:50%;*/
+}
+
+#about_background{
+	/*margin-top: 825px;*/
+	/*position: absolute;*/
+	/*size: inherit;*/
+	/*margin:0 auto;*/
+	/*background-color: #FAC29D;*/
+	background-image: url("resources/raw/flowerOnlyopa.png");
+	background-clip: content-box;
+	/*background-size: 50%;*/
+	background-repeat: no-repeat;
+	background-position: center;
+
+	/*Original value was Contain*/
+	background-size: 70%; 
+	/*opacity: 0.5;*/
+
+	/*Original value was 500x*/
+
+	height: 500px;
+	width:50%;
+	/*float: left;*/
+	/*width:500px;*/
 }
 
 #about_text{
+	/*position: inherit;*/
+	/*margin: 40px;*/
+	/*margin-left: 60px;*/
 	margin: 40px;
-	color: white;
+	color: #0D094F;
     font-size: 40;
+    height: 250px;
     text-align: center;
-    border-radius: 25px;
+    /*text-overflow: hidden;*/
+    border-radius: 10px;
+    /*background-color: rgba(255,255,255,0.5);*/
+  /*background:rgba(0,0,0,0.13);*/
+  /*background:rgba(0,0,0,0.26);*/
+  /*background:rgba(0,0,0,0.26);*/
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#309dcf+0,63b6db+100&1+0,0.1+84 */
+background: -moz-linear-gradient(top, rgba(48,157,207,1) 0%, rgba(91,178,217,0.1) 84%, rgba(99,182,219,0.1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(48,157,207,1) 0%,rgba(91,178,217,0.1) 84%,rgba(99,182,219,0.1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(48,157,207,1) 0%,rgba(91,178,217,0.1) 84%,rgba(99,182,219,0.1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#309dcf', endColorstr='#1a63b6db',GradientType=0 ); /* IE6-9 */
+
+
+    font-size: 14px;
+
+
+
+  /*margin-left: 50px*/
+/*	border-radius: 105px 18px 106px 19px;
+	-moz-border-radius: 105px 18px 106px 19px;
+	-webkit-border-radius: 105px 18px 106px 19px;
+	border: 0px solid #000000;*/
+
+
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border: 0px solid #000000;
+
+
+-webkit-box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
+-moz-box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
+box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
+
+  background-blend-mode: lighten(#f0f4c3, 30%);
+    /*opacity: 1.5;*/
     /*border: 1px solid black;*/
-    height: 150px;
-    padding-top: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
+    /*height: 150px;*/
+    /*padding-top: 20px;*/
+    /*padding-left: 50px;*/
+    /*padding-right: 50px;*/
 }
+
+#blurcontent{
+	/*position: relative;*/
+	/*height: 100px;*/
+}
+
 
 #search{
-	position: absolute;
-	margin-top: 775px;
-	margin-left: 500px;
-	float: left;
-	background-color: pink;
-	height: 500px;
-	width:500px;
+	/*position: absolute;*/
+	/*display:inline-block;*/
+	color: #0D094F;
+	position: relative;
+	z-index: 40;
+	/*margin-top: 825px;*/
+	/*margin-left: 500px;*/
+	float: right;
+	background-color: white;
+	/*float: right;*/
+	    /*border-radius: 25px;*/
+    /*border: 1px solid black;*/
+    /*Original value was 500px*/
+	height: 500px;		
+	width:50%;
+	background-image: url("resources/flowerblueopa.png");
+	background-clip: content-box;
+	background-repeat: no-repeat;
+	background-position: center;
 }
+
 #real_estate_request{
 	margin: 40px;
-    font-size: 40;
+    /*font-size: 40;*/
+    font-size: 14px;
     text-align: center;
-    border-radius: 25px;
-    border: 1px solid black;
-    height: 180px;
+	/*z-index: 6;*/
+/*	border-radius: 18px 105px 19px 106px;
+	-moz-border-radius: 18px 105px 19px 106px;
+	-webkit-border-radius: 18px 105px 19px 106px;
+	border: 0px solid #000000;
+*/
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border: 0px solid #000000;
+
+
+    /*border: 1px solid black;*/
+    /*box-shadow: 0px 1px 1px 1px #888888;*/
+    /*background-color: #DCE4F2;*/
+
+-webkit-box-shadow: 11px 7px 45px -9px rgba(0,0,0,0.75);
+-moz-box-shadow: 11px 7px 45px -9px rgba(0,0,0,0.75);
+box-shadow: 11px 7px 45px -9px rgba(0,0,0,0.75);
+/*z-index: 100;*/
+  background-blend-mode: lighten(#f0f4c3, 30%);
+
+    /*background-color: #ffb84d;*/
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f79621+0,f9c667+91,f9c667+96&1+0,0.27+68,0.27+95 */
+background: -moz-linear-gradient(top, rgba(247,150,33,1) 0%, rgba(248,186,85,0.27) 68%, rgba(249,198,103,0.27) 91%, rgba(249,198,103,0.27) 95%, rgba(249,198,103,0.27) 96%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(251,121,33,1) 0%,rgba(248,186,85,0.27) 68%,rgba(249,198,103,0.27) 91%,rgba(249,198,103,0.27) 95%,rgba(249,198,103,0.27) 96%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(247,150,33,1) 0%,rgba(248,186,85,0.27) 68%,rgba(249,198,103,0.27) 91%,rgba(249,198,103,0.27) 95%,rgba(249,198,103,0.27) 96%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f79621', endColorstr='#45f9c667',GradientType=0 ); /* IE6-9 */
+
+
+    height: 250px;
     padding-top: 20px;
     padding-left: 50px;
     padding-right: 50px;
+      overflow: hidden;
+  transform: translate3d(0, 0, 0);
 }
 
+div.real_estate_request label{
+	background-color: red;	
+	    /*word-spacing: 30px;*/
+
+}
+
+div.real_estate_request a{
+	color:white;
+}
+
+
 #mail_list{
+	/*margin-top: -100px;*/
+	/*padding-top: -10px;*/
+
+	/*This was previous round edges*/
+	/*border-radius: 50px 50px 0px 0px; */
+	/*border-radius: 5px 5px 0px 0px; */
+
+/*maybe 105px*/
 	/*align-content: center;	*/
-	position: absolute;
+	/*position: relative;*/
 	height: 50px;
-	width: 1000px;
-	background-color: #42f1f4;
+	/*width: 1000px;*/
+	/*width: 100%;*/
+	margin: 0 auto;
+	color:white;
+	/*background-color: #d07200;*/
+	/*background-color: #e68a00;*/
+	background-color: #fb7921;
+	line-height: 50px;
+	/*text-align:center;*/
 	/*z-index: 1;*/
-	margin-top: 1300px;
+	/*text-*/
+	/*margin-top: 1350px;*/
 	text-align: center;
+
+	        /*padding-left:35px;*/
+        -webkit-box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
+-moz-box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
+box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
+
 }
 
 #contact {
-	position: absolute;
-	height: 80px;
-	width: 1000px;
-	background-color: purple;
-	margin-top: 1350px;
+	/*position: relative;*/
+	height: 125px;
+	/*width: 1000px;*/
+	border-top: 1px solid #888888;
+	color: white;
+	/*background-color: #1C589C;*/
+	/*background-color: darkorange;*/
+	/*background-color: #d07200;*/
+	background-color: #1C589C;
+	/*border-radius: 0px 0px 25px 25px; */
+	/*border-radius: 0px 0px 5px 5px; */
+
+        /*padding-left:35px;*/
+        -webkit-box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
+-moz-box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
+box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
+
+
+	/*margin-top: 1400px;*/
 	padding-top: 5px;
 	text-align: center;
 }
