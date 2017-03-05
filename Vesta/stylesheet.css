@@ -18,6 +18,7 @@ http://blog.froont.com/positioning-in-web-design/*/
 }*/
 
 
+
 #main_box {
 	/*width: 50%;*/
 		/*margin: 0 auto;*/
@@ -59,7 +60,7 @@ div.tab {
     position: relative;
     z-index: 46;
 
-        padding-left:35px;
+        /*padding-left:35px;*/
         -webkit-box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
 -moz-box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
 box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
@@ -70,7 +71,9 @@ box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
 /* Style the links inside the tab */
 div.tab a {
     /*float: left;*/
-    width: 17%;
+    /*width: 210px;*/
+    width: 16.65%;
+    /*height: ;*/
     /*margin: 0 auto;*/
     display: inline-block;
     /*margin: 0 auto;*/
@@ -78,7 +81,7 @@ div.tab a {
     	/*color: #0D094F;*/
 color: white;
     text-align: center;
-    padding: 10px 16px;   /*originally 13 16*/
+    padding: 10px 0px;   /*originally 13 16*/
     text-decoration: none;
     /*line-height: 30px;*/
     transition: 0.3s;
@@ -114,6 +117,46 @@ div.tab a:focus, .active {
     from {opacity: 0;}
     to {opacity: 1;}
 }
+
+@-webkit-keyframes fadeout{
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@keyframes fadeout {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+#quote_hidden{
+	width: 100%;
+	/*height: 200px;*/
+    text-align: center;
+	font-style: italic;
+
+	-webkit-animation: fadeout 2s linear 1 normal forwards;
+}
+
+#quote{
+	width: 100%;
+	/*height: 200px;*/
+	/*width:200px;*/
+	   text-align: center;
+	   /*align-items: center;*/
+	   display: inline;
+	-webkit-animation: fadeEffect 2s linear 1 normal forwards;
+	font-style: italic;
+}
+
+.quote{
+	height: 170px;
+	width: 100%;
+	    display: -webkit-flex; /* Safari */
+    -webkit-align-items: center; /* Safari 7.0+ */
+    display: flex;
+    align-items: center;
+}
+
 
 .quote{
 	text-align: center;
@@ -354,10 +397,11 @@ box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
 
 #contact {
 	/*position: relative;*/
-	height: 125px;
+	height: 108px;
 	/*width: 1000px;*/
 	border-top: 1px solid #888888;
 	color: white;
+	font-size: 10px;
 	/*background-color: #1C589C;*/
 	/*background-color: darkorange;*/
 	/*background-color: #d07200;*/
