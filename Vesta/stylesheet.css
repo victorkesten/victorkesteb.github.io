@@ -2,9 +2,17 @@ html {
 	/*background-color: #99CCFF;*/
 	/*min-width:1200px;*/
 	/*min-width: 1245px;*/
+
+	/*This is the original width.*/
 	min-width:1270px;
 	max-width: 1520px;
+
+	/*min-width:870px;*/
+	/*max-width: 1070px;*/
+	/*max-width: 1270px;*/
+
 	margin: 0 auto;
+
 	float: none;
 	/*Oldgood*/
 	/*font-family: Verdana,sans-serif;*/
@@ -178,8 +186,10 @@ div.tab a:focus, .active {
 	/*position: relative;*/
 	/*width:1000px;*/
 	padding-top: 10px;
-	height: 670px;
-
+	/*orginally 670*/
+	height: 500px;
+	/*width: 80%*/
+	/*margin: 0 auto;*/
 	border: 0px;
 -webkit-box-shadow: 3px 2px 33px -1px rgba(0,0,0,0.75);
 -moz-box-shadow: 3px 2px 33px -1px rgba(0,0,0,0.75);
@@ -377,7 +387,9 @@ box-shadow: 11px 7px 45px -9px rgba(0,0,0,0.75);
 /*background: linear-gradient(45deg,  rgba(30,34,154,1) 0%,rgba(126,140,232,0) 100%);*/ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e229a', endColorstr='#007e8ce8',GradientType=1 );*/ /* IE6-9 fallback on horizontal gradient */
 
-	background-color: #161F60;
+	/*background-color: #161F60;*/
+	/*background-color: rgba(9,12,38,0.8);*/
+	background-color: rgba(29,40,110,0.8);
 
     height: 250px;
     padding-top: 20px;
