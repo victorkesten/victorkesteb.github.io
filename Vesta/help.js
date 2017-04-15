@@ -72,6 +72,12 @@ function unsetCol(a){
 	document.getElementById("g"+a).style.backgroundColor = "";
 	$("#g" + a).css( "cursor", "initial" );
 	$("#g" + a).css( "color", "white" );
+}
 
+var divNames = ['about_section','about_team_title', 'midsection_photo','section1','property_management','contact'];
 
+function getToDiv(divName){
+    $('html,body').animate({
+        scrollTop: $("#" + divNames[divName]).offset().top},
+        'slow');
 }

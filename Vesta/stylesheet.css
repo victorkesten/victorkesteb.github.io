@@ -50,7 +50,8 @@ http://blog.froont.com/positioning-in-web-design/*/
 	background-image: url('resources/raw/header.jpg');
 	background-clip: content-box;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: center bottom;
+	/*Added bottom*/
 	background-size: 100%;
 
 	/*background-size: 80%;*/
@@ -58,7 +59,8 @@ http://blog.froont.com/positioning-in-web-design/*/
 	/*width: 1000px;*/
 	background-color: #FFFFFF;
 	margin:auto;
-	height: 250px;
+	/*height: 250px;*/
+	height: 350px;
 }
 
 
@@ -80,8 +82,9 @@ div.tab {
         -webkit-box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
 -moz-box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
 box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
-
+	/*height: 50px;*/
     /*margin: 0 auto;*/
+    /*margin-top:10px;*/
 }
 
 /* Style the links inside the tab */
@@ -96,6 +99,8 @@ div.tab a {
     /*color: black;*/
     	/*color: #0D094F;*/
 color: white;
+/*margin-top: 8px;*/
+
     text-align: center;
     padding: 10px 0px;   /*originally 13 16*/
     text-decoration: none;
@@ -104,7 +109,7 @@ color: white;
     font-size: 16px;
     font-family: "Segoe UI",Arial,sans-serif;
 
-
+    height: 100%;
 
     /*font-weight: bold;*/
 }
@@ -198,7 +203,8 @@ box-shadow: 3px 2px 33px -1px rgba(0,0,0,0.75);
 /*overflow: visible;*/
 position: relative;
 z-index: 45;
-	/*width: 50%;*/
+	width: 50%;
+	float:right;
 	/*margin: 0 auto;*/
 	/*padding: 10px;*/
 	/*padding-bottom: 20px;*/
@@ -206,6 +212,49 @@ z-index: 45;
 }
 
 .fotorama__wrap { margin: auto; }
+
+#midsection_photo{
+	width:100%;
+	height:600px;
+}
+#buy_section{
+	width:40%;
+	height:500px;
+	float: left;
+}
+
+#section1{
+	/*background-color: orange;*/
+	width:100%;
+	height:575px;
+}
+#sell_section_photo{
+	float: left;
+	width:50%;
+}
+#sell_section_photo img{
+	width:100%;
+}
+
+#sell_section{
+	float: right;
+	width:50%;
+}
+
+#property_management{
+	width:100%;
+	height:500px;
+}
+
+#prop_left{
+	width:50%;
+	float: left;
+}
+
+#prop_right{
+	width:50%;
+	float: right;
+}
 
 #about{
 	/*margin-top: 825px;*/
@@ -468,3 +517,103 @@ box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
 	padding-top: 5px;
 	text-align: center;
 }
+
+#footer{
+	width:100%;
+	height:138px;
+	/*position: absolute;*/
+	/*position: relative;*/
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,600);
+.meet_the_team{
+	  font-family: 'Roboto', Arial, sans-serif;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  /*min-width: 150px;*/
+  /*max-width: 250px;*/
+  max-width:18%;
+  width: 100%;
+  color: orange;
+  text-align: left;
+  line-height: 1.4em;
+  /*background-color: #141414;*/
+  background-color: #fb6e21;
+  height:400px;
+
+	-webkit-box-shadow: 11px 7px 45px -9px rgba(0,0,0,0.75);
+	-moz-box-shadow: 11px 7px 45px -9px rgba(0,0,0,0.75);
+	box-shadow: 11px 7px 45px -9px rgba(0,0,0,0.75);
+}
+
+.meet_the_team * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.profile_box {
+  width: 100%;
+  background-color: white;
+  padding: 13px;
+  position: relative;
+
+}
+
+.meet_the_team #profile_img{
+  border-radius: 50%;
+  /*position: absolute;*/
+  /*bottom: 100%;*/
+  /*left: 25px;*/
+  z-index: 1;
+  max-width: 220px;
+  height:230px;
+  margin: auto 0;
+  opacity: 1;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.meet_the_team h2 {
+  margin: 0 0 5px;
+  font-weight: 300;
+}
+.meet_the_team h2 span {
+  display: block;
+  font-size: 0.5em;
+  color: #0D094F;
+}
+.meet_the_team p {
+  margin: 0 0 10px;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  opacity: 0.8;
+}
+
+#team{
+	height: 500px;
+}
+
+#about_team_title{
+	width:100%;
+	margin: auto 0;
+	text-align:center;
+	height:80px;
+	/*Hey I am a bunny*/
+}
+
+
+#about_team_title hr {
+  border: 4px solid #ff9933;
+
+}
+
+#about_team_title h2 {
+  font-size: 2em;
+  text-align: center;
+  font-family: open roboto, sans-serif;
+
+}
+
