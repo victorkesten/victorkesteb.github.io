@@ -34,6 +34,59 @@
 	<!-- Content -->
 	<div class="content">
 		<div class="container">
+								<div class="post">
+				<!-- Heading -->
+				<a href="#"><h1>April 2017 - Engine Architecture</h1></a>
+				<hr>
+				<div class="in-content">
+					<p>
+						Game engine architecture! An area most people who are not into engine programming might look above and beyond. A game engine is the core foundation and software framework design for creative development. It's the heart of the games we play and thus an extremely critical part of making a successfull game. Questions like how do we optimally structure our engine? What parts should be considered first when we go through the code to screen pipeline? How do we handle user-input, in-game updates and scene rendering? How do all the different parts coomunicate and coordinate? <a href="http://www.latexstudio.net/wp-content/uploads/2014/12/Game_Engine_Architecture-en.pdf">[Game Engine Architecture, Jason Gregory]</a>
+						<br><br>
+						My project has ultimately become a demonstration of one generic based way of creating a game engine. We will begin the discussion by starting off with the big basics. The entire engine is essentially divided up into three sections listed below. At the end of this post I have also attached a picture of my Eclipse library set up and how the classes are divided amongst each section. 
+						</p>
+						<ul>
+						<li>Rendering Engine</li>
+						<li>Physics Engine</li>
+						<li>Audio Engine</li>
+						<li>Core Engine</li>
+						</ul>
+						<p>
+						Now of course, the physics and audio engine isn't implemented yet but the other two are and they are key to development. 
+						</p>
+						<br><br>
+						<img src="6.png">
+
+						<h2>Core Engine</h2><br>
+						<p>Lets start by going through the Core Engine. This part essentially links modular engines together and produces the basis for rendering and updating the scene at an appropriate framerate. It consists of methods such as run(), createWindow(), exit() - all initiation and closing function that run the simulation we see on the screen. It also stores the different engines we have (such as the Rendering Engine and Physics Engine) and grants access to these if needed. 
+						<br><br>
+						We also have the math section closely related to this, and every other engine. As I explained in an earlier post - I decided to design my own math library as I felt this way I could learn the mathematics behind everything I am doing. The Math library contains full support for Vector2f, Vector3f, Matrix4f and Quaternions. I actaully attempted designing a more generic library using templates in C++ for my C++ version of this engine and this was rather successful. It supports more versions of Vector and Matrix but nevertheless - this is what we have for Java! 
+						<br><br>
+						For each loop the core engine goes through, it processes the input of our game, updates the values we see on the screen and only then renders it. Doing it this way is on purpose as this order provides a nice and fluid gameplay experience. In the simulation I have currently set up the chosen framerate is 60. This can be adjusted to the user's needs though and the framerate is not a limiting factor in terms of screen updates. The two are mutually exclusive on purpose. There are examples of games such as Need For Speed Rivals back in 2014 where they locked the game to 30fps. With specific hacks, the community was able to unlock the framerate of the game but subsequently the game's update speed also unlocked. So at 60fps the game was running at literally 2x the speed on the intended framerate. <a href="http://answers.ea.com/t5/Need-for-Speed-Rivals/60-FPS-workaround-without-speeding-the-game-up/td-p/1894629">[Source]</a> 
+						</p>
+						<br><br> 
+						<h2>Rendering Engine</h2>
+						<p>
+						The rendering engine is the meat on the bone in this engine. It takes care of all the communication with the GPU. The shader class itself was rather difficult to get correct. This class contains most of the OpenGL commands and directives. To create and transfer data from the CPU or Memory to the GPU is more difficult than it seems. The way it is set up right now allows for good regex parsing Fragment, Geometric and Vertex shader files with dynamic mapping. Most of this code structure came from The Benny Box and Offline OpenGL book. The most difficult part of this however was getting the first program to compile. Once you have something that's compiling and drawing properly it's all forward from there. 
+						</p>
+						<br>
+						<p>
+						Then we have the Texture, Material, Vertex and Mesh classes. All of these classes take care of the creation of mesh based objects and their appropriate attributes. These classes along with the shaders are monitored through a resource management system that allows for multiple textures in the GPU pipeline and for the core engine to keep track of things. 
+						</p>
+						<br><br> 
+						<h2>Game</h2>
+						<p>Then we have what sits ontop of the core engine - the simulation or 'game'. In this section we create all the objects we see on the screen. This part provides the relevant facts as to how the engines interact with each other and what happens in the scene. There's an individual class where we can spawn in objects and position them using our flexible transform class. This section could actually be done using a scripting engine but I have not implemented any way to support this. Nevertheless, the flexibility of creating objects here makes the entire engine very easy for 'new' users to use as they don't have dwelve into the code in order to spawn specific things. 
+
+						<br><br>
+						We use a basic scene graph solution to display all our data and things we want to display on the screen. All objects are rendered in a tree hierarchy. This is essentially the core object creation within our engine. We have a rootobject that acts as the root of the scene. This root object gets branch and leaf child nodes consisting of more Game Objects. A Game Object consists of a Game Component - a structure that can be a thing like a Mesh, a Light or even a camera. A Game Object can also have more than one component in it's list which allows for scenes to render using relative positions. If a game object for example is spawned at (1,1,1) and it has another game object attached to it signaling to spawn at (0,0,0), it too will spawn at (1,1,1) as this is relative to the parent node. This can actually be seen in some of the screenshots I have posted earlier. This inheritence is very useful when creating larger projects and if you want to move an entire section of the game without having to go through each object individually. 
+						<br><br>
+						When the core engine gets the input, updates and renders the scene it can easily go through each object from the root object and call their indvidual respective functions. This is another very big benefit of the way this system is set up. 
+					</p>
+					<img src="7.png">
+					<p> <a href="https://github.com/victorkesten/OpenGL-3D-Engine">Here</a> is a link to the source code. 99% of it should be commented so please enjoy browsing at your own pleasure! To run import and link the latest versions of LWJGL and Slick Util libraries.
+					</p>
+				</div>
+			</div>
+
 
 						<div class="post">
 				<!-- Heading -->
@@ -41,7 +94,7 @@
 				<hr>
 				<div class="in-content">
 					<p>
-						Saturn has a prominent ring system that consists of nine continuous main rings and three discontinuous arcs, composed mostly of ice particles with a smaller amount of rocky debris and dust. Sixty-two known moons orbit the planet, of which fifty-three are officially named. This does not include the hundreds of "moonlets" comprising the rings.
+						I spent the entire month restructuring and replanning my project. I've ended up with a solid explanation of the engine's architecture and this will be my official submission to the course so that I can finally get a grade. I will write a post officially describing the engine architecture I've chosen. This is coming soon!
 					</p>
 				</div>
 			</div>
@@ -54,6 +107,9 @@
 				<div class="in-content">
 					<p>
 						I've attempted creating post-processing support to my engine. However this was not as easy as I thought it would be. To do this I would need to restructure how I load and store textures as well as how each game object and component is rendered. This is not an easy task and I don't believe I am up for changing it unfortunately. I believe I may have to change my project specification unfortunately and put something I've already dont instead. 
+
+						<br><br> 
+						To briefly explain the problem and what I have done: the core problem lies in the Frame Buffer Object. I have had problems with using a lower version of OpenGL this entire time and thus the guides and help online with it is limited. After many hours of trying myself I finally decided to try something else. This will perhaps be something I'll return to do one day. What I considered doing was quickly going back to my very old-old projects that only contained one or two classes as with these I could easily direct it and "statically" create post-processing support. The thing with my current engine is that it is supposed to be very scalable and modular and thus the support for many different types of post-processing effects in the way it is set up is difficult and I am unfortunately not there yet. 
 					</p>
 				</div>
 			</div>
@@ -80,7 +136,23 @@
 				<hr>
 				<div class="in-content">
 					<p>
+						There is now proper camera and movement mechanics. I can also change beteween an orhtographic view and a perspective view. Using SDL and it's input mechanics was very easy and there were many good templates for each key and it's appropriate hex value. 
+
 						Camera and movement! As well as restructuring of the project. Proper grouping guides and game object creation. 
+						<br><br>
+						I will now proceed to show some pictures of what I have managed to complete! 
+					</p>
+					<img src="3.png">
+					<p>
+					This image shows of the full scope of what the engine is capable off. We see a tall tower - an OBJ file I downloaded from an open source website that included material textures. We see the three different types of lighting, all in different colors and we see the classic "monkey" object that's been used when testing shadows and light bounces. 
+					</p>
+					<img src="4.png">
+					<p>
+					This is a closer look at the inside of the tower and in fact is me testing 16xMSAA. I decided to base my Bachelors thesis around anti aliasing and thus this engine has served two purposes. I'm very happy with the result and the engine runs extremley smoothly. 
+					</p>
+					<img src="5.png">
+					<p>
+					Another shot, taken from my MacBook. For the most part the project was made on my MacBook using Eclipse. However, at times I was able to use a Windows 10 client as well. But since I needed spport for a lower version of OpenGL, everything had to be adapted appropriately. In this picture I am testing a dragon model without a texture just to see whether or not lighting shades worked as intended. The model indeed is 3D and light acts 3D!  	
 					</p>
 				</div>
 			</div>
@@ -94,7 +166,12 @@
 				<div class="in-content">
 					<!-- <img class="right" src="img/post-img.jpg" alt=""> -->
 					<p>
-					I've spent all of june figuring out lighting and writing proper lighting code for the engine. I wanted to take what we learned in class and apply it to the engine - Diffuse, Specular and Ambient lighting. Writing the shader classes was not too difficult as 
+					I've spent all of June figuring out lighting and writing proper lighting code for the engine. I wanted to take what we learned in class and apply it to the engine - Diffuse, Specular and Ambient lighting. The way OpenGL deals with this is through separate classes and eventual shader support for lighting. Writing the shader classes was not too difficult as GLSL is a very straight forward language similar to C with fairly good documentation. As my MacBook only supports an older version of OpenGL I had to create everything in version #120. This made it so that I had to rewrite parts of my Shader class so that it supports
+<br><br>
+					What I have now is support for three different lighting types: Point Light, Direcitonal Light and a Spot Light. With these three styles of lighting I can now get a beautiful scene with imported models. There is not yet support for shadows as this I will save for a later stage! Persumably this will be adding another shader or so though. 
+
+					<br><br>
+					I have now also successfully implemented phong lighting. This can be seen in the shader file phongFragment.fs and phoneVertex.vs. This was also more challenging than anticipated. I essentially included and rewrote the way Uniforms are added to the renderer. With a bit of easy regex parsing I can easily delegate appropriate uniform values that are then transferred to the GPU. 
 					</p>
 				</div>
 			</div>
@@ -107,17 +184,17 @@
 				<hr>
 				<div class="in-content">
 					<p>
-						This is where I begin my journey. Initially I googled everything I could find on OpenGL and how to take that which we learned from the labs one step further. I ended up learning from a site called <a href="http://ogldev.atspace.co.uk">OGL Dev</a> how to draw triangles, how to transform them and how to render them as 3D. 
+						This is where I begin my journey. Initially I googled everything I could find on OpenGL and how to take that which we learned from the labs one step further. I ended up learning from a site called <a href="http://ogldev.atspace.co.uk">OGL Dev</a> how to draw triangles, how to transform them and how to render them as 3D primitives using basic OpenGL constructions. This was very enriching but the techniques offered by this site were just not quiet enough as I wanted something more scalable and structured. 
 					</p>
 
 					<img src="1.png">
 
-					<p>This essentially meant writing my own mathematics classes, a transform class and a shader support class. One of the key goals for the engine was for it to be scalable and therefore using good programming practices when creating classes and methods was very important. With the help of <a href="http://www.youtube.com/thebennybox/">The Benny Box</a> on YouTube I was able to create a class structure that worked well for what I had in mind.  </p>
+					<p>With the help of <a href="http://www.youtube.com/thebennybox/">The Benny Box</a> on YouTube I was able to create a class structure that worked well for what I had in mind. This essentially meant writing my own mathematics classes, a transform class and a shader support class that could draw primitives that can be shaped and created into objects. As previously mentioned, one of the key goals for the engine was for it to be scalable and therefore using good programming practices when creating classes and methods was very important. </p>
 
 
 					<img src="2.png">
 					<p>
-					Finally I had something that was presentable - a 3D model that could be transformed and rotated as much as I pleased
+					After a few weeks of struggle I had something that was presentable - a 3D model that could be easily transformed and rotated as much as I pleased. I also included an OBJ File importer and so I could create and import models in Blender for example. 
 					</p>
 
 
