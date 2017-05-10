@@ -2,6 +2,21 @@
 
 function tat(){
 	console.log($(window).width());
+	console.log($(window).height());
+	setSize($(window).height());
+}
+
+function setSize(y){
+	var t = y - 80;
+	console.log(t);
+	if(t > 500){
+		$("#about_section").css("height",t+"px");
+		$("#midsection_photo").css("height", t+"px");
+		$("#section1").css("height", t+"px");
+		$("#property_management").css("height", t+"px");
+
+		$("#photo_reel".css("height", (t-100)+"px"))
+	}
 }
 
 var quotNumber = Math.floor((Math.random() * 5));
@@ -63,9 +78,6 @@ function setCol(test){
 	document.getElementById("g"+test).style.backgroundColor = "#DCE4F2";
 	$("#g" + test).css( "cursor", "pointer" );
 	$("#g" + test).css( "color", "#0D094F" );
-
-
-
 }
 
 function unsetCol(a){
@@ -74,7 +86,7 @@ function unsetCol(a){
 	$("#g" + a).css( "color", "white" );
 }
 
-var divNames = ['about_section','about_team_title', 'midsection_photo','section1','property_management','contact'];
+var divNames = ['about_section_head','meet_the_team_head', 'midsection_photo_head','section1_head','property_management_head','contact'];
 
 function getToDiv(divName){
     $('html,body').animate({

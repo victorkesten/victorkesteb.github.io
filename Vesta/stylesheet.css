@@ -129,7 +129,7 @@ div.tab a:hover {
 
 /* Create an active/current tablink class */
 div.tab a:focus, .active {
-    background-color: #ccc;
+    /*background-color: #ccc;*/
 }
 
 @-webkit-keyframes fadeEffect {
@@ -200,7 +200,7 @@ div.tab a:focus, .active {
 	background-color: white;
 	/*position: relative;*/
 	/*width:1000px;*/
-	padding-top: 10px;
+	/*padding-top: 10px; */
 	/*orginally 670*/
 	height: 500px;
 	/*width: 80%*/
@@ -227,15 +227,48 @@ z-index: 45;
 #midsection_photo{
 	width:100%;
 	height:600px;
+		padding-top: 50px;
+
 	/*padding-bottom: 50px;*/
-	/*margin-bottom: 50px;*/
+	/*margin-top: 0px;*/
 }
 #buy_section{
-	width:40%;
+	width:50%;
 	height:500px;
 	float: left;
-}
 
+	/*margin: 40px;*/
+	/*margin-left: 40px;*/
+	color: #0D094F;
+    font-size: 20px;
+    /*height: 250px;*/
+   /* text-justify*/: auto;
+    /*text-align: center;*/
+    /*text-overflow: hidden;*/
+    /*border-radius: 10px;*/
+    /*background-color: rgba(255,255,255,0.5);*/
+  /*background:rgba(0,0,0,0.13);*/
+  /*background:rgba(0,0,0,0.26);*/
+  /*background:rgba(0,0,0,0.26);*/
+  /*padding-top: 20px;*/
+  /*padding-left: 10px;*/
+  /*padding-right: 10px;*/
+
+  text-align:justify;
+/*word-spacing:-2px;*/
+  text-shadow: 1px 1px 2px #d3d3d3;
+}
+#buy_section_text{
+	/*background-color: white;*/
+	border-radius: 5px;
+	padding: 20px;
+	margin: 10px;
+	padding-top: 5px;
+	background-color: rgba(213,162,83,0.4);
+}
+#buy_section_text h1 {
+	font-size: 30px;
+}
 #section1{
 	/*background-color: orange;*/
 	width:100%;
@@ -252,6 +285,7 @@ z-index: 45;
 #sell_section{
 	float: right;
 	width:50%;
+	height:575px;
 }
 
 #property_management{
@@ -277,6 +311,10 @@ z-index: 45;
 	float: left;
 	/*width:500px;*/
 	/*width:50%;*/
+}
+#about_section{
+	width: 100%;
+	height: 200px;
 }
 
 #about_background{
@@ -606,25 +644,24 @@ box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
   opacity: 0.8;
 }
 
+
 #team{
 	height: 500px;
 }
 
-#about_team_title{
+.about_team_title{
 	width:100%;
 	margin: auto 0;
 	text-align:center;
 	height:80px;
-	/*Hey I am a bunny*/
 }
 
-
-#about_team_title hr {
+.about_team_title hr {
   border: 4px solid #ff9933;
 
 }
 
-#about_team_title h2 {
+.about_team_title h2 {
   font-size: 2em;
   text-align: center;
   font-family: open roboto, sans-serif;
