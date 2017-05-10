@@ -1,3 +1,50 @@
+html, body, div, span, applet, object, iframe,
+ h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
 html {
 	/*background-color: #99CCFF;*/
 	/*min-width:1200px;*/
@@ -41,6 +88,9 @@ http://blog.froont.com/positioning-in-web-design/*/
 	/*width: 50%;*/
 		/*margin: 0 auto;*/
 	/*min-width:1264px;*/
+    margin: 0;
+    padding: 0;
+    /*margin: 0;*/
 
 	/*height: 1450px;*/
 	/*position: absolute;*/
@@ -271,8 +321,16 @@ z-index: 45;
 }
 #section1{
 	/*background-color: orange;*/
+		background-color: rgba(213,162,83,0.4);
+
 	width:100%;
 	height:575px;
+}
+#section1_head{
+		background-color: rgba(213,162,83,0.4);
+		/*padding-top: 2px*/
+		/*margin-top: 5px;*/
+		/*padding-top: 4px;*/
 }
 #sell_section_photo{
 	float: left;
@@ -315,6 +373,11 @@ z-index: 45;
 #about_section{
 	width: 100%;
 	height: 200px;
+	background-color: rgba(213,162,83,0.4);
+}
+#about_section_head{
+	background-color: rgba(213,162,83,0.4);
+
 }
 
 #about_background{
@@ -583,6 +646,8 @@ box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
   float: left;
   overflow: hidden;
   margin: 10px 1%;
+  	/*background-color: rgba(213,162,83,0.4);*/
+
   /*min-width: 150px;*/
   /*max-width: 250px;*/
   max-width:18%;
@@ -644,9 +709,15 @@ box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
   opacity: 0.8;
 }
 
+#meet_the_team_head{
+		background-color: rgba(213,162,83,0.4);
+		/*padding-top: 5px;*/
+}
 
 #team{
 	height: 500px;
+		background-color: rgba(213,162,83,0.4);
+
 }
 
 .about_team_title{
@@ -654,6 +725,7 @@ box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
 	margin: auto 0;
 	text-align:center;
 	height:80px;
+	/*padding-top:1px;*/
 }
 
 .about_team_title hr {
@@ -664,6 +736,7 @@ box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
 .about_team_title h2 {
   font-size: 2em;
   text-align: center;
+  padding-top: 15px;
   font-family: open roboto, sans-serif;
 
 }
