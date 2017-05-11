@@ -18,6 +18,8 @@ function setSize(y){
 		// $("#photo_reel".css("height", (t-100)+"px"))
 		var w = $(window).width();
 		$("#photo_reel").css("margin-left", ((w/2)-560)/2 );
+		$("#photo_reel").css("margin-top", 10);
+
 	}
 }
 
