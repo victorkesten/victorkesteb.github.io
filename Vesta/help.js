@@ -19,7 +19,7 @@ function setSize(y){
 		var w = $(window).width();
 		$("#photo_reel").css("margin-left", ((w/2)-560)/2 );
 		$("#photo_reel").css("margin-top", 10);
-
+		$("#about_right_text").css("margin-top",(y/2)-200);
 	}
 }
 

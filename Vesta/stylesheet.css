@@ -296,6 +296,8 @@ z-index: 45;
 	height:500px;
 	float: left;
 
+
+
 	/*margin: 40px;*/
 	/*margin-left: 40px;*/
 	color: #0D094F;
@@ -324,6 +326,9 @@ z-index: 45;
 	margin: 10px;
 	padding-top: 5px;
 	background-color: rgba(213,162,83,0.4);
+	-webkit-box-shadow: 11px 7px 45px -9px rgba(0,0,0,0.75);
+-moz-box-shadow: 11px 7px 45px -9px rgba(0,0,0,0.75);
+box-shadow: 11px 7px 45px -9px rgba(0,0,0,0.75);
 }
 #buy_section_text h1 {
 	font-size: 30px;
@@ -766,3 +771,18 @@ box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
 
 }
 
+#about_left{
+	float: left;
+	width:65%;
+}
+
+#about_right {
+	float: right;
+	width:35%;
+	margin-right: 10px;
+	height: 200px;
+}
+
+#about_right_text{
+
+}
