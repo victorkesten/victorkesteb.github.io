@@ -15,7 +15,9 @@ function setSize(y){
 		$("#section1").css("height", t+"px");
 		$("#property_management").css("height", t+"px");
 
-		$("#photo_reel".css("height", (t-100)+"px"))
+		// $("#photo_reel".css("height", (t-100)+"px"))
+		var w = $(window).width();
+		$("#photo_reel").css("margin-left", ((w/2)-560)/2 );
 	}
 }
 

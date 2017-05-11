@@ -246,13 +246,20 @@ div.tab a:focus, .active {
 	float:right;
 }
 
+#buy_right_section{
+	height: 500px;
+	width: 50%;
+	float:right;
+
+}
+
 #photo_reel{
-	background-color: white;
+	background-color: rgba(255,255,255,.6);
+	/*background-color: rgba(213,162,83,0.2);*/
 	/*position: relative;*/
 	/*width:1000px;*/
 	/*padding-top: 10px; */
 	/*orginally 670*/
-	height: 500px;
 	/*width: 80%*/
 	/*margin: 0 auto;*/
 	border: 0px;
@@ -263,8 +270,8 @@ box-shadow: 3px 2px 33px -1px rgba(0,0,0,0.75);
 /*overflow: visible;*/
 position: relative;
 z-index: 45;
-	width: 50%;
-	float:right;
+	width: 560px;
+	/*float:right;*/
 	/*margin: 0 auto;*/
 	/*padding: 10px;*/
 	/*padding-bottom: 20px;*/
@@ -620,11 +627,14 @@ box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
 
 #contact {
 	/*position: relative;*/
-	height: 108px;
+	/*height: 108px;*/
+
+	height: 225px;
+
 	/*width: 1000px;*/
 	border-top: 1px solid #888888;
 	color: white;
-	font-size: 10px;
+	font-size: 25px;
 	/*background-color: #1C589C;*/
 	/*background-color: darkorange;*/
 	/*background-color: #d07200;*/

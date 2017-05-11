@@ -1,5 +1,3 @@
 - Photos
-- Follow Flower
 - A top button
 - New font
-- 
