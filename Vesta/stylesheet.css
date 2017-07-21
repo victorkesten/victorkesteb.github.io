@@ -7,8 +7,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -19,7 +19,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -82,6 +82,26 @@ http://blog.froont.com/positioning-in-web-design/*/
 
 }*/
 
+#buy_section_text li {
+  /*display:inline-block;*/
+  /*width:10px;*/
+  /*padding-left: 10px;*/
+}
+
+#buy_section_text ul {
+  padding: 20px;
+}
+
+ul {
+  padding: 20px;
+}
+
+#about_start_text{
+  width: 50%;
+  margin: 0 auto;
+  font-size: 20px;
+  text-align: center;
+}
 
 
 #main_box {
@@ -207,7 +227,6 @@ div.tab a:focus, .active {
 	/*height: 200px;*/
     text-align: center;
 	font-style: italic;
-
 	-webkit-animation: fadeout 2s linear 1 normal forwards;
 }
 
@@ -225,7 +244,7 @@ div.tab a:focus, .active {
 .quote{
 	height: 170px;
 	width: 50%;
-	float: left;
+	/*float: left;*/
 	    display: -webkit-flex; /* Safari */
     -webkit-align-items: center; /* Safari 7.0+ */
     display: flex;
@@ -237,7 +256,8 @@ div.tab a:focus, .active {
 	text-align: center;
 	width: 50%;
 	margin: 0 auto;
-	color: #434D92;
+  /*!CHANGE*/
+	/*color: #434D92;*/
 }
 
 #about_vesta{
@@ -300,7 +320,8 @@ z-index: 45;
 
 	/*margin: 40px;*/
 	/*margin-left: 40px;*/
-	color: #0D094F;
+  /*!CHANGE*/
+	/*color: #0D094F;*/
     font-size: 20px;
     /*height: 250px;*/
    /* text-justify*//*: auto;*/
@@ -348,7 +369,7 @@ box-shadow: 11px 7px 45px -9px rgba(0,0,0,0.75);
 }
 #sell_section_photo{
 	float: left;
-	width:50%;
+	width:48%;
 }
 #sell_section_photo img{
 	width:100%;
@@ -356,6 +377,11 @@ box-shadow: 11px 7px 45px -9px rgba(0,0,0,0.75);
 
 #sell_section{
 	float: right;
+  /*padding: 5px;*/
+  /*margin: 5px;*/
+  margin-left: 20px;
+  /*padding-left: 5px;*/
+  /*margin-right: -5px;*/
 	width:50%;
 	height:575px;
 }
@@ -378,7 +404,7 @@ box-shadow: 11px 7px 45px -9px rgba(0,0,0,0.75);
 #about{
 	/*margin-top: 825px;*/
 	/*position: relative;*/
-	
+
 	/*height: 500px;*/
 	float: left;
 	/*width:500px;*/
@@ -422,7 +448,8 @@ box-shadow: 11px 7px 45px -9px rgba(0,0,0,0.75);
 	/*margin: 40px;*/
 	/*margin-left: 60px;*/
 	margin: 40px;
-	color: #0D094F;
+  /*!CHANGE*/
+	/*color: #0D094F;*/
     font-size: 40;
     height: 250px;
    /* text-justify*/: auto;
@@ -589,7 +616,7 @@ box-shadow: 11px 7px 45px -9px rgba(0,0,0,0.75);
 }
 
 div.real_estate_request label{
-	background-color: red;	
+	background-color: red;
 	    /*word-spacing: 30px;*/
 
 }
