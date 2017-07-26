@@ -277,7 +277,7 @@ div.tab a:focus, .active {
 }
 
 #photo_reel{
-	background-color: rgba(255,255,255,.6);
+	/*background-color: rgba(255,255,255,.6);*/
 	/*background-color: rgba(213,162,83,0.2);*/
 	/*position: relative;*/
 	/*width:1000px;*/
@@ -285,10 +285,10 @@ div.tab a:focus, .active {
 	/*orginally 670*/
 	/*width: 80%*/
 	/*margin: 0 auto;*/
-	border: 0px;
+	/*border: 0px;
 -webkit-box-shadow: 3px 2px 33px -1px rgba(0,0,0,0.75);
 -moz-box-shadow: 3px 2px 33px -1px rgba(0,0,0,0.75);
-box-shadow: 3px 2px 33px -1px rgba(0,0,0,0.75);
+box-shadow: 3px 2px 33px -1px rgba(0,0,0,0.75);*/
 
 /*overflow: visible;*/
 position: relative;
@@ -456,6 +456,7 @@ box-shadow: 11px 7px 45px -9px rgba(0,0,0,0.75);*/
 	/*margin: 40px;*/
 	/*margin-left: 60px;*/
 	margin: 40px;
+  margin-top: 150px;
   /*!CHANGE*/
 	/*color: #0D094F;*/
     font-size: 40;
@@ -819,5 +820,7 @@ box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
 }
 
 #about_right_text{
+  margin-top: 120px;
+  margin-right:50px;
 
 }
