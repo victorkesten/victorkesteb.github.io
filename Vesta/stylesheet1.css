@@ -1,0 +1,25 @@
+.table-head {
+  /*width: 100%;*/
+}
+
+.section{
+  /*width: 50%;
+  height: 500px;
+  background-color: red;*/
+}
+
+#left{
+  width:50%;
+  /*height: 100%;*/
+  height: auto;
+  float: left;
+  /*background-color: red;*/
+}
+
+#right{
+  width: 50%;
+  /*height: 100%;*/
+  height: auto;
+  float: right;
+  /*background-color: white;*/
+}
