@@ -1,0 +1,20 @@
+.table-head {
+  /*width: 100%;*/
+}
+
+
+#left{
+  width:50%;
+  /*height: 100%;*/
+  height: auto;
+  float: left;
+  /*background-color: red;*/
+}
+
+#right{
+  width: 50%;
+  /*height: 100%;*/
+  height: auto;
+  float: right;
+  /*background-color: white;*/
+}

@@ -97,3 +97,12 @@ function getToDiv(divName){
         scrollTop: $("#" + divNames[divName]).offset().top},
         'slow');
 }
+
+
+function showdetails(who){
+	$("#email_"+who).css("display","initial");
+}
+
+function hidedetails(who){
+	$("#email_"+who).css("display","none");
+}
