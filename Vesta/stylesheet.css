@@ -59,7 +59,7 @@ html {
 	/*min-width:870px;*/
 	/*max-width: 1070px;*/
 	/*max-width: 1270px;*/
-
+  /*text-justify:inter-word;*/
 	margin: 0 auto;
 
 	float: none;
@@ -92,8 +92,15 @@ http://blog.froont.com/positioning-in-web-design/*/
   padding: 20px;
 }
 
+li {
+  margin-bottom: 2px;
+  margin-left: 30px;
+}
 ul {
   padding: 20px;
+  list-style-image: url('Temp/sun.png');
+  /*list-sty*/
+
 }
 
 #about_start_text{
@@ -166,7 +173,8 @@ box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
 div.tab a {
     /*float: left;*/
     /*width: 210px;*/
-    width: 16.65%;
+    /*width: 16.65%;*/
+    width:15%;
     /*height: ;*/
     /*margin: 0 auto;*/
     display: inline-block;
@@ -188,7 +196,20 @@ color: white;
 
     /*font-weight: bold;*/
 }
+div.tab #special{
+  width:2%;
+  padding: 0px 0px;
+  /*margin-top: 5px;*/
+  /*margin-bottom:-5px;*/
+  /*padding-top:5px;*/
+}
 
+
+div.tab #special:hover{
+  /*background-color: white;*/
+  background-color: #fb6e21;
+
+}
 /* Change background color of links on hover */
 div.tab a:hover {
     /*background-color: #ddd;*/
@@ -198,6 +219,7 @@ div.tab a:hover {
     /*margin-bottom: -1px;*/
 
 }
+
 
 /* Create an active/current tablink class */
 div.tab a:focus, .active {
@@ -320,6 +342,7 @@ z-index: 45;
 	height:500px;
 	float: left;
 
+  /*margin: 40px;*/
 
 
 	/*margin: 40px;*/
@@ -344,37 +367,20 @@ z-index: 45;
 /*word-spacing:-2px;*/
   text-shadow: 1px 1px 2px #d3d3d3;
 }
-#buy_section_text{
-	/*background-color: white;*/
-	/*border-radius: 5px;*/
-	padding: 20px;
-	margin: 10px;
-	padding-top: 5px;
-  font-size: 18px;
-	/*background-color: rgba(213,162,83,0.4);*/
-  /*background-color: rgba(246,225,151,1);*/
-  /*background-color: rgba(255,255,255,.6);*/
 
-	/*-webkit-box-shadow: 11px 7px 45px -9px rgba(0,0,0,0.75);
--moz-box-shadow: 11px 7px 45px -9px rgba(0,0,0,0.75);
-box-shadow: 11px 7px 45px -9px rgba(0,0,0,0.75);*/
+
+#buy_section_text{
+  /*margin-left: 5px;*/
+  margin-left: 25px;
+  margin-right: 20px;
+  margin-top: -10px;
+  text-align:justify;
+  font-size: 18px;
 }
 #buy_section_text h1 {
 	font-size: 30px;
 }
-#section1{
-	/*background-color: orange;*/
-		/*background-color: rgba(213,162,83,0.4);*/
 
-	width:100%;
-	height:575px;
-}
-#section1_head{
-		/*background-color: rgba(213,162,83,0.4);*/
-		/*padding-top: 2px*/
-		/*margin-top: 5px;*/
-		/*padding-top: 4px;*/
-}
 #sell_section_photo{
 	float: left;
 	width:48%;
@@ -383,20 +389,18 @@ box-shadow: 11px 7px 45px -9px rgba(0,0,0,0.75);*/
 	width:100%;
 }
 
-#sell_section{
-	float: right;
-  /*padding: 5px;*/
-  /*margin: 5px;*/
+#sell_t{
+  text-align:justify;
   margin-left: 20px;
-  /*padding-left: 5px;*/
-  /*margin-right: -5px;*/
-	width:50%;
-	height:575px;
+  margin-right:25px;
 }
 
 #property_management{
+  margin-left: 50px;
 	width:100%;
 	height:500px;
+  text-align:justify;
+
 }
 
 #prop_left{
@@ -409,15 +413,6 @@ box-shadow: 11px 7px 45px -9px rgba(0,0,0,0.75);*/
 	float: right;
 }
 
-#about{
-	/*margin-top: 825px;*/
-	/*position: relative;*/
-
-	/*height: 500px;*/
-	float: left;
-	/*width:500px;*/
-	/*width:50%;*/
-}
 #about_section{
 	width: 100%;
 	height: 200px;
@@ -426,29 +421,6 @@ box-shadow: 11px 7px 45px -9px rgba(0,0,0,0.75);*/
 #about_section_head{
 	/*background-color: rgba(213,162,83,0.4);*/
 
-}
-
-#about_background{
-	/*margin-top: 825px;*/
-	/*position: absolute;*/
-	/*size: inherit;*/
-	/*margin:0 auto;*/
-	/*background-color: #FAC29D;*/
-	/*background-image: url("resources/raw/flowerOnlyopa.png");*/
-	/*background-clip: content-box;*/
-	/*background-repeat: no-repeat;*/
-	/*background-position: center;*/
-
-	/*Original value was Contain*/
-	/*background-size: 70%; */
-	/*opacity: 0.5;*/
-
-	/*Original value was 500x*/
-
-	height: 500px;
-	width:50%;
-	/*float: left;*/
-	/*width:500px;*/
 }
 
 #about_text{
@@ -522,10 +494,6 @@ box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
     /*padding-right: 50px;*/
 }
 
-#blurcontent{
-	/*position: relative;*/
-	/*height: 100px;*/
-}
 
 #background{
 		background-image: url("resources/raw/flowerOnlyopa.png");
@@ -538,17 +506,6 @@ box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
 	background-size: 70%;
 }
 
-#flower_background{
-	width: 100%;
-	height: 400px;
-	/*background-image: url("resources/raw/flowerOnlyopa.png");*/
-	    /*background-attachment: fixed;*/
-
-	/*background-clip: content-box;*/
-	/*background-repeat: no-repeat;*/
-	/*background-position: center;*/
-	/*background-size: 70%;*/
-}
 
 
 #search{
@@ -668,6 +625,11 @@ box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
 
 }
 
+#bot_t{
+  width:100%;
+  height:200px;
+}
+
 #contact {
 	/*position: relative;*/
 	/*height: 108px;*/
@@ -700,6 +662,7 @@ box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
 #footer{
 	width:100%;
 	height:138px;
+  /*display: block;*/
 	/*position: absolute;*/
 	/*position: relative;*/
 }
@@ -736,8 +699,14 @@ box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
   transition: all 0.25s ease;
 }
 
+.t_box{
+  height:370px;
+  width:100%;
+  background-color: white;
+}
 .profile_box {
   width: 100%;
+  /*height: 360px;*/
   background-color: white;
   padding: 13px;
   position: relative;
@@ -751,8 +720,10 @@ box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
   /*left: 25px;*/
   z-index: 1;
   /*max-width: 220px;*/
-  width:220px;
-  height:230px;
+  /*width:220px;*/
+  width:100%;
+  /*height:230px;*/
+  height: 100%;
   margin: auto 0;
   opacity: 1;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
@@ -790,8 +761,9 @@ box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
 	margin: auto 0;
 	text-align:center;
 	height:80px;
-	padding-bottom: 40px;
-	/*padding-top:1px;*/
+	margin-bottom: 40px;
+  /*margin-top: 10px;*/
+	padding-top:1px;
 }
 
 .about_team_title hr {
@@ -802,7 +774,7 @@ box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
 .about_team_title h2 {
   font-size: 2em;
   text-align: center;
-  padding-top: 15px;
+  padding-top: 5px;
   font-family: open roboto, sans-serif;
 
 }
@@ -820,7 +792,41 @@ box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
 }
 
 #about_right_text{
+  text-align:justify;
+
   margin-top: 120px;
   margin-right:50px;
 
+}
+
+.contact_window{
+  /*margin-left: 50px;*/
+  margin: 0 auto;
+  width:40%;
+  font-size: 20px;
+  /*background-color: orange;*/
+}
+
+#mail_form{
+  /*width:300px;*/
+  /*width:100%;*/
+  /*height: 400px;*/
+  /*margin:20px;*/
+  padding:20px;
+  /*padding-top:25px;*/
+  /*margin-right: -25px;*/
+  border-radius: 2px;
+  /*border: 1px solid #a9a9a9;*/
+  /*padding-right:250px;*/
+  /*background-color: red;*/
+
+  	-webkit-box-shadow: 11px 7px 45px -9px rgba(0,0,0,0.75);
+  	-moz-box-shadow: 11px 7px 45px -9px rgba(0,0,0,0.75);
+  	box-shadow: 11px 7px 45px -9px rgba(0,0,0,0.75);
+background-color: rgba(213,162,83,0.5);
+
+}
+
+.opening_hours{
+  font-size: 25px;
 }
