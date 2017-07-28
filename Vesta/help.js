@@ -6,22 +6,6 @@ function tat(){
 	setSize($(window).height());
 }
 
-function setSize(y){
-	var t = y - 80;
-	console.log(t);
-	if(t > 500){
-		$("#about_section").css("height",t+"px");
-		$("#midsection_photo").css("height", t+"px");
-		$("#section1").css("height", t+"px");
-		$("#property_management").css("height", t+"px");
-
-		// $("#photo_reel".css("height", (t-100)+"px"))
-		var w = $(window).width();
-		$("#photo_reel").css("margin-left", ((w/2)-560)/2 );
-		$("#photo_reel").css("margin-top", 10);
-		$("#about_right_text").css("margin-top",(y/2)-200);
-	}
-}
 
 var quotNumber = Math.floor((Math.random() * 5));
 var listOfQuotes = ["\"If you're looking for a home to purchase or need property management, look no further.\"",
@@ -63,20 +47,6 @@ function timedEvent2(){
 }
 
 
-function ensureWidth(){
-	if($(window).width() >= 1520){
-		// console.log(Y);
-		// $("#main_box").css("margin", "auto 0");
-		// $("#main_box").css("width", "50%");
-		// $("#main_box").css("margin-left", ($(window).width() - 1520)/2);
-		// $("#main_box").css("margin-right", ($(window).width() - 1520)/2);
-	} else {
-		// var t = $("#navBar").css("padding-left");
-		// $("#navBar").css("padding-left", t+1);
-	}
-
-}
-
 function setCol(test){
 	// console.log("hey");
 	document.getElementById("g"+test).style.backgroundColor = "#DCE4F2";
@@ -91,12 +61,6 @@ function unsetCol(a){
 }
 
 var divNames = ['about_section_head','meet_the_team_head', 'midsection_photo_head','section1_head','property_management_head','contact'];
-
-function getToDiv(divName){
-    $('html,body').animate({
-        scrollTop: $("#" + divNames[divName]).offset().top},
-        'slow');
-}
 
 
 function showdetails(who){

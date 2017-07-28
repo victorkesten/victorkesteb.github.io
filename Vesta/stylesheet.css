@@ -103,27 +103,6 @@ ul {
 
 }
 
-#about_start_text{
-  width: 50%;
-  margin: 0 auto;
-  font-size: 20px;
-  text-align: center;
-}
-
-
-#main_box {
-	/*width: 50%;*/
-		/*margin: 0 auto;*/
-	/*min-width:1264px;*/
-    margin: 0;
-    padding: 0;
-    /*margin: 0;*/
-
-	/*height: 1450px;*/
-	/*position: absolute;*/
-	/*background-color: #DCE4F2;*/
-	/*background-color: #CCFFFF;*/
-}
 
 
 #banner_top{
@@ -171,18 +150,10 @@ box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
 
 /* Style the links inside the tab */
 div.tab a {
-    /*float: left;*/
-    /*width: 210px;*/
     /*width: 16.65%;*/
-    width:15%;
-    /*height: ;*/
-    /*margin: 0 auto;*/
+    width:15.8%;
     display: inline-block;
-    /*margin: 0 auto;*/
-    /*color: black;*/
-    	/*color: #0D094F;*/
 color: white;
-/*margin-top: 8px;*/
 
     text-align: center;
     padding: 10px 0px;   /*originally 13 16*/
@@ -196,12 +167,10 @@ color: white;
 
     /*font-weight: bold;*/
 }
+
 div.tab #special{
   width:2%;
   padding: 0px 0px;
-  /*margin-top: 5px;*/
-  /*margin-bottom:-5px;*/
-  /*padding-top:5px;*/
 }
 
 
@@ -285,19 +254,6 @@ div.tab a:focus, .active {
 	/*color: #434D92;*/
 }
 
-#about_vesta{
-	width:50%;
-	height: 170px;
-	float:right;
-}
-
-#buy_right_section{
-	height: 500px;
-	width: 50%;
-	float:right;
-	/*padding-bottom: 5px;*/
-}
-
 #photo_reel{
 	/*background-color: rgba(255,255,255,.6);*/
 	/*background-color: rgba(213,162,83,0.2);*/
@@ -332,42 +288,7 @@ z-index: 45;
 #midsection_photo{
 	width:100%;
 	height:600px;
-		/*padding-top: 50px;*/
-
-	/*padding-bottom: 50px;*/
-	/*margin-top: 0px;*/
 }
-#buy_section{
-	width:50%;
-	height:500px;
-	float: left;
-
-  /*margin: 40px;*/
-
-
-	/*margin: 40px;*/
-	/*margin-left: 40px;*/
-  /*!CHANGE*/
-	/*color: #0D094F;*/
-    font-size: 20px;
-    /*height: 250px;*/
-   /* text-justify*//*: auto;*/
-    /*text-align: center;*/
-    /*text-overflow: hidden;*/
-    /*border-radius: 10px;*/
-    /*background-color: rgba(255,255,255,0.5);*/
-  /*background:rgba(0,0,0,0.13);*/
-  /*background:rgba(0,0,0,0.26);*/
-  /*background:rgba(0,0,0,0.26);*/
-  /*padding-top: 20px;*/
-  /*padding-left: 10px;*/
-  /*padding-right: 10px;*/
-
-  text-align:justify;
-/*word-spacing:-2px;*/
-  text-shadow: 1px 1px 2px #d3d3d3;
-}
-
 
 #buy_section_text{
   /*margin-left: 5px;*/
@@ -400,47 +321,17 @@ z-index: 45;
 	width:100%;
 	height:500px;
   text-align:justify;
-
 }
 
-#prop_left{
-	width:50%;
-	float: left;
-}
-
-#prop_right{
-	width:50%;
-	float: right;
-}
-
-#about_section{
-	width: 100%;
-	height: 200px;
-	/*background-color: rgba(213,162,83,0.4);*/
-}
-#about_section_head{
-	/*background-color: rgba(213,162,83,0.4);*/
-
-}
 
 #about_text{
-	/*position: inherit;*/
-	/*margin: 40px;*/
-	/*margin-left: 60px;*/
 	margin: 40px;
   margin-top: 150px;
   /*!CHANGE*/
 	/*color: #0D094F;*/
     font-size: 40;
     height: 250px;
-   /* text-justify*/: auto;
-    /*text-align: center;*/
-    /*text-overflow: hidden;*/
     border-radius: 10px;
-    /*background-color: rgba(255,255,255,0.5);*/
-  /*background:rgba(0,0,0,0.13);*/
-  /*background:rgba(0,0,0,0.26);*/
-  /*background:rgba(0,0,0,0.26);*/
   padding-top: 20px;
   padding-left: 10px;
   padding-right: 10px;
@@ -466,51 +357,10 @@ word-spacing:-2px;
     /*font-size: 14px;*/
     font-size: 20px;
     /*text-align: left;*/
-
-
-  /*margin-left: 50px*/
-/*	border-radius: 105px 18px 106px 19px;
-	-moz-border-radius: 105px 18px 106px 19px;
-	-webkit-border-radius: 105px 18px 106px 19px;
-	border: 0px solid #000000;*/
-
-/*
-	border-radius: 5px 5px 5px 5px;
-	-moz-border-radius: 5px 5px 5px 5px;
-	-webkit-border-radius: 5px 5px 5px 5px;
-	border: 0px solid #000000;
-
-
--webkit-box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
--moz-box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
-box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
-
-  background-blend-mode: lighten(#f0f4c3, 30%);*/
-    /*opacity: 1.5;*/
-    /*border: 1px solid black;*/
-    /*height: 150px;*/
-    /*padding-top: 20px;*/
-    /*padding-left: 50px;*/
-    /*padding-right: 50px;*/
 }
-
-
-#background{
-		background-image: url("resources/raw/flowerOnlyopa.png");
-	    background-attachment: fixed;
-
-	background-clip: content-box;
-	/*background-size: 50%;*/
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 70%;
-}
-
 
 
 #search{
-	/*position: absolute;*/
-	/*display:inline-block;*/
 	color: #0D094F;
 	position: relative;
 	z-index: 40;
@@ -593,35 +443,17 @@ div.real_estate_request a{
 
 
 #mail_list{
-	/*margin-top: -100px;*/
-	/*padding-top: -10px;*/
 
-	/*This was previous round edges*/
-	/*border-radius: 50px 50px 0px 0px; */
-	/*border-radius: 5px 5px 0px 0px; */
-
-/*maybe 105px*/
-	/*align-content: center;	*/
-	/*position: relative;*/
 	height: 30px;
-	/*width: 1000px;*/
-	/*width: 100%;*/
 	margin: 0 auto;
 	color:white;
-	/*background-color: #d07200;*/
-	/*background-color: #e68a00;*/
 	background-color: #fb6e21;
 	line-height: 30px;
-	/*text-align:center;*/
-	/*z-index: 1;*/
-	/*text-*/
-	/*margin-top: 1350px;*/
 	text-align: center;
 
-	        /*padding-left:35px;*/
-        -webkit-box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
--moz-box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
-box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
+  -webkit-box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
+  -moz-box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
+  box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
 
 }
 
@@ -657,14 +489,6 @@ box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
 	/*margin-top: 1400px;*/
 	padding-top: 5px;
 	text-align: center;
-}
-
-#footer{
-	width:100%;
-	height:138px;
-  /*display: block;*/
-	/*position: absolute;*/
-	/*position: relative;*/
 }
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,600);
@@ -829,4 +653,31 @@ background-color: rgba(213,162,83,0.5);
 
 .opening_hours{
   font-size: 25px;
+}
+
+.table-head {
+  /*width: 100%;*/
+}
+
+#about_start_text{
+  width: 50%;
+  margin: 0 auto;
+  font-size: 20px;
+  text-align: center;
+}
+
+#left{
+  width:50%;
+  /*height: 100%;*/
+  height: auto;
+  float: left;
+  /*background-color: red;*/
+}
+
+#right{
+  width: 50%;
+  /*height: 100%;*/
+  height: auto;
+  float: right;
+  /*background-color: white;*/
 }
