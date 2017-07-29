@@ -14,10 +14,18 @@
 		<script src="sorttable.js"></script> <!-- http://www.kryogenix.org/code/browser/sorttable/ -->
 		<script src="help.js"></script>
  <!-- http://tableizer.journalistopia.com/tableizer.php -->
-	<script src="radarchart.js"></script>	
+	<script src="radarchart.js"></script>
 
 </head>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-98785382-1', 'auto');
+  ga('send', 'pageview');
+</script>
 <body onload="tableFix()">
 <!-- <body> -->
 <!-- Create an interactive Radar Chart with D3. List everyone on the left, be abble to sort and all that. Highlight selected ones and show up on the right. Where you can select people to work together and then see how they match up. <br>
@@ -46,8 +54,8 @@
 			<table class="sortable">
 				<thead>
 				    <th><span class="title_head">Number</span></th>
-				    <th><span class="title_head">Alias</span></th> 
-				    <th><span class="title_head">IVIS</span></th>	
+				    <th><span class="title_head">Alias</span></th>
+				    <th><span class="title_head">IVIS</span></th>
 			  		<th><span class="title_head">Stats</span></th>
 			  		<th><span class="title_head">Math</span></th>
 			  		<th><span class="title_head">Art</span></th>

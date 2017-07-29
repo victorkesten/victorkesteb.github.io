@@ -4,7 +4,9 @@ ProjectNames = {
     GL_ENGINE : 2,
     SMALL_GAMES : 3,
     RAY_TRACE : 4,
-    MINECRAFT: 5
+    MINECRAFT : 5,
+    INFO_VIS : 6,
+    WEB_DESIGN : 7
 }
 
 function go(a) {
@@ -27,10 +29,16 @@ function go(a) {
 			break;
 		case ProjectNames.MINECRAFT:
 			locat = "minecraft_mod";
+      break;
+    case ProjectNames.INFO_VIS:
+      locat = "info_vis";
+      break;
+    case ProjectNames.WEB_DESIGN:
+      locat= "web_design";
+      break;
 		default:
 			break;
 	}
-
 	location.replace(locat);
 }
 function showText(a){
@@ -70,10 +78,10 @@ function clickMe(a){
 var velocity = 1;
 var oldPos;
 var percent = 50;
-$(window).bind('scroll', function() { 
-	    var pos = $(window).scrollTop(); 
+$(window).bind('scroll', function() {
+	    var pos = $(window).scrollTop();
 	    // console.log("TEST");
-	    $('#backgroundPic').each(function() { 
+	    $('#backgroundPic').each(function() {
 	        var $element = $(this);
 	        // subtract some from the height b/c of the padding
 	        var height = $element.height();//-18;
@@ -86,7 +94,8 @@ $(window).bind('scroll', function() {
 	    if(pos >= 200){
 	    	element.css('position', 'fixed');
 	    	var x = screen.width;
-	    	element.css('width', ''+x);
+	    	// element.css('width', ''+x);
+        element.css("width","100%");
 	    	element.css('top', '50px');
 	    	element2.css('margin-bottom', '63px');
 	    } else {

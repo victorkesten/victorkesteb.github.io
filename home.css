@@ -22,11 +22,12 @@ html, body {
 	margin-top: -50px;
 	margin-bottom: 50px;
 	background-color: black;
-	color: white;	
+	color: white;
 	text-align: center;
 	/*position: relative;*/
 	position: auto;
 	height: 63px;
+	width:100%;
 	z-index: 50;
 }
 
@@ -153,6 +154,19 @@ html, body {
     background-repeat: no-repeat;
 }
 
+#proj7{
+		background-image: url("resources/vis_heroes.PNG");
+		background-size: 140%;
+		background-position: center;
+	    background-repeat: no-repeat;
+}
+
+#proj8{
+		background-image: url("resources/web_design.PNG");
+		background-size: 140%;
+		background-position: center;
+	    background-repeat: no-repeat;
+}
 .textDesc {
 	/*display: none;*/
 	/*visibility: hidden;*/
