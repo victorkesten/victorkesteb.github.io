@@ -3,7 +3,6 @@
 function tat(){
 	console.log($(window).width());
 	console.log($(window).height());
-	setSize($(window).height());
 }
 
 
@@ -19,15 +18,13 @@ var listOfQuotes = ["\"If you're looking for a home to purchase or need property
 
 
 function onLoad(){
-	$("#navBar").css("padding-left", "200px");
-	console.log(4);
 	$("#quote").text(listOfQuotes[quotNumber]);
 }
 
 function timedEvent(){
 
 	//console.log($("#quote").text());
-	//console.log(listOfQuotes[quotNumber]);
+	console.log(listOfQuotes[quotNumber]);
 	$("#quote").attr("id","quote_hidden");
 	window.setTimeout(timedEvent2,2000);
 	//console.log("HEY");
