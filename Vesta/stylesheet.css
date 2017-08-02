@@ -106,7 +106,9 @@ ul {
 
 
 #banner_top{
-	background-image: url('resources/raw/header.jpg');
+	/*background-image: url('resources/raw/header.jpg');*/
+  background-image: url('resources/temp_new.png');
+
 	background-clip: content-box;
 	background-repeat: no-repeat;
 	background-position: center bottom;
@@ -120,7 +122,10 @@ ul {
 	margin:auto;
 	/*height: 250px;*/
 	/*height: 350px;*/
-  height: 450px;
+  height: 100%;
+
+
+
 
 }
 
