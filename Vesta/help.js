@@ -16,10 +16,32 @@ var listOfQuotes = ["\"If you're looking for a home to purchase or need property
 	"\"By the end, we were saying things like 'let’s go with the one you would use' because we felt Courtney was just as invested as us in the selection of our house.\""
 ];
 
+var clicked = 0;
+function showThis(){
+	$(".search-box").css("display","initial");
+	$(".inner_box").css("display","initial");
+	if(clicked == 0){
+		clicked = 1;
+	} else {
+		clicked = 0 ;
+	}
+}
 
 function onLoad(){
 	$("#quote").text(listOfQuotes[quotNumber]);
 }
+
+$(document).mouseup(function(e)
+{
+    var container = $(".inner_box");
+    // if the target of the click isn't the container nor a descendant of the container
+    if (!container.is(e.target) && container.has(e.target).length === 0 && clicked == 1)
+    {
+        container.hide();
+				$(".search-box").hide();
+				clicked = 0;
+    }
+});
 
 function timedEvent(){
 

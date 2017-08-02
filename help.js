@@ -6,7 +6,12 @@ ProjectNames = {
     RAY_TRACE : 4,
     MINECRAFT : 5,
     INFO_VIS : 6,
-    WEB_DESIGN : 7
+    WEB_DESIGN : 7,
+    ANTI_ALIASING : 8,
+    IV_P1 : 9,
+    IV_P2 : 10,
+    HEROES_VIS : 11,
+    FOOD_ADVISOR : 12
 }
 
 function go(a) {
@@ -35,6 +40,21 @@ function go(a) {
       break;
     case ProjectNames.WEB_DESIGN:
       locat= "web_design";
+      break;
+    case ProjectNames.ANTI_ALIASING:
+      locat = "anti_aliasing"
+      break;
+    case ProjectNames.IV_P1:
+      locat = "../DH2321/Project1/index.html";
+      break;
+    case ProjectNames.IV_P2:
+      locat = "../DH2321/Project2/index.html";
+      break;
+    case ProjectNames.FOOD_ADVISOR:
+      locat = "https://foodadvisor10.github.io/FoodAdvisor/";
+      break;
+    case ProjectNames.HEROES_VIS:
+      locat = "../Heroes/index.html";
       break;
 		default:
 			break;
