@@ -11,7 +11,8 @@ ProjectNames = {
     IV_P1 : 9,
     IV_P2 : 10,
     HEROES_VIS : 11,
-    FOOD_ADVISOR : 12
+    FOOD_ADVISOR : 12,
+    VESTA_HAWAII ; 13
 }
 
 function go(a) {
@@ -55,6 +56,9 @@ function go(a) {
       break;
     case ProjectNames.HEROES_VIS:
       locat = "../Heroes/index.html";
+      break;
+    case ProjectNames.VESTA_HAWAII:
+      locat = "../Vesta/";
       break;
 		default:
 			break;

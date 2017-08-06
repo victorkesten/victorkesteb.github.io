@@ -51,7 +51,7 @@ html {
 	/*min-width: 1245px;*/
 
 	/*This is the original width.*/
-	min-width:1410px;
+	/*min-width:1410px;*/
 	/*max-width: 1520px;*/
 
 	/*width:1520px;*/
@@ -264,6 +264,8 @@ position: relative;
 z-index: 45;
 	/*width: 560px;*/
   width: 640px;
+  width: 90%;
+  /*height:80%;*/
 
 }
 
@@ -306,7 +308,9 @@ z-index: 45;
   margin-right: 20px;
   margin-top: -10px;
   text-align:justify;
-  font-size: 18px;
+  /*font-size: 18px;*/
+  /*font-size: 15px;*/
+  font-size: 100%;
 }
 #buy_section_text h1 {
 	font-size: 30px;
@@ -322,6 +326,7 @@ z-index: 45;
 
 #sell_t{
   text-align:justify;
+  font-size: 15px;
   margin-left: 20px;
   margin-right:25px;
 }
@@ -450,6 +455,10 @@ div.real_estate_request label{
 div.real_estate_request a{
 	color:white;
 }
+#center{
+  width:65%;
+  margin: 0 auto;
+}
 
 
 #mail_list{
@@ -512,14 +521,16 @@ box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
 
   /*min-width: 150px;*/
   /*max-width: 250px;*/
-  max-width:18%;
-  width: 100%;
+  /*max-width:18%;*/
+  /*width: 100%;*/
+  width: 250px;
   color: orange;
   text-align: left;
   line-height: 1.4em;
   /*background-color: #141414;*/
-  background-color: #fb6e21;
-  height:400px;
+  /*background-color: #fb6e21;*/
+  height:350px;
+  border-bottom: 10px solid orange;
 
 	-webkit-box-shadow: 11px 7px 45px -9px rgba(0,0,0,0.75);
 	-moz-box-shadow: 11px 7px 45px -9px rgba(0,0,0,0.75);
@@ -573,7 +584,7 @@ box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
   color: #0D094F;
 }
 .meet_the_team p {
-  margin: 0 0 10px;
+  margin: 0 0 5px;
   font-size: 0.8em;
   letter-spacing: 1px;
   opacity: 0.8;
@@ -585,9 +596,10 @@ box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
 }
 
 #team{
-	height: 500px;
+	height: 380px;
 		/*background-color: rgba(213,162,83,0.4);*/
-
+    /*width: 50%;*/
+    margin: auto;
 }
 
 .about_team_title{
@@ -613,6 +625,9 @@ box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
 
 }
 
+#spec_header{
+  margin-bottom: 20px;
+}
 #about_left{
 	float: left;
 	width:65%;
@@ -636,7 +651,7 @@ box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
 .contact_window{
   /*margin-left: 50px;*/
   margin: 0 auto;
-  width:40%;
+  width:45%;
   font-size: 20px;
   /*background-color: orange;*/
 }
@@ -690,4 +705,15 @@ background-color: rgba(213,162,83,0.5);
   height: auto;
   float: right;
   /*background-color: white;*/
+}
+
+#small_profile{
+  /*width:150px;*/
+  width: 12%;
+  /*height:45%;*/
+  height: 170px;
+  font-size: 10px;
+}
+#small_profile h2{
+  font-size: 9px;
 }
