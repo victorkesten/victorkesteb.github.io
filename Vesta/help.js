@@ -7,11 +7,11 @@ function tat(){
 
 
 var quotNumber = Math.floor((Math.random() * 5));
-var listOfQuotes = ["\"If you're looking for a home to purchase or need property management, look no further.\"",
+var listOfQuotes = ["\"If you're looking for a home to purchase or need property management, look no further.\"\n\n",
 	"\"I was very happy working with this company rather than any other. They were professional, easy to work with, and best yet, no pressure. We had a lot of options on the table, but they worked with us on our time and with what we could afford. I would recommend them often!\"",
 	"\"Hands down the best real estate transaction we ever had! Courtney is a top-notch realtor and we could not have been more pleased with the sale of our home...\"",
 	"\"They were organized, quick, and efficient... I could not believe how stress free this was. I only wish I could give more than 5 stars. Awesome job, guys!\"",
-	"\"Everyone at Vesta has been very helpful and patient!\"",
+	"\"Everyone at Vesta has been very helpful and patient!\"\n\n\n",
 	"\"Courtney is caring and patient. She actively listened to our needs and what we were looking for...\"",
 	"\"By the end, we were saying things like 'let’s go with the one you would use' because we felt Courtney was just as invested as us in the selection of our house.\""
 ];
@@ -27,9 +27,6 @@ function showThis(){
 	}
 }
 
-function onLoad(){
-	$("#quote").text(listOfQuotes[quotNumber]);
-}
 
 $(document).mouseup(function(e)
 {
