@@ -107,7 +107,7 @@ ul {
 
 #banner_top{
 	/*background-image: url('resources/raw/header.jpg');*/
-  background-image: url('resources/temp_new.png');
+  background-image: url('resources/header_new.jpg');
 
 	background-clip: content-box;
 	background-repeat: no-repeat;
@@ -225,7 +225,7 @@ div.tab a:focus, .active {
 	/*height: 200px;*/
     text-align: center;
     display: initial;
-    
+
 	font-style: italic;
 	-webkit-animation: fadeout 2s linear 1 normal forwards;
 }
