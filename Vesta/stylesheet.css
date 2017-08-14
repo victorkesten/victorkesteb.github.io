@@ -123,8 +123,29 @@ ul {
 	/*height: 250px;*/
 	/*height: 350px;*/
   height: 100%;
+}
 
 
+#banner_mid{
+	/*background-image: url('resources/raw/header.jpg');*/
+  background-image: url('resources/1.jpg');
+
+	background-clip: content-box;
+	background-repeat: no-repeat;
+	/*background-position: center bottom;*/
+  background-position: center;
+
+	/*Added bottom*/
+	background-size: 100%;
+
+	/*background-size: 80%;*/
+	/*position: relative;*/
+	/*width: 1000px;*/
+	background-color: #FFFFFF;
+	margin:auto;
+	/*height: 250px;*/
+	/*height: 350px;*/
+  height: 100%;
 
 
 }
