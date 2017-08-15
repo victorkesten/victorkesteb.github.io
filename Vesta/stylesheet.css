@@ -572,8 +572,10 @@ box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
 }
 
 .t_box{
-  height:370px;
+  /*height:370px;*/
+  /*height: 50%;*/
   width:100%;
+  /*width:*/
   background-color: white;
 }
 .profile_box {
@@ -593,11 +595,14 @@ box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
   z-index: 2;
   /*max-width: 220px;*/
   /*width:220px;*/
-  width:90%;
+  /*width:90%;*/
+  width:185px;
+
   /*width:200%;*/
   margin-left: 5%;
-  /*height:230px;*/
-  height: 90%;
+  height:185px;
+  /*height: 90%;*/
+
   /*margin: auto 0;*/
   opacity: 1;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
@@ -775,7 +780,9 @@ background-color: rgba(213,162,83,0.5);
   /*width:150px;*/
   width: 18%;
   /*height:45%;*/
-  height: 250px;
+  /*height: 250px;*/
+  background-color: white;
+  height: 85%;
   font-size: 10px;
 }
 #small_profile h2{
