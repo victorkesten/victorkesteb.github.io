@@ -349,6 +349,9 @@ z-index: 45;
 	width:100%;
 }
 
+.section{
+  width:100%;
+}
 #sell_t{
   text-align:justify;
   font-size: 15px;
@@ -599,7 +602,9 @@ box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
   width:185px;
 
   /*width:200%;*/
-  margin-left: 5%;
+  /*margin-left: 5%;*/
+  display: block;
+  margin: 0 auto;
   height:185px;
   /*height: 90%;*/
 
@@ -665,10 +670,23 @@ box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
 }
 
 #team{
-	height: 290px;
+	   height: 290px;
 		/*background-color: rgba(213,162,83,0.4);*/
     /*width: 50%;*/
-    margin: auto;
+    /*width: 600px;*/
+    width:100%;
+    margin: 0 auto;
+    /*width: 1000px;*/
+}
+
+
+#team_2{
+	   height: 290px;
+		/*background-color: rgba(213,162,83,0.4);*/
+    /*width: 50%;*/
+    width: 600px;
+    margin: 0 auto;
+    /*width: 1000px;*/
 }
 
 .about_team_title{
