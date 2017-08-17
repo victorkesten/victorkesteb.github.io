@@ -598,14 +598,15 @@ box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
   z-index: 2;
   /*max-width: 220px;*/
   /*width:220px;*/
-  /*width:90%;*/
-  width:185px;
+  width:80%;
+  /*width:185px;*/
 
   /*width:200%;*/
   /*margin-left: 5%;*/
   display: block;
   margin: 0 auto;
-  height:185px;
+  /*height:185px;*/
+  height:80%;
   /*height: 90%;*/
 
   /*margin: auto 0;*/

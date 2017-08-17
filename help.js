@@ -12,7 +12,7 @@ ProjectNames = {
     IV_P2 : 10,
     HEROES_VIS : 11,
     FOOD_ADVISOR : 12,
-    VESTA_HAWAII ; 13
+    VESTA_HAWAII : 13
 }
 
 function go(a) {
