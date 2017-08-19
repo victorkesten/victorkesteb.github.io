@@ -71,14 +71,11 @@ html, body {
 	/*margin-left:10%;
 	margin-right:10%;*/
 	display: block;
-	width: 80%;
+	/*width: 80%;*/
+	/*height: at;*/
+	width: 998px;
 	margin: 0 auto;
 	/*align-content: center;*/
-}
-
-#box_special{
-	margin: 0 auto;
-	width: 100%;
 }
 /*http://www.w3schools.com/cssref/pr_class_display.asp*/
 .project {
