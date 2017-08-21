@@ -739,7 +739,7 @@ box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
 
 #about_right_text{
   text-align:justify;
-
+  font-size :1.2vw;
   margin-top: 120px;
   margin-right:50px;
 
