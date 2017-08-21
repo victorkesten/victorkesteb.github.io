@@ -631,16 +631,19 @@ box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
 
 .meet_the_team h2 {
   margin: 0 0 5px;
+  margin-top: 8px;
   font-weight: 300;
 }
 .meet_the_team h2 span {
   display: block;
-  font-size: 0.5em;
+  /*font-size: 0.5em;*/
+  font-size: 70%;
   color: #0D094F;
 }
 .meet_the_team p {
   margin: 0 0 5px;
-  font-size: 0.8em;
+  /*font-size: 0.8em;*/
+  font-size: 100%;
   letter-spacing: 1px;
   opacity: 0.8;
 }
