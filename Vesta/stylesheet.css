@@ -335,7 +335,8 @@ z-index: 45;
   text-align:justify;
   /*font-size: 18px;*/
   /*font-size: 15px;*/
-  font-size: 100%;
+  /*font-size: 100%;*/
+  font-size: 1.2vw;
 }
 #buy_section_text h1 {
 	font-size: 30px;
@@ -354,7 +355,8 @@ z-index: 45;
 }
 #sell_t{
   text-align:justify;
-  font-size: 15px;
+  /*font-size: 15px;*/
+  font-size: 1.2vw;
   margin-left: 20px;
   margin-right:25px;
 }
@@ -373,7 +375,8 @@ z-index: 45;
   margin-top: 150px;
   /*!CHANGE*/
 	/*color: #0D094F;*/
-    font-size: 40;
+    /*font-size: 40;*/
+    font-size: 1.2vw;
     height: 250px;
     border-radius: 10px;
   padding-top: 20px;
