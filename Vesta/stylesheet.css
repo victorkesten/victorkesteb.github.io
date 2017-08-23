@@ -788,7 +788,7 @@ background-color: rgba(213,162,83,0.5);
   text-align: center;
 }
 
-#left{
+.left{
   width:50%;
   /*height: 100%;*/
   height: auto;
@@ -796,7 +796,7 @@ background-color: rgba(213,162,83,0.5);
   /*background-color: red;*/
 }
 
-#right{
+.right{
   width: 50%;
   /*height: 100%;*/
   height: auto;
@@ -804,7 +804,7 @@ background-color: rgba(213,162,83,0.5);
   /*background-color: white;*/
 }
 
-#small_profile{
+.small_profile{
   /*width:150px;*/
   width: 18%;
   /*height:45%;*/
@@ -813,6 +813,6 @@ background-color: rgba(213,162,83,0.5);
   height: 85%;
   font-size: 10px;
 }
-#small_profile h2{
+.small_profile h2{
   font-size: 15px;
 }
