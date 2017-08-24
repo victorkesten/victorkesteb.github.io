@@ -92,6 +92,10 @@ http://blog.froont.com/positioning-in-web-design/*/
   padding: 20px;
 }
 
+#navbarcheck{
+  height: 36px;
+}
+
 li {
   margin-bottom: 2px;
   margin-left: 30px;
@@ -182,7 +186,8 @@ box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
 /* Style the links inside the tab */
 div.tab a {
     /*width: 16.65%;*/
-    width:15.8%;
+    /*width:15.8%;*/
+    width: 16.415%;
     display: inline-block;
 color: white;
 
@@ -200,7 +205,7 @@ color: white;
 }
 
 div.tab #special{
-  width:2%;
+  width:1.5%;
   padding: 0px 0px;
 }
 
