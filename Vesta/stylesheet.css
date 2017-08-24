@@ -61,7 +61,8 @@ html {
 	/*max-width: 1270px;*/
   /*text-justify:inter-word;*/
 	margin: 0 auto;
-
+  min-width:1276px;
+  min-height:412px;
 	float: none;
 	/*Oldgood*/
 	/*font-family: Verdana,sans-serif;*/
