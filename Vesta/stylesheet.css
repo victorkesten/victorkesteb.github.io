@@ -291,6 +291,7 @@ div.tab a:focus, .active {
 	text-align: center;
 	width: 50%;
 	margin: 0 auto;
+  display: block;
   /*!CHANGE*/
 	/*color: #434D92;*/
 }
