@@ -677,7 +677,7 @@ box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
   display:none;
 }
 
-#team{
+.team{
 	   /*height: 290px;*/
      height:48%;
 		/*background-color: rgba(213,162,83,0.4);*/
