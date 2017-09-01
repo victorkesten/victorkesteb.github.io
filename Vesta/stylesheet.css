@@ -98,12 +98,28 @@ http://blog.froont.com/positioning-in-web-design/*/
 }
 
 li {
+  /*margin-bottom: 5px;*/
   margin-bottom: 2px;
+  /*padding-bottom: 5px;*/
   margin-left: 30px;
+  /*margin-right: 36px;*/
+  padding-left: 20px;
+  vertical-align: top;
+  list-style:none;
+  background-image: url('Temp/sun.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 10px;
+  margin: 0;
 }
 ul {
   padding: 20px;
-  list-style-image: url('Temp/sun.png');
+  /*font-size: 110%;*/
+  /*list-style-image: url('Temp/sun.png');*/
+
+  /*background-size: contain;*/
+  /*list-style-position: inside;*/
+  /*vertical-align: middle;*/
   /*list-sty*/
 
 }
@@ -133,7 +149,7 @@ ul {
 
 #banner_mid{
 	/*background-image: url('resources/raw/header.jpg');*/
-  background-image: url('resources/1.jpg');
+  background-image: url('resources/14.jpg');
 }
 
 #banner_bot{
@@ -307,9 +323,11 @@ z-index: 45;
 }
 
 .fotorama__caption {
-  margin-bottom: 395px;
+  /*margin-bottom: 395px;
+
   margin-left: 1px;
-  opacity: 0.7;
+  opacity: 0.7;*/
+  margin-bottom: 396px;
 }
 
 .fotorama__wrap { margin: auto; }
@@ -654,6 +672,7 @@ box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
   display: block;
   /*font-size: 0.5em;*/
   font-size: 70%;
+  font-size: 0.8vw;
   color: #0D094F;
 }
 .meet_the_team p {
@@ -736,17 +755,6 @@ box-shadow: -11px 7px 45px -9px rgba(0,0,0,0.75);
 
 #spec_header{
   margin-bottom: 20px;
-}
-#about_left{
-	float: left;
-	width:65%;
-}
-
-#about_right {
-	float: right;
-	width:35%;
-	margin-right: 10px;
-	height: 200px;
 }
 
 #about_right_text{
