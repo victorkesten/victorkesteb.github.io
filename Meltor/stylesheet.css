@@ -54,6 +54,11 @@ li.dropdown {
   height: 24.66%;
 }
 
+.thumb1{
+  width: 32.1%;
+  height: 32%;
+}
+
 .thumb_t {
   width: 16.32%;
   height: 16%;
@@ -75,4 +80,30 @@ li.dropdown {
 .navbar{
   font-family: Impact, Charcoal, sans-serif;
 
+}
+
+.photo_section{
+  /*-webkit-animation: fadeout 2s linear 1 normal forwards;*/
+
+}
+
+
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-webkit-keyframes fadeout{
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@keyframes fadeout {
+    from {opacity: 1;}
+    to {opacity: 0;}
 }

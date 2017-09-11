@@ -12,12 +12,20 @@
 <link rel="stylesheet" href="null.css" />
 
 <link rel="stylesheet" href="stylesheet.css" />
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-98785382-1', 'auto');
+  ga('send', 'pageview');
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
-
+<script src="help.js"></script>
 <div class="navbar">
   <ul>
-    <li><a href="#ALL">All</a></li>
+    <li><a href="#ALL" onclick="show_all()">All</a></li>
     <li class="dropdown">
       <a href="javascript:void(0)" class="dropbtn">2015</a>
       <div class="dropdown-content">
@@ -48,13 +56,15 @@
     <li class="dropdown">
       <a href="javascript:void(0)" class="dropbtn">Moments/Memories</a>
       <div class="dropdown-content">
-        <a href="#">First Trip to USA</a>
-        <a href="#">Christmas 2016/7</a>
-        <a href="#">Hawaii Trip #1 2017</a>
+        <a href="#" onclick="show(4)">First Trip to USA</a>
+        <a href="#" onclick="show(3)">Christmas 2016-2017</a>
+        <a href="#" onclick="show(1)">Summer 2017</a>
+        <a href="#" onclick="show(2)">Photoshoot</a>
+        <a href="#" onclick="show(0)">Hawaii Trip #1 2017</a>
       </div>
     </li>
     <li style="float:right;">
-      <a href="https://youtu.be/dpHI04WQX5Y">&hearts;</a>
+      <a data-fancybox href="https://youtu.be/dpHI04WQX5Y">&hearts;</a>
     </li>
   </ul>
 </div>
@@ -66,13 +76,14 @@
 <a data-fancybox="gallery" href="resources/A1.jpg"><img class="thumb" src="resources/thumbnails/A1.jpg"></a>
 <a data-fancybox="gallery" href="resources/A1.jpg"><img class="thumb" src="resources/thumbnails/A1.jpg"></a> -->
 </div>
-<div class="section_break">
-  <!-- <h1>March 2017 Hawaii Trip &hearts;</h1> -->
-  <h1>MARCH 2017 HAWAII TRIP &hearts;</h1>
 
-  <hr>
-</div>
 <div class="photo_section" id="hawaii2017">
+  <div class="section_break">
+    <!-- <h1>March 2017 Hawaii Trip &hearts;</h1> -->
+    <h1>MARCH 2017 HAWAII TRIP &hearts;</h1>
+
+    <hr>
+  </div>
   <a data-fancybox="gallery" href="resources/2017/Hawaii_Trip_1/DSC_0795.JPG"><img class="thumb_t" src="resources/2017/Hawaii_Trip_1/DSC_0795t.jpg"></a>
   <a data-fancybox="gallery" href="resources/2017/Hawaii_Trip_1/DSC_0798.JPG"><img class="thumb_t" src="resources/2017/Hawaii_Trip_1/DSC_0798t.jpg"></a>
   <a data-fancybox="gallery" href="resources/2017/Hawaii_Trip_1/DSC_0799.JPG"><img class="thumb_t" src="resources/2017/Hawaii_Trip_1/DSC_0799t.jpg"></a>
@@ -158,13 +169,14 @@
   <a data-fancybox="gallery" href="resources/2017/Hawaii_Trip_1/DSC_1073.JPG"><img class="thumb" src="resources/2017/Hawaii_Trip_1/DSC_1073t.jpg"></a>
 
   <a data-fancybox="gallery" href="resources/2017/Hawaii_Trip_1/DSC_1075.JPG"><img class="thumb" src="resources/2017/Hawaii_Trip_1/DSC_1075t.jpg"></a>
-  <a data-fancybox="gallery" href="resources/2017/Hawaii_Trip_1/DSC_1076.JPG"><img class="thumb" src="resources/2017/Hawaii_Trip_1/DSC_1076t.jpg"></a>
+  <a data-fancybox="gallery" href="resources/2017/Hawaii_Trip_1/DSC_1076.JPG"><img class="thumb" src="resources/2017/Hawaii_Trip_1/DSC_1076.JPG"></a>
   <a data-fancybox="gallery" href="resources/2017/Hawaii_Trip_1/DSC_1079.JPG"><img class="thumb" src="resources/2017/Hawaii_Trip_1/DSC_1079t.jpg"></a>
   <a data-fancybox="gallery" href="resources/2017/Hawaii_Trip_1/DSC_1082.JPG"><img class="thumb" src="resources/2017/Hawaii_Trip_1/DSC_1082t.jpg"></a>
 
   <a data-fancybox="gallery" href="resources/2017/Hawaii_Trip_1/DSC_1069.JPG"><img class="thumb" src="resources/2017/Hawaii_Trip_1/DSC_1069t.jpg"></a>
   <a data-fancybox="gallery" href="resources/2017/Hawaii_Trip_1/DSC_1081.JPG"><img class="thumb_t" src="resources/2017/Hawaii_Trip_1/DSC_1081t.jpg"></a>
   <a data-fancybox="gallery" href="resources/2017/Hawaii_Trip_1/DSC_1113.JPG"><img class="thumb_t" src="resources/2017/Hawaii_Trip_1/DSC_1113t.jpg"></a>
+  <a data-fancybox="gallery" href="resources/2017/Hawaii_Trip_1/DSC_1105.JPG"><img class="thumb_t" src="resources/2017/Hawaii_Trip_1/DSC_1105.JPG"></a>
   <a data-fancybox="gallery" href="resources/2017/Hawaii_Trip_1/DSC_1114.JPG"><img class="thumb" src="resources/2017/Hawaii_Trip_1/DSC_1114t.jpg"></a>
 
   <a data-fancybox="gallery" href="resources/2017/Hawaii_Trip_1/DSC_1116.JPG"><img class="thumb" src="resources/2017/Hawaii_Trip_1/DSC_1116t.jpg"></a>
@@ -241,11 +253,80 @@
 
 
 </div>
-<div class="section_break">
-  <h1>SUMMER 2016</h1>
-  <hr>
+
+<div class="photo_section" id="photoshoot">
+  <div class="section_break">
+    <h1>PHOTOSHOOT</h1>
+    <hr>
+  </div>
+  <a data-fancybox="gallery" href="resources/2017/Photoshoot/IMG-20170406-WA0000.jpg"><img class="thumb_t" src="resources/2017/Photoshoot/IMG-20170406-WA0000.jpg"></a>
+  <a data-fancybox="gallery" href="resources/2017/Photoshoot/IMG-20170406-WA0002.jpg"><img class="thumb_t" src="resources/2017/Photoshoot/IMG-20170406-WA0002.jpg"></a>
+  <a data-fancybox="gallery" href="resources/2017/Photoshoot/IMG-20170406-WA0005.jpg"><img class="thumb_t" src="resources/2017/Photoshoot/IMG-20170406-WA0005.jpg"></a>
+  <a data-fancybox="gallery" href="resources/2017/Photoshoot/IMG-20170406-WA0001.jpg"><img class="thumb" style="width:36.5%;" src="resources/2017/Photoshoot/IMG-20170406-WA0001.jpg"></a>
+
+  <a data-fancybox="gallery" href="resources/2017/Photoshoot/IMG-20170406-WA0003.jpg"><img class="thumb1" src="resources/2017/Photoshoot/IMG-20170406-WA0003.jpg"></a>
+  <a data-fancybox="gallery" href="resources/2017/Photoshoot/IMG-20170406-WA0004.jpg"><img class="thumb1" src="resources/2017/Photoshoot/IMG-20170406-WA0004.jpg"></a>
+  <a data-fancybox="gallery" href="resources/2017/Photoshoot/IMG-20170406-WA0006.jpg"><img class="thumb1" src="resources/2017/Photoshoot/IMG-20170406-WA0006.jpg"></a>
+
 </div>
+
+<div class="photo_section" id="winter2016">
+  <div class="section_break">
+    <h1>WINTER 2016-2017</h1>
+    <hr>
+  </div>
+  <a data-fancybox="gallery" href="resources/2016/Winter/DSC_0171.JPG"><img class="thumb_t" src="resources/2016/Winter/DSC_0171t.jpg"></a>
+  <a data-fancybox="gallery" href="resources/2016/Winter/DSC_0172.JPG"><img class="thumb_t" src="resources/2016/Winter/DSC_0172t.jpg"></a>
+  <a data-fancybox="gallery" href="resources/2016/Winter/DSC_0176.JPG"><img class="thumb1" src="resources/2016/Winter/DSC_0176t.jpg"></a>
+  <a data-fancybox="gallery" href="resources/2016/Winter/DSC_0182.JPG"><img class="thumb_t" src="resources/2016/Winter/DSC_0182t.jpg"></a>
+  <a data-fancybox="gallery" href="resources/2016/Winter/DSC_0225.JPG"><img class="thumb_t" src="resources/2016/Winter/DSC_0225t.jpg"></a>
+
+  <a data-fancybox="gallery" href="resources/2016/Winter/DSC_0233.JPG"><img class="thumb_t" src="resources/2016/Winter/DSC_0233t.jpg"></a>
+  <a data-fancybox="gallery" href="resources/2016/Winter/DSC_0239.JPG"><img class="thumb_t" src="resources/2016/Winter/DSC_0239t.jpg"></a>
+  <a data-fancybox="gallery" href="resources/2016/Winter/DSC_0236.JPG"><img class="thumb_t" src="resources/2016/Winter/DSC_0236t.jpg"></a>
+  <a data-fancybox="gallery" href="resources/2016/Winter/DSC_0237.JPG"><img class="thumb_t" src="resources/2016/Winter/DSC_0237t.jpg"></a>
+  <a data-fancybox="gallery" href="resources/2016/Winter/DSC_0246.JPG"><img class="thumb_t" src="resources/2016/Winter/DSC_0246t.jpg"></a>
+  <a data-fancybox="gallery" href="resources/2016/Winter/DSC_0248.JPG"><img class="thumb_t" src="resources/2016/Winter/DSC_0248t.jpg"></a>
+
+  <a data-fancybox="gallery" href="resources/2016/Winter/DSC_0261.JPG"><img class="thumb_t" src="resources/2016/Winter/DSC_0261t.jpg"></a>
+  <a data-fancybox="gallery" href="resources/2016/Winter/DSC_0263.JPG"><img class="thumb_t" src="resources/2016/Winter/DSC_0263t.jpg"></a>
+  <a data-fancybox="gallery" href="resources/2016/Winter/DSC_0269.JPG"><img class="thumb_t" src="resources/2016/Winter/DSC_0269t.jpg"></a>
+  <a data-fancybox="gallery" href="resources/2016/Winter/DSC_0272.JPG"><img class="thumb_t" src="resources/2016/Winter/DSC_0272t.jpg"></a>
+  <a data-fancybox="gallery" href="resources/2016/Winter/DSC_0282.JPG"><img class="thumb_t" src="resources/2016/Winter/DSC_0282t.jpg"></a>
+  <a data-fancybox="gallery" href="resources/2016/Winter/DSC_0295.JPG"><img class="thumb_t" src="resources/2016/Winter/DSC_0295t.jpg"></a>
+
+  <a data-fancybox="gallery" href="resources/2016/Winter/DSC_0297.JPG"><img class="thumb" src="resources/2016/Winter/DSC_0297t.jpg"></a>
+  <a data-fancybox="gallery" href="resources/2016/Winter/DSC_0305.JPG"><img class="thumb" src="resources/2016/Winter/DSC_0305t.jpg"></a>
+  <a data-fancybox="gallery" href="resources/2016/Winter/DSC_0306.JPG"><img class="thumb" src="resources/2016/Winter/DSC_0306t.jpg"></a>
+  <a data-fancybox="gallery" href="resources/2016/Winter/DSC_0309.JPG"><img class="thumb" src="resources/2016/Winter/DSC_0309t.jpg"></a>
+
+  <a data-fancybox="gallery" href="resources/2016/Winter/DSC_0304.JPG"><img class="thumb_t" src="resources/2016/Winter/DSC_0304t.jpg"></a>
+  <a data-fancybox="gallery" href="resources/2016/Winter/DSC_0308.JPG"><img class="thumb_t" src="resources/2016/Winter/DSC_0308t.jpg"></a>
+  <a data-fancybox="gallery" href="resources/2016/Winter/DSC_0313.JPG"><img class="thumb1" src="resources/2016/Winter/DSC_0313t.jpg"></a>
+
+  <a data-fancybox="gallery" href="resources/2016/Winter/DSC_0314.JPG"><img class="thumb_t" src="resources/2016/Winter/DSC_0314t.jpg"></a>
+  <a data-fancybox="gallery" href="resources/2016/Winter/DSC_0316.JPG"><img class="thumb_t" src="resources/2016/Winter/DSC_0316t.jpg"></a>
+  <a data-fancybox="gallery" href="resources/2016/Winter/DSC_0318.JPG"><img class="thumb_t" src="resources/2016/Winter/DSC_0318t.jpg"></a>
+  <a data-fancybox="gallery" href="resources/2016/Winter/DSC_0334.JPG"><img class="thumb_t" src="resources/2016/Winter/DSC_0334t.jpg"></a>
+  <a data-fancybox="gallery" href="resources/2016/Winter/DSC_0345.JPG"><img class="thumb_t" src="resources/2016/Winter/DSC_0345t.jpg"></a>
+  <a data-fancybox="gallery" href="resources/2016/Winter/DSC_0346.JPG"><img class="thumb_t" src="resources/2016/Winter/DSC_0346t.jpg"></a>
+  <a data-fancybox="gallery" href="resources/2016/Winter/DSC_0347.JPG"><img class="thumb_t" src="resources/2016/Winter/DSC_0347t.jpg"></a>
+  <a data-fancybox="gallery" href="resources/2016/Winter/DSC_0430.JPG"><img class="thumb_t" src="resources/2016/Winter/DSC_0430t.jpg"></a>
+
+
+  <a data-fancybox="gallery" href="resources/2016/Winter/DSC_0350.JPG"><img class="thumb" src="resources/2016/Winter/DSC_0350t.jpg"></a>
+  <a data-fancybox="gallery" href="resources/2016/Winter/DSC_0351.JPG"><img class="thumb" src="resources/2016/Winter/DSC_0351t.jpg"></a>
+  <a data-fancybox="gallery" href="resources/2016/Winter/DSC_0354.JPG"><img class="thumb" src="resources/2016/Winter/DSC_0354t.jpg"></a>
+  <a data-fancybox="gallery" href="resources/2016/Winter/DSC_0366.JPG"><img class="thumb" src="resources/2016/Winter/DSC_0366t.jpg"></a>
+
+
+</div>
+
 <div class="photo_section" id="summer2016">
+  <div class="section_break">
+    <h1>SUMMER 2016</h1>
+    <hr>
+  </div>
   <a data-fancybox="gallery" href="resources/2016/Summer/DSC_0048.JPG"><img class="thumb_t" src="resources/2016/Summer/DSC_0048t.jpg"></a>
   <a data-fancybox="gallery" href="resources/2016/Summer/DSC_0051.JPG"><img class="thumb_t" src="resources/2016/Summer/DSC_0051t.jpg"></a>
   <a data-fancybox="gallery" href="resources/2016/Summer/DSC_0053.JPG"><img class="thumb_t" src="resources/2016/Summer/DSC_0053t.jpg"></a>
