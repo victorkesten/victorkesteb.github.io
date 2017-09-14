@@ -1,0 +1,31 @@
+<div class="section_break">
+  <h1>SUMMER 2016</h1>
+  <hr>
+</div>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0048.JPG"><img class="thumb_t" src="resources/2016/Summer/DSC_0048t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0051.JPG"><img class="thumb_t" src="resources/2016/Summer/DSC_0051t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0053.JPG"><img class="thumb_t" src="resources/2016/Summer/DSC_0053t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0054.JPG"><img class="thumb_t" src="resources/2016/Summer/DSC_0054t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0060.JPG"><img class="thumb_t" src="resources/2016/Summer/DSC_0060t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0061.JPG"><img class="thumb_t" src="resources/2016/Summer/DSC_0061t.jpg"></a>
+
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0066.JPG"><img class="thumb_t" src="resources/2016/Summer/DSC_0066t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0073.JPG"><img class="thumb_t" src="resources/2016/Summer/DSC_0073t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0079.JPG"><img class="thumb_t" src="resources/2016/Summer/DSC_0079t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0084.JPG"><img class="thumb_t" src="resources/2016/Summer/DSC_0084t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0135.JPG"><img class="thumb_t" src="resources/2016/Summer/DSC_0135t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0135.JPG"><img class="thumb_t" src="resources/2016/Summer/DSC_0135t.jpg"></a>
+
+<!-- <div class="half" style="width:100%; height:400px;"> -->
+  <!-- <div class="left" style="float: left width:50%;"> -->
+    <a data-fancybox="gallery" href="resources/2016/Summer/DSC_0083.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0083t.jpg"></a>
+    <a data-fancybox="gallery" href="resources/2016/Summer/DSC_0095.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0095t.jpg"></a>
+  <!-- </div> -->
+<!-- <div class="right" style="float: right; width:50%;"> -->
+    <a data-fancybox="gallery" href="resources/2016/Summer/DSC_0098.JPG"><img class="thumb_t" src="resources/2016/Summer/DSC_0098t.jpg"></a>
+    <a data-fancybox="gallery" href="resources/2016/Summer/DSC_0099.JPG"><img class="thumb_t" src="resources/2016/Summer/DSC_0099t.jpg"></a>
+  <!-- </div> -->
+<!-- </div> -->
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0104.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0104t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0142.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0142t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0147.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0147t.jpg"></a>

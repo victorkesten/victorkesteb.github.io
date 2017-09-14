@@ -1,0 +1,12 @@
+<div class="section_break">
+  <h1>PHOTOSHOOT</h1>
+  <hr>
+</div>
+<a data-fancybox="gallery" href="resources/2017/Photoshoot/IMG-20170406-WA0000.jpg"><img class="thumb_t" src="resources/2017/Photoshoot/IMG-20170406-WA0000.jpg"></a>
+<a data-fancybox="gallery" href="resources/2017/Photoshoot/IMG-20170406-WA0002.jpg"><img class="thumb_t" src="resources/2017/Photoshoot/IMG-20170406-WA0002.jpg"></a>
+<a data-fancybox="gallery" href="resources/2017/Photoshoot/IMG-20170406-WA0005.jpg"><img class="thumb_t" src="resources/2017/Photoshoot/IMG-20170406-WA0005.jpg"></a>
+<a data-fancybox="gallery" href="resources/2017/Photoshoot/IMG-20170406-WA0001.jpg"><img class="thumb" style="width:36.5%;" src="resources/2017/Photoshoot/IMG-20170406-WA0001.jpg"></a>
+
+<a data-fancybox="gallery" href="resources/2017/Photoshoot/IMG-20170406-WA0003.jpg"><img class="thumb1" src="resources/2017/Photoshoot/IMG-20170406-WA0003.jpg"></a>
+<a data-fancybox="gallery" href="resources/2017/Photoshoot/IMG-20170406-WA0004.jpg"><img class="thumb1" src="resources/2017/Photoshoot/IMG-20170406-WA0004.jpg"></a>
+<a data-fancybox="gallery" href="resources/2017/Photoshoot/IMG-20170406-WA0006.jpg"><img class="thumb1" src="resources/2017/Photoshoot/IMG-20170406-WA0006.jpg"></a>

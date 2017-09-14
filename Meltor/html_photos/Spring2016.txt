@@ -1,0 +1,37 @@
+<div class="section_break">
+<h1>SPRING 2016</h1>
+<hr>
+</div>
+<a data-fancybox="gallery" href="resources/2016/Spring/DSC_0694.JPG"><img class="thumb_t" src="resources/2016/Spring/DSC_0694t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Spring/DSC_0695.JPG"><img class="thumb" src="resources/2016/Spring/DSC_0695t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Spring/DSC_0697.JPG"><img class="thumb" src="resources/2016/Spring/DSC_0697t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Spring/DSC_0702.JPG"><img class="thumb" src="resources/2016/Spring/DSC_0702t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Spring/DSC_0700.JPG"><img class="thumb_t" src="resources/2016/Spring/DSC_0700t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Spring/DSC_0711.JPG"><img class="thumb_t" src="resources/2016/Spring/DSC_0711t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Spring/DSC_0713.JPG"><img class="thumb_t" src="resources/2016/Spring/DSC_0713t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Spring/DSC_0716.JPG"><img class="thumb_t" src="resources/2016/Spring/DSC_0716t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Spring/DSC_0724.JPG"><img class="thumb_t" src="resources/2016/Spring/DSC_0724t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Spring/12.jpg"><img class="thumb_t" src="resources/2016/Spring/12.jpeg"></a>
+<a data-fancybox="gallery" href="resources/2016/Spring/DSC_0718.JPG"><img class="thumb" src="resources/2016/Spring/DSC_0718t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Spring/1.jpg"><img class="thumb" src="resources/2016/Spring/1.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Spring/DSC_0734.JPG"><img class="thumb" src="resources/2016/Spring/DSC_0734t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Spring/DSC_0736.JPG"><img class="thumb" src="resources/2016/Spring/DSC_0736t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Spring/DSC_0737.JPG"><img class="thumb_t" src="resources/2016/Spring/DSC_0737t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Spring/DSC_0738.JPG"><img class="thumb_t" src="resources/2016/Spring/DSC_0738t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Spring/DSC_0747.JPG"><img class="thumb_t" src="resources/2016/Spring/DSC_0747t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Spring/DSC_0751.JPG"><img class="thumb_t" src="resources/2016/Spring/DSC_0751t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Spring/DSC_0750.JPG"><img class="thumb" src="resources/2016/Spring/DSC_0750t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Spring/DSC_0752.JPG"><img class="thumb_t" src="resources/2016/Spring/DSC_0752t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Spring/DSC_0753.JPG"><img class="thumb_t" src="resources/2016/Spring/DSC_0753t.jpg"></a>
+
+<a data-fancybox="gallery" href="resources/2016/Spring/2.jpg"><img class="thumb_t" src="resources/2016/Spring/2.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Spring/3.jpg"><img class="thumb_t" src="resources/2016/Spring/3.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Spring/4.jpg"><img class="thumb_t" src="resources/2016/Spring/4.jpeg"></a>
+<a data-fancybox="gallery" href="resources/2016/Spring/5.jpg"><img class="thumb_t" src="resources/2016/Spring/5.jpeg"></a>
+<a data-fancybox="gallery" href="resources/2016/Spring/6.jpg"><img class="thumb_t" src="resources/2016/Spring/6.jpeg"></a>
+<a data-fancybox="gallery" href="resources/2016/Spring/7.jpg"><img class="thumb_t" src="resources/2016/Spring/7.jpeg"></a>
+<a data-fancybox="gallery" href="resources/2016/Spring/8.jpg"><img class="thumb_t" src="resources/2016/Spring/8.jpeg"></a>
+<a data-fancybox="gallery" href="resources/2016/Spring/9.jpg"><img class="thumb_t" src="resources/2016/Spring/9.jpeg"></a>
+<a data-fancybox="gallery" href="resources/2016/Spring/10.jpg"><img class="thumb_t" src="resources/2016/Spring/10.jpeg"></a>
+<a data-fancybox="gallery" href="resources/2016/Spring/11.jpg"><img class="thumb_t" src="resources/2016/Spring/11.jpeg"></a>
+<a data-fancybox="gallery" href="resources/2016/Spring/13.jpeg"><img class="thumb_t" src="resources/2016/Spring/13.jpeg"></a>
