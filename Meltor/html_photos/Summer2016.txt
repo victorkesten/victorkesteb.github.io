@@ -19,13 +19,121 @@
 <!-- <div class="half" style="width:100%; height:400px;"> -->
   <!-- <div class="left" style="float: left width:50%;"> -->
     <a data-fancybox="gallery" href="resources/2016/Summer/DSC_0083.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0083t.jpg"></a>
-    <a data-fancybox="gallery" href="resources/2016/Summer/DSC_0095.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0095t.jpg"></a>
   <!-- </div> -->
 <!-- <div class="right" style="float: right; width:50%;"> -->
+    <a data-fancybox="gallery" href="resources/2016/Summer/DSC_0081.JPG"><img class="thumb_t" src="resources/2016/Summer/DSC_0081t.jpg"></a>
     <a data-fancybox="gallery" href="resources/2016/Summer/DSC_0098.JPG"><img class="thumb_t" src="resources/2016/Summer/DSC_0098t.jpg"></a>
     <a data-fancybox="gallery" href="resources/2016/Summer/DSC_0099.JPG"><img class="thumb_t" src="resources/2016/Summer/DSC_0099t.jpg"></a>
+    <a data-fancybox="gallery" href="resources/2016/Summer/DSC_0095.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0095t.jpg"></a>
+
   <!-- </div> -->
 <!-- </div> -->
 <a data-fancybox="gallery" href="resources/2016/Summer/DSC_0104.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0104t.jpg"></a>
 <a data-fancybox="gallery" href="resources/2016/Summer/DSC_0142.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0142t.jpg"></a>
 <a data-fancybox="gallery" href="resources/2016/Summer/DSC_0147.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0147t.jpg"></a>
+
+
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0142.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0142t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0087.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0087t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0110.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0110t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0125.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0125t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0145.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0145t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0148.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0148t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0151.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0151t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0159.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0159t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0164.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0164t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0166.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0166t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0169.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0169t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0171.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0171t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0176.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0176t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0186.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0186t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0211.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0211t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0180.JPG"><img class="thumb_t" src="resources/2016/Summer/DSC_0180t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0249.JPG"><img class="thumb_t" src="resources/2016/Summer/DSC_0249t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0228.JPG"><img class="thumb_t" src="resources/2016/Summer/DSC_0228t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0218.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0218t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0223.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0223t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0230.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0230t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0236.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0236t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0277.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0277t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0281.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0281t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0276.JPG"><img class="thumb_t" src="resources/2016/Summer/DSC_0276t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0287.JPG"><img class="thumb_t" src="resources/2016/Summer/DSC_0287t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0285.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0285t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0288.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0288t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0291.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0291t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0294.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0294t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0295.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0295t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0298.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0298t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0306.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0306t.jpg"></a>
+<!--<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0310.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0310t.jpg"></a>-->
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0311.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0311t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0314.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0314t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0319.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0319t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0317.JPG"><img class="thumb_t" src="resources/2016/Summer/DSC_0317t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0333.JPG"><img class="thumb_t" src="resources/2016/Summer/DSC_0333t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0335.JPG"><img class="thumb_t" src="resources/2016/Summer/DSC_0335t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0341.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0341t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0342.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0342t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0349.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0349t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0354.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0354t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0357.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0357t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0360.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0360t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0362.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0362t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0366.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0366t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0374.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0374t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0389.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0389t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0388.JPG"><img class="thumb_t" src="resources/2016/Summer/DSC_0388t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0399.JPG"><img class="thumb_t" src="resources/2016/Summer/DSC_0399t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0444.JPG"><img class="thumb_t" src="resources/2016/Summer/DSC_0444t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0390.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0390t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0391.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0391t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0392.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0392t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0396.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0396t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0405.JPG"><img class="thumb_t" src="resources/2016/Summer/DSC_0405t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0408.JPG"><img class="thumb_t" src="resources/2016/Summer/DSC_0408t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0411.JPG"><img class="thumb_t" src="resources/2016/Summer/DSC_0411t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0417.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0417t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0420.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0420t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0422.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0422t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0438.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0438t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0440.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0440t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0445.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0445t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0449.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0449t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0451.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0451t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0488.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0488t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0489.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0489t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0491.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0491t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0494.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0494t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0495.JPG"><img class="thumb_t" src="resources/2016/Summer/DSC_0495t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0496.JPG"><img class="thumb_t" src="resources/2016/Summer/DSC_0496t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0508.JPG"><img class="thumb_t" src="resources/2016/Summer/DSC_0508t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0497.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0497t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0499.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0499t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0501.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0501t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0504.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0504t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0506.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0506t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0540.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0540t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0571.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0571t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0572.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0572t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0574.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0574t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0580.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0580t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0590.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0590t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0594.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0594t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0596.JPG"><img class="thumb_t" src="resources/2016/Summer/DSC_0596t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0598.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0598t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0603.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0603t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0607.JPG"><img class="thumb_t" src="resources/2016/Summer/DSC_0607t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0608.JPG"><img class="thumb_t" src="resources/2016/Summer/DSC_0608t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0616.JPG"><img class="thumb_t" src="resources/2016/Summer/DSC_0616t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0617.JPG"><img class="thumb_t" src="resources/2016/Summer/DSC_0617t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0623.JPG"><img class="thumb_t" src="resources/2016/Summer/DSC_0623t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0642.JPG"><img class="thumb_t" src="resources/2016/Summer/DSC_0642t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0647.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0647t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0649.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0649t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0653.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0653t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0654.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0654t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0657.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0657t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0658.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0658t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0672.JPG"><img class="thumb" src="resources/2016/Summer/DSC_0672t.jpg"></a>
+<a data-fancybox="gallery" href="resources/2016/Summer/DSC_0625.JPG"><img class="thumb_t" src="resources/2016/Summer/DSC_0625t.jpg"></a>
