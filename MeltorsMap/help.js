@@ -159,6 +159,7 @@ function click_us(){
   //  console.log("H");
    // Draw a legend for this map
    map.legend();
+   map.labels();
 
 
    map.svg.selectAll('.datamaps-subunit').on('click', function(d) {
