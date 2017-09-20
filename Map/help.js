@@ -2,7 +2,7 @@
 var to_visit = [];
 var pos = 0;
 var rendered = true;
-
+var world_visible = true;
 function load_map(){
   var basic_choropleth = new Datamap({
     element: document.getElementById("basic_choropleth"),
@@ -188,26 +188,25 @@ function click_us(){
 }
 
 function createMap(id){
-  document.getElementById('country_map').src = id.toLowerCase()+".html";
+  if(world_visible){
+    $("#country_map").css("display","initial");
+    $("#basic_choropleth").css("display","none");
+    $("#back_button_1").css("display","initial");
 
-  //
-  // console.log(id.toLowerCase());
-  // var map = new Datamap({
-  //      element: document.getElementsByClassName(id+'_MAP')[0],
-  //      scope : 'bra',
-  //
-  //      fills: {
-  //          VISITED: 'Blue',
-  //          FUTURE: 'Purple',
-  //         //  UNKNOWN: 'rgb(0,0,0)',
-  //          defaultFill: 'green'
-  //      },
-  //      data: {
-  //
-  //      }
-  //  });
-  //  map.legend();
-  //  map.labels();
+    world_visible = false;
+
+  }
+  document.getElementById('country_map').src = "maps/"+id.toLowerCase()+".html";
+}
+
+function back_to_world(){
+  $("#basic_choropleth").css("display","initial");
+  $("#country_map").css("display","none");
+
+  world_visible = true;
+  $("#back_button_1").css("display","none");
+
+
 }
 //
 // function goto(d){
