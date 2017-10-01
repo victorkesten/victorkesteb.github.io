@@ -41,39 +41,39 @@ function load_map(){
 
   });
 
-  basic_choropleth.arc([{
-         origin: {
-           latitude: 59.3293,
-           longitude: 18.0868
-         },
-         destination: {
-           latitude: 21.3069,
-           longitude: -157.8583
-         }
-       }
-      //  ,{
-      //    origin: {
-      //      latitude: 59.3293,
-      //      longitude: 18.0868
-      //    },
-      //    destination: {
-      //      latitude: 39.9042,
-      //      longitude: 116.40712
-      //    }
-      //  },{
-      //    origin: {
-      //      latitude: 55.9533,
-      //      longitude: -3.1883
-      //    },
-      //    destination: {
-      //      latitude: 59.3293,
-      //      longitude: 18.0868
-      //    }
-      //  }
-     ], {
-        //  greatArc: true,
-         animationSpeed: 2000
-       });
+  // basic_choropleth.arc([{
+  //        origin: {
+  //          latitude: 59.3293,
+  //          longitude: 18.0868
+  //        },
+  //        destination: {
+  //          latitude: 21.3069,
+  //          longitude: -157.8583
+  //        }
+  //      }
+  //     //  ,{
+  //     //    origin: {
+  //     //      latitude: 59.3293,
+  //     //      longitude: 18.0868
+  //     //    },
+  //     //    destination: {
+  //     //      latitude: 39.9042,
+  //     //      longitude: 116.40712
+  //     //    }
+  //     //  },{
+  //     //    origin: {
+  //     //      latitude: 55.9533,
+  //     //      longitude: -3.1883
+  //     //    },
+  //     //    destination: {
+  //     //      latitude: 59.3293,
+  //     //      longitude: 18.0868
+  //     //    }
+  //     //  }
+  //    ], {
+  //       //  greatArc: true,
+  //        animationSpeed: 2000
+  //      });
 
   basic_choropleth.svg.selectAll('.datamaps-subunit')
     .attr("id", function(d){return d.id;})

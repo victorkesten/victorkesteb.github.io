@@ -1,0 +1,31 @@
+var tournament = {
+	"name" : "",
+	"patch" : "",
+	"match" : [{
+		"rank" : "", 			//	Group Stage, Ro64, Ro32, Ro16, Quarter, Semi, Final
+		"bestof" : 0, 			//  Integer
+		"date" : "",
+		"team1:" : "",
+		"team2:" : "",
+		"game" : {
+			"map" : "", 		// Map Name
+			"player" : [{
+				"name" : "",
+				"hero" : "",
+				"pick" : 0,
+				"kills" : 0,
+				"deaths" : 0,
+				"assists" : 0
+			}],
+			"1ban1" : "",
+			"1ban2" : "",
+			"time" : "",
+		}
+	}]
+}
+
+// Player
+// Char
+// Map
+// Date
+// Tournament
