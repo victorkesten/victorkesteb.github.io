@@ -56,10 +56,10 @@ function go(a) {
       locat = "https://foodadvisor10.github.io/FoodAdvisor/";
       break;
     case ProjectNames.HEROES_VIS:
-      locat = "../Heroes/index.html";
+      locat = "../HeroesProject/index.html";
       break;
     case ProjectNames.VESTA_HAWAII:
-      locat = "../Vesta/";
+      locat = "../Meltor/Vesta";
       break;
     case ProjectNames.MT_MAP:
       locat = "../Map/index.html";
