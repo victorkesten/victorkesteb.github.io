@@ -1,0 +1,22 @@
+.beer {
+  margin: 0 auto;
+  width: 70%;
+  background-color: red;
+  height: 350px;
+}
+
+.beer_photo_w{
+  width: 50%;
+  /*height: 50%;*/
+  float: left;
+}
+
+.beer_photo_h{
+  width: 25%;
+  float: left;
+}
+
+.beer p {
+  /*margin-left: 10px;*/
+  /*margin: 10%;*/
+}

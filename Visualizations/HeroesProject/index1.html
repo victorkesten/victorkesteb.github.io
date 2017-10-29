@@ -1,0 +1,96 @@
+<DOCTYPE! html>
+<html>
+<head>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<link rel="stylesheet" href="stylesheet.css">
+<script src="api-fetch.js"></script>
+<script src="help-functions.js"></script>
+<script src="backend-fetch.js"></script>
+
+<link rel="shortcut icon" href="/favicon.png"/>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-98785382-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</head>
+<script>
+	$(document).ready(function(){
+		// getAllTeams(1,'a');
+		// getTeamNames();
+    getAllMatches(42,1,1, 4);
+    getHeroes();
+    getHero();
+	});
+</script>
+<body>
+<!-- <button type="button" onclick="getAllTeams(1, 'a')">Get teams!</button><br> -->
+<!-- <button type="button" onclick="printTeams()">Print teams!</button><br> -->
+<!-- <button type="button" onclick="getTeamData('fNatic')">Get fna!</button><br> -->
+<!--  GoOD cut off -->
+<!-- <button type="button" onclick="getTournament(1, 'Mid-Season Brawl', 1)">Get Tournament</button><br>
+<button type="button" onclick="getMatches(42,1,1)">Get Matches</button><br>
+<button type="button" onclick="printMatches()">Print matches!</button><br>
+<button type="button" onclick="getHeroes()">Get Heroes!</button><br>
+<button type="button" onclick="getWinRate(37)">Get winrate!</button><br> -->
+
+<!--  -->
+
+<div class="hero_diagram" style="width:40%">
+</div>
+<div class="selected_heroes">
+</div>
+<div class="select_buttons">
+  <button onclick="selectAllHeroes()">Select All</button>
+  <button onclick="selectSupport()">Select support</button>
+  <button onclick="deselectAllHeroes()">Deselct All</button>
+  <button onclick="selectNation(0)">EU</button>
+  <button onclick="selectNation(1)">NA</button>
+  <button onclick="selectNation(2)">KR</button>
+  <button onclick="selectNation(3)">CN</button>
+  <button onclick="selectNation(4)">HGC</button>
+</div>
+
+  <!-- <svg id="line_graph_1" width="960" height="500"></svg> -->
+  <svg id="line_graph_1" width="960" height="500"></svg>
+
+<script src="line-graph.js"></script>
+<!-- <script>draw();</script> -->
+
+<div class="dropdown">
+  <!-- <button onclick="myFunction()" class="dropbtn">Dropdown</button> -->
+  <div id="myDropdown" class="dropdown-content">
+    <a onclick="changeYAxis(0)">Winrate, %</a>
+    <a onclick="changeYAxis(1)">Involvement, %</a>
+    <a onclick="changeYAxis(2)">Link 3  </a>
+  </div>
+</div>
+
+<!-- <div class="ui-widget">
+  <label for="teams">Team: </label>
+  <input id="teams"/>
+</div>
+
+
+
+
+<div class="ui-widget">
+  <label for="heroes_list">Heroes: </label>
+  <input id="heroes_list"/>
+</div> -->
+<!-- <button type="button" onclick="updateGraph()">updateGraph()</button> -->
+<!-- <button type="button" onclick="updateGraph2()">ma</button> -->
+<!--
+Heroes - Have an autocomplete list and also a hero-diagram clicker.<br>
+Maps - Also beauty diagram and list. All vs None<br> -->
+<br>
+<div id="list">
+</div>
+</body>
+</html>

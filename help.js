@@ -13,56 +13,60 @@ ProjectNames = {
     HEROES_VIS : 11,
     FOOD_ADVISOR : 12,
     VESTA_HAWAII : 13,
-    MT_MAP : 14
+    MT_MAP : 14,
+    BIRD : 15
 }
 
 function go(a) {
 	var locat = "portfolio";
 	switch(a){
 		case ProjectNames.THEA:
-			locat = "thea";
+			locat = "thea.html";
 			break;
 		case ProjectNames.TEXT_CPP:
-			locat = "text_cpp";
+			locat = "text_cpp.html";
 			break;
 		case ProjectNames.RAY_TRACE:
-			locat = "raytrace";
+			locat = "raytrace.html";
 			break;
 		case ProjectNames.SMALL_GAMES:
-			locat = "small_games";
+			locat = "small_games.html";
 			break;
 		case ProjectNames.GL_ENGINE:
-			locat = "gl_engine";
+			locat = "gl_engine.html";
 			break;
 		case ProjectNames.MINECRAFT:
-			locat = "minecraft_mod";
+			locat = "minecraft_mod.html";
       break;
     case ProjectNames.INFO_VIS:
-      locat = "info_vis";
+      locat = "info_vis.html";
       break;
     case ProjectNames.WEB_DESIGN:
-      locat= "web_design";
+      locat= "web_design.html";
       break;
     case ProjectNames.ANTI_ALIASING:
-      locat = "anti_aliasing"
+      locat = "anti_aliasing.html"
       break;
     case ProjectNames.IV_P1:
-      locat = "../DH2321/Project1/index.html";
+      locat = "../Visualizations/DH2321/Project1/index.html";
       break;
     case ProjectNames.IV_P2:
-      locat = "../DH2321/Project2/index.html";
+      locat = "../Visualizations/DH2321/Project2/index.html";
       break;
     case ProjectNames.FOOD_ADVISOR:
       locat = "https://foodadvisor10.github.io/FoodAdvisor/";
       break;
     case ProjectNames.HEROES_VIS:
-      locat = "../HeroesProject/index.html";
+      locat = "../Visualizations/HeroesProject/index.html";
       break;
     case ProjectNames.VESTA_HAWAII:
-      locat = "../Meltor/Vesta";
+      locat = "../Visualizations/Meltor/Vesta";
       break;
     case ProjectNames.MT_MAP:
-      locat = "../Map/index.html";
+      locat = "../Visualizations/Map/index.html";
+      break;
+    case ProjectNames.BIRD:
+      locat = ""; //Add our project link. 
       break;
 		default:
 			break;

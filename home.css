@@ -10,7 +10,8 @@ html, body {
 }
 
 #backgroundPic{
-	background-image: url("resources/fb552ac9c84a206fed9c13b0b483d6a4.png");
+	/*background-image: url("resources/fb552ac9c84a206fed9c13b0b483d6a4.png");*/
+	background-image: url("resources/suQX4yD.jpg");
 	background-size: cover;
     background-position: 50% 50%;
     height: 250px;
@@ -249,6 +250,10 @@ html, body {
 
 }
 
+#spec_text{
+	margin-left : 20%;
+	margin-right :20%;
+}
 div.img {
     margin: 7px;
     border: 1px solid #ccc;
