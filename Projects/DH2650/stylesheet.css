@@ -1,0 +1,29 @@
+html {
+  font-family: candara;
+
+}
+.banner{
+  /*width:100%;
+  height: 300px;*/
+  background-size: cover;
+  background-image: url('../../resources/suQX4yD.jpg');
+  background-position: 50% 50%;
+  height: 250px;
+  width: auto;
+}
+
+.blog{
+  width: 70%;
+  margin: 0 auto;
+  /*background-color: white;  */
+}
+
+.blog_post{
+  text-align: center;
+}
+
+
+.title{
+  font-size: 150%;
+
+}
