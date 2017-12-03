@@ -66,12 +66,13 @@ function go(a) {
       locat = "../Visualizations/Map/index.html";
       break;
     case ProjectNames.BIRD:
-      locat = ""; //Add our project link. 
+      locat = ""; //Add our project link.
       break;
 		default:
 			break;
 	}
-	location.replace(locat);
+//	location.replace(locat);
+  location.href = locat;
 }
 function showText(a){
 	document.getElementById('proj' + a).style.opacity = "0.5";
