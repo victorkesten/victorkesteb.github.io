@@ -1,6 +1,6 @@
 ProjectNames = {
     THEA : 0,
-    TEXT_CPP : 1,
+    // TEXT_CPP : 1,
     GL_ENGINE : 2,
     SMALL_GAMES : 3,
     RAY_TRACE : 4,
@@ -12,9 +12,10 @@ ProjectNames = {
     IV_P2 : 10,
     HEROES_VIS : 11,
     FOOD_ADVISOR : 12,
-    VESTA_HAWAII : 13,
     MT_MAP : 14,
-    BIRD : 15
+    BIRD : 15,
+    STROLL : 16,
+    TIMELAPSE : 17
 }
 
 function go(a) {
@@ -22,9 +23,6 @@ function go(a) {
 	switch(a){
 		case ProjectNames.THEA:
 			locat = "thea.html";
-			break;
-		case ProjectNames.TEXT_CPP:
-			locat = "text_cpp.html";
 			break;
 		case ProjectNames.RAY_TRACE:
 			locat = "raytrace.html";
@@ -59,14 +57,17 @@ function go(a) {
     case ProjectNames.HEROES_VIS:
       locat = "../Visualizations/HeroesProject/index.html";
       break;
-    case ProjectNames.VESTA_HAWAII:
-      locat = "../Visualizations/Meltor/Vesta";
-      break;
     case ProjectNames.MT_MAP:
       locat = "../Visualizations/Map/index.html";
       break;
     case ProjectNames.BIRD:
-      locat = ""; //Add our project link.
+      locat = "bird.html";
+      break;
+    case ProjectNames.TIMELAPSE:
+      locat = "timelapse.html";
+      break;
+    case ProjectNames.STROLL:
+      locat = "stroll_for_your_life.html";
       break;
 		default:
 			break;

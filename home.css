@@ -186,6 +186,26 @@ html, body {
 	    background-repeat: no-repeat;
 }
 
+#proj10{
+		background-image: url("resources/Stroll.PNG");
+		background-size: 140%;
+		background-position: center;
+	    background-repeat: no-repeat;
+}
+
+#proj11{
+		background-image: url("resources/Bird.PNG");
+		background-size: 140%;
+		background-position: center;
+	    background-repeat: no-repeat;
+}
+#proj12{
+		background-image: url("resources/Timelapse.PNG");
+		background-size: 140%;
+		background-position: center;
+	    background-repeat: no-repeat;
+}
+
 #i_p1{
 			background-image: url("resources/I_P1.PNG");
 			background-size: 120%;
