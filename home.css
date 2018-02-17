@@ -206,6 +206,20 @@ html, body {
 	    background-repeat: no-repeat;
 }
 
+#proj13{
+		background-image: url("resources/TIP.jpg");
+		background-size: 100%;
+		background-position: center;
+	    background-repeat: no-repeat;
+}
+
+#proj14{
+		background-image: url("resources/beer/tree_in_the_closet.JPG");
+		background-size: 180%;
+		background-position: center;
+	    background-repeat: no-repeat;
+}
+
 #i_p1{
 			background-image: url("resources/I_P1.PNG");
 			background-size: 120%;
