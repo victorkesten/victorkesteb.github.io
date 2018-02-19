@@ -17,7 +17,9 @@ ProjectNames = {
     STROLL : 16,
     TIMELAPSE : 17,
     MASTER : 18,
-    PARADISE : 19
+    PARADISE : 19,
+    GARMIN : 20,
+    UNTAPPD : 21
 }
 
 function go(a) {
@@ -76,6 +78,12 @@ function go(a) {
       break;
     case ProjectNames.PARADISE:
       locat = "trouble_in_paradise.html";
+      break;
+    case ProjectNames.GARMIN:
+      locat = "/Visualizations/Running/";
+      break;
+    case ProjectNames.UNTAPPD:
+      locat = "/Visualizations/Beer/Untappd/";
       break;
 		default:
 			break;
