@@ -33,8 +33,40 @@ The crownless shall be King again.
 <br><br>
 The poem above is magical in every way possible.
 Send me an email the day you want to talk. I will always reply. Know that I think about you <u>every</u> day.
-March is the month of decisions. 
+March is the month of decisions.
 Regardless of what happens it will turn out good. In different ways.
+<br><br>
+<p id="demo"></p>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("March 24, 2018 12:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
 <br><br>
 <a href="PragmaticMaxim.pdf" target="_blank" onclick="ga('send', 'event', 'PDF', 'Download', 'Seen Again');">Here</a> is a short writing that embodies my thoughts. If you want to hear more, message me. I've written so much.
 
