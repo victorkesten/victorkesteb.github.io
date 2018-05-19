@@ -17,7 +17,7 @@ ProjectNames = {
     STROLL : 16,
     TIMELAPSE : 17,
     MASTER : 18,
-    PARADISE : 19,
+    CIMMERIAN : 19,
     GARMIN : 20,
     UNTAPPD : 21
 }
@@ -76,8 +76,8 @@ function go(a) {
     case ProjectNames.MASTER:
       locat = "master_thesis.html";
       break;
-    case ProjectNames.PARADISE:
-      locat = "trouble_in_paradise.html";
+    case ProjectNames.CIMMERIAN:
+      locat = "cimmerian.html";
       break;
     case ProjectNames.GARMIN:
       locat = "/Visualizations/Running/";
