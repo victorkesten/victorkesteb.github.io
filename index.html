@@ -3,36 +3,54 @@
 <head>
 <link rel="stylesheet" type="text/css" href="home.css">
 <link rel="shortcut icon" href="favicon.png"/>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="../jquery-3.0.0.js"></script>
-<script language="JavaScript" type="text/javascript" src="help.js"></script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-98785382-1', 'auto');
-  ga('send', 'pageview');
-</script>
 <title>Victor Kesten</title>
 <meta name="description" content="My creative journal and professional portfolio." />
 </head>
+
 <body>
 <div id="backgroundPic">
 </div>
-<div id="bannerTop">
-	<br>
-	<div id="bannerLink">
-		<a id=homeLink href="/">HOME</a> / <a id=homeLink href="portfolio/">PORTFOLIO</a> / <a id=homeLink href="about.html">ABOUT</a>
-	</div>
-</div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-0" data-spy="affix" data-offset-top="200" id="nav_bar">
+      <div class="collapse navbar-collapse justify-content-md-center">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="/"><h3>Home <span class="sr-only">(current)</span></h3></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/portfolio"><h3>Portfolio</h3></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about"><h3>About</h3></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+<div class="content_sup">
 <div class="textBox" id="spec_text" style="text-align:center"><h1>Welcome to my website!</h1> <br>This is my creative journal and professional portfolio.
+  <br><br><b>NOTE:</b> Currently available for part-time freelance data analysis and/or visualization projects. Reach out to me at <a href="mailto:mail@victorkesten.com" target="_top">mail@victorkesten.com</a>
 <br><br>
 <hr style="width:40%;border: 2px solid orange">
 <b>Current Projects: </b>
 <br>
+<h1>2018 Swedish General Election</h1>
+Our Swedish general election happened on September 9th and the government makes all voter data available to the public.
+This data is however fairly difficult to navigate in an effective way! I, being a problem solver, am in the process of creating a visualization tool that organizes the data and allows
+users to browse it more easily with the goal of spotting trends and patterns!<br><br>
+<a href="/Visualizations/2018_Election"><img src="/resources/election.PNG" style="width:80%" /></a>
+<br><br>
+<hr>
+
+<h1>SKL</h1>
+In my professional life I'm currently working as a freelance data analyst for Sveriges Kommuner och Landsting (government section dedicated to state organisation) on a project called <a href="http://skoldigiplan.se/">#skolDigiPlan</a>.
+My role in this project is to measure and visualize user engagement in this plan, elucidate discussion results based on pre-determined questions and to provide feedback on the discussion platform they use (called VoteIT).
+Hopefully soon I will be able to share some visualizations based on the data collected!
+<br><br>
+<img src="/resources/SKL_logga.png" style="width:50%" />
+<img src="/resources/skoldigi.png" style="width:60%" />
+<br><br>
+<hr>
 <!-- <a style="width:60%;"> -->
 <!-- Information Visualization has become a quiet big interest of mine as of recent and I am currently working on prepartions for my Masters Thesis. This will combine one of my biggest hobbies, beer, and computer science. More to come soon! -->
 <!-- <br><br><br>Other projects, which can be previewd below include a visualization program easily displaying sports and esports statistics. Another visualization application in the pipeline is a project called MT Map. The intention is to create an interactable map in which a user can plan potential vacations or trips! -->
@@ -45,12 +63,16 @@
 <i>Heroes of the Storm Visualization. <a href="Visualizations/HeroesProject/">Click here</a> to see a prototype of the project!</i>
 <br><br>
 <hr> -->
+
+
+
+
 <h1>Garmin Running Data</h1>
-Long distance running is my main hobby right now and in June 2018 I will be running my first Marathon. Running a marathon requires a lot of prepartion and practice - something that can be tracked!
+Long distance running is my main hobby right now and in June 2018 I ran my first Marathon (and the second on September 1st, 2018). Running a marathon requires a lot of prepartion and practice - something that can be tracked!
 With the use of my new Garmin Forerunner 235 tempo watch I'm able to extract each activity session and collect a ton of super interesting data!
 Seeings as one of my favourite activities is to visualize data, the only logical thing to do next was to create a cool interactive tool which I can
 use on my journey!<br><br>
-<img src="resources/garmin.PNG" style="width:80%" />
+<img src="/resources/garmin.PNG" style="width:80%" />
 
 <br><br>
 <!-- <h1>Master Thesis</h1>
@@ -68,6 +90,18 @@ Professionally, I'm currently working on my Masters Thesis that entails creating
 <div style="margin-right:10%;margin-left:10%;margin-top:2%;margin-bottom:5%;">
 Recently I've been working on a modular 3D Engine. The main focus as of now is to transfer my project from Java into C++ (which is almost complete) and then to implement different Anti-Aliasing techniques and studying how these work.  <a href="portfolio/gl_engine.html">Click here</a> to see more about it!</div>
 </div> -->
+</div>
 </body>
+<script src="/jquery-3.0.0.min.js"></script>
+<script language="JavaScript" type="text/JavaScript" src="/bootstrap.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="/help.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-98785382-1', 'auto');
+  ga('send', 'pageview');
+</script>
 </html>

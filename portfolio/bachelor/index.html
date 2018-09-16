@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/home.css">
+<link rel="stylesheet" href="/lib/bootstrap.min.css">
+<link rel="shortcut icon" href="/favicon.png"/>
+<title>Victor Kesten - Anti-Aliasing</title>
+</head>
+<body>
+  <div id="backgroundPic">
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" data-spy="affix" data-offset-top="200" id="nav_bar">
+    <div class="collapse navbar-collapse justify-content-md-center">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/"><h3>Home</h3></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/portfolio"><h3>Portfolio <span class="sr-only">(current)</span></h3></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about"><h3>About</h3></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<div class="content_sup">
+<div class="textBox">
+<h2 style="	text-align: center">Evaluating Different Spatial Anti Aliasing Techniques</h2>
+<hr style="width:20%; border: 2px solid orange;">
+
+<div class="center" id="AApicture"><img src="/resources/AACOMP.png"></div>
+<br>
+For my Bachelors paper I decided to analyze different spatial anti aliasing techniques and to thoroughly scrutinize OpenGL and the rendering pipeline. The paper introduces the topic, analyzes different techniques and then suggest theoretical speculative improvements that could be made in order to make Anti Aliasing a more efficient technique. Below you can read the abstract and find a link to the publication page.
+
+<br><br>
+<h3 style="text-align:center;">Abstract</h3>
+<p style="width:50%; margin: 0 auto; text-align:justify;"><i>"Aliasing, a commonly found phenomenon in sound engineering, is an effect that causes different signals to become indistinguishable when sampled. In computer graphics, it occurs when a picture is processed through the rendering pipeline and finally reconstructed. The reconstruction, performed by a display for example - will differ from the originally intended image as aliasing artifacts can be seen. "Jagged" is an informal name for the artifacts in raster images that appear from aliasing. Aliasing is not to be confused with compression artifacts as these occur due to lossy compression. Spatial anti aliasing, the primary focus of this thesis, is a collection of techniques used to minimizing the alias distortion artifacts when representing a high-resolution image on a lower resolution screen. In computer graphics, anti aliasing is generally used to improve the appearance of polygon edges so that they do not appear jagged and instead are smoothed out on the screen."
+</i></p><br>
+
+<a href="http://urn.kb.se/resolve?urn=urn:nbn:se:kth:diva-208411">Link</a><br><br>
+
+
+</div>
+</div>
+</body>
+<script src="/lib/jquery-3.0.0.min.js"></script>
+<script language="JavaScript" type="text/JavaScript" src="/lib/bootstrap.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="/help.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-98785382-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</html>

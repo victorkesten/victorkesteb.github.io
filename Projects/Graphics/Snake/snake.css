@@ -1,0 +1,17 @@
+#playfield {
+    width: 300px;
+    height: 300px;        
+}
+
+.square {
+    outline: 1px solid black;
+    background: orange;
+    float: left;
+    height: 20px;
+    width: 20px;    
+}
+
+
+th {
+    text-align: left;
+}

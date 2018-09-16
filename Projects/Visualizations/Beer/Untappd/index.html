@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Untappd Beer Chart</title>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="donut.js"></script>
+    <script src="piechart.js"></script>
+    <link rel="shortcut icon" href="/favicon.png"/>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-98785382-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+</head>
+<body>
+
+<div id="chart"></div>
+<div id="chart2"></div>
+
+<script>
+  var donut = donutChart()
+      .width(960)
+      .height(500)
+      .cornerRadius(3) // sets how rounded the corners are on each slice
+      .padAngle(0.015) // effectively dictates the gap between slices
+      .variable('rating_score')
+      .category('beer_type');
+
+  // d3.tsv('species.tsv', function(error, data) {
+  //     if (error) throw error;
+  //     d3.select('#chart')
+  //         .datum(data) // bind data to the div
+  //         .call(donut); // draw chart in div
+  // });
+  d3.csv('untappd_donut_reduced.csv', function(error,data){
+    if (error) throw error;
+    d3.select("#chart")
+      .datum(data)
+      .call(donut);
+  });
+
+  // pieChart(null);
+
+</script>
+</body>
+</html>

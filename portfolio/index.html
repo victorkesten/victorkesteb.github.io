@@ -1,13 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="../home.css">
-<!-- <script language="JavaScrpt" type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
-</script> -->
+<link rel="stylesheet" type="text/css" href="/home.css">
+<link rel="stylesheet" href="/lib/bootstrap.min.css">
 <link rel="shortcut icon" href="/favicon.png"/>
 
-<script src="../jquery-3.0.0.js"></script>
-<script language="JavaScript" type="text/javascript" src="../help.js"></script>
+<title>Victor Kesten - Portfolio</title>
+</head>
+
+<body>
+  <div id="backgroundPic">
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-0" data-spy="affix" data-offset-top="200" id="nav_bar">
+        <div class="collapse navbar-collapse justify-content-md-center">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/"><h3>Home</h3></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/portfolio"><h3>Portfolio <span class="sr-only">(current)</span></h3></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about"><h3>About</h3></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+<!-- A range of both professional and hobby projects!  -->
+  <div class="container portfolio_content content_sup">
+    <div class="row">
+      <div class="col-sm">
+          <a href="info_viz" >
+            <img class="rounded-circle circ" src="/resources/vis_heroes.PNG" title="Information Visualization"/>
+          </a>
+          <p class="textDesc" id="textDesc3"><b><u>Data Analysis & Information Visualization</u></b><br>My main area of focus - the world of data analysis and visualization. This page contains a multitude of projects I've done over the past few years.</p>
+        </div>
+      <div class="col-sm">
+          <a href="CG" >
+            <img class="rounded-circle circ" src="/resources/GLMon.png" title="Computer Graphics"/>
+          </a>
+          <p class="textDesc" id="textDesc3"><b><u>Computer Graphics and Games</u></b><br>A collection of projects ranging from raw OpenGL programming to fullfledged Unity games. I even made my own game engine!</p>
+      </div>
+      <div class="col-sm">
+          <a href="web_design" >
+            <img class="rounded-circle circ" src="/resources/web_design.PNG" title="Web Design"/>
+          </a>
+          <p class="textDesc" id="textDesc3"><b><u>Web Development & Design</u></b><br>A lot of the visualizations that I create are browser based and thus naturally I also have projects in Web Design and Development!</p>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-sm">
+          <a href="master" >
+            <img class="rounded-circle circ" src="/resources/beer/tree_in_the_closet.JPG" title="Masters Thesis"/>
+          </a>
+          <p class="textDesc" id="textDesc3"><b><u>Master's Thesis</u></b><br>"An evaluation on how interactive visual data structures can enhance a brewer's cognition of brewing data." - In other words, a really cool visualization model for a complex dataset!</p>
+        </div>
+      <div class="col-sm">
+          <a href="bachelor" >
+            <img class="rounded-circle circ" src="/resources/AA.PNG" title="Bachelors Thesis"/>
+          </a>
+          <p class="textDesc" id="textDesc3"><b><u>Bachelor's Thesis</u></b><br>For my Bachelor's these I took a deep look at Anti-Aliasing and scrutinized the modern day rasterization rendering pipeline.</p>
+      </div>
+      <div class="col-sm">
+          <a href="other" >
+            <img class="rounded-circle circ" src="/resources/proj1ss.PNG" title="Other Projects"/>
+          </a>
+          <p class="textDesc" id="textDesc3"><b><u>Other Projects</u></b><br>Anything else that does not fit in the categories above!</p>
+        </div>
+    </div>
+  </div>
+</body>
+</div>
+<script type="text/javascript "src="/lib/jquery-3.0.0.min.js"></script>
+<script language="JavaScript" type="text/JavaScript" src="/lib/bootstrap.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="/help.js"></script>
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -18,92 +85,6 @@
   ga('send', 'pageview');
 
 </script>
-<title>Victor Kesten - Portfolio</title>
-</head>
-<body onload="screenCheck()">
-<div id="backgroundPic">
-</div>
-<div id="bannerTop">
-	<br>
-	<div id="bannerLink">
-    <a id=homeLink href="/">HOME</a> / <a id=homeLink href="/portfolio/">PORTFOLIO</a> / <a id=homeLink href="/about.html">ABOUT</a>
-	</div>
-</div>
-
-<div id="box">
-
-  <!-- <div class="projectSpace">
-		<div class="project" id="proj8" title="Web Design" onclick="go(ProjectNames.WEB_DESIGN)">
-		</div>
-		<p class="textDesc" id="textDesc3"><b><u>Dynamic Web Design</u></b><br>Modern crisp web design using dynamic and interactive templates.</p>
-	</div> -->
-  <div class="projectSpace">
-		<div class="project" id="proj14" title="Master Thesis" onclick="go(ProjectNames.MASTER)">
-		</div>
-		<p class="textDesc" id="textDesc3"><b><u>Master Thesis</u></b><br><i>"An evaluation on how interactive visual data structures can enhance a brewer's cognition of brewing data."</i> - In other words, a really cool visualization model for a complex dataset!</p>
-	</div>
-  <div class="projectSpace">
-    <div class="project" id="proj13" title="The Cimmerian Island: A Ray Of Hope" onclick="go(ProjectNames.CIMMERIAN)">
-    </div>
-    <p class="textDesc" id="textDesc3"><b><u>The Cimmerian Island: A Ray of Hope</u></b><br>A full fledge story based asymmetrical coop survival game created in Unity combining cool technology and also opens up a number of interesting research questions! </p>
-  </div>
-  <div class="projectSpace">
-    <div class="project" id="proj7" title="Information Visualization" href="info_vis.html" onclick="go(ProjectNames.INFO_VIS)">
-    </div>
-    <p class="textDesc" id="textDesc3"><b><u>Information Visualization</u></b><br>My main area of focus - the world of data visualization. This page contains a multitude of projects I've done over the past few years.</p>
-  </div>
-  <div class="projectSpace">
-		<div class="project" id="proj10" title="Stroll For Your Life" onclick="go(ProjectNames.STROLL)">
-		</div>
-		<p class="textDesc" id="textDesc3"><b><u>Stroll For Your Life</u></b><br>An interesting proof-of-concept project that explores how a combination of interactive technologies can work together while also having the goal of creating a unique asymmetrical coop game experience.</p>
-	</div>
-  <div class="projectSpace">
-		<div class="project" id="proj12" title="Timelapse" onclick="go(ProjectNames.TIMELAPSE)">
-		</div>
-		<p class="textDesc" id="textDesc3"><b><u>Timelapse</u></b><br>A top-down view rhythm based shooting game created in Unity. Let's revive this genre!</p>
-	</div>
-  <div class="projectSpace">
-		<div class="project" id="proj11" title="Bird" onclick="go(ProjectNames.BIRD)">
-		</div>
-		<p class="textDesc" id="textDesc3"><b><u>Bird-d-d-d</u></b><br>A Microsoft Kinect based bird-simulator where you take on the roll of controlling a bird through intuitive body movements. </p>
-	</div>
-
-  <div class="projectSpace">
-		<div class="project" id="proj9" title="Anti Aliasing Bachelors Paper" onclick="go(ProjectNames.ANTI_ALIASING)">
-		</div>
-		<p class="textDesc" id="textDesc3"><b><u>Bachelors Research Paper</u></b><br>As my bachelors project I took a deep look at Anti Aliasing and scrutinized the modern day rasterization rendering pipeline.</p>
-	</div>
-
-
-	<div class="projectSpace">
-		<div class="project" id="proj5" title="GL 3D" onclick="go(ProjectNames.GL_ENGINE)">
-		</div>
-		<p class="textDesc" id="textDesc3"><b><u>OpenGL Project</u></b><br>3D custom rendering engine made in OpenGL using Java and C++</p>
-	</div>
-  <div class="projectSpace">
-		<div class="project" id="proj3" title="GL Engine" onclick="go(ProjectNames.RAY_TRACE)">
-		</div>
-		<p class="textDesc" id="textDesc3"><b><u>Ray Tracing</u></b><br>Creating Ray Tracers and exploring the rasterization pipeline.</p>
-	</div>
-	<div class="projectSpace">
-		<div class="project" id="proj6" title="Minecraft Mod" onclick="go(ProjectNames.MINECRAFT)">
-		</div>
-		<p class="textDesc" id="textDesc6"><b><u>Minecraft Mod</u></b><br>A Minecraft (1.7) Mod named Afternoon Delight adding more blocks, new functionality and a fresh take on the combat system!</p>
-	</div>
-
-	<div class="projectSpace">
-		<div class="project" id="proj2" onclick="go(ProjectNames.THEA)">
-		</div>
-		<p class="textDesc" id="textDesc2"><b><u>Thea For Glasses</u></b><br>An augmented reality app made for Android phones with the aim to help hearing impaired people enjoy operas and theater.</p>
-	</div>
-
-	<div class="projectSpace">
-		<div class="project" id="proj1" onclick="go(ProjectNames.SMALL_GAMES)">
-		</div>
-		<p class="textDesc" id="textDesc4"><b><u>Vareity of Small Games</u></b><br>Simple games such as Snake, Battleship and Pong (among others) created using a variety of programming languages, libraries and techniques.</p>
-	</div>
-</div>
-
 </body>
 
 </html>

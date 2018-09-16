@@ -17,4 +17,9 @@ font-size: 16px;
 
     Upload code for
     - Ray Tracer
-    
+
+
+
+- Master thesis text check
+- Master thesis images.
+- Master thesis link to paper. 
